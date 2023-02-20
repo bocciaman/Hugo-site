@@ -1,0 +1,147 @@
+# logo
+logo = "/img/logo.png"
+logoWidth = 120
+logoHeight = 120
+
+# favicon
+favicon = "images/favicon.png"
+
+# meta data
+author = "AB Anwar"
+description = "Website description"
+
+# homepage main section
+mainSections = ["posts"]
+
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+
+# copyright
+copyright = ""
+rssLimit = 20
+
+# dark_mode_toggle *** true or false ***
+dark_mode_toggle = false
+
+# search *** true or false ***
+search = false
+
+header_search_layout = "expanded" # "expanded" or "popupable"
+# Menu align *** "left", "right" or "center" (if Search is disable Menu will align in Right) ***
+menu_align = "center"
+# Blog-details page sidebar
+sidebar = "right" # Sidebar value ("left", "right" or false)
+
+# google tag manager, see https://developers.google.com/tag-manager/
+# google_tag_manager = "" # example: G-XXXXXXXXXX
+
+code_copy_button = true # Turn on/off the code-copy-button for code-fields
+
+
+# social icons 
+
+[[social]]
+name = "Twitter"
+icon = "fa-brands fa-twitter"
+link = "https://twitter.com/bocciaman"
+
+[[social]]
+name = "Facebook"
+icon = "fa-brands fa-facebook"
+link = "https://www.facebook.com/anwar.abdallah1"
+
+[[social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin"
+link = "https://linkedin.com/"
+
+[[social]]
+name = "YouTube"
+icon = "fa-brands fa-youtube"
+link = "https://www.youtube.com/@AutomationMaestro"
+
+# [[social]]
+# name = "Instagram"
+# icon = "fa-brands fa-instagram"
+# link = "https://www.instagram.com/bocciaman/"
+
+
+
+
+
+# Site Variables 
+
+[variables]
+# Color Variables
+primary_color = "#47c4f1"
+secondary_color = "#9AC4F8"
+text_color = "#666666"
+text_color_dark = "#222222"
+body_color = "#fff"
+border_color = "#ACB9C4"
+black = "#000"
+white = "#fff"
+light = "#F8F8F8"
+
+# font variable
+# Give your font name from google font. add font weight using ":wght@" and separate by ";"
+# example: "Work Sans:wght@400;500;600"
+primary_font = "PT Sans:wght@400;700"
+secondary_font = ""
+icon_font = "Font Awesome 6 Free"
+
+
+######################## sidebar widgets #########################
+[widgets]
+sidebar = ["toc", "google"]
+# available widget : search,about-me,authors,categories,tags,recent-post,social,promotion,subscription
+
+# preloader
+[preloader]
+enable = false
+preloader = "" # use png, jpg, svg or gif format
+
+# Subscription
+[subscription]
+enable = false
+title = "Subscribe for our monthly newsletter."
+input_placeholder = "Enter your email"
+
+# Google Ads
+[googlead]
+enable = true
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+
+########################## Plugings ######################################
+# css plugins
+[[plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[plugins.css]]
+link = "plugins/slick/slick.min.css"
+[[plugins.css]]
+link = "css/custom-nav.css"
+
+
+# js plugins
+[[plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[plugins.js]]
+link = "plugins/search/mark.js"
+[[plugins.js]]
+link = "plugins/search/search.js"
+[[plugins.js]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+

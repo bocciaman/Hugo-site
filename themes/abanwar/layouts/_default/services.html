@@ -1,0 +1,33 @@
+{{define "main"}}
+
+<!-- services -->
+<!-- Services -->
+{{ with .Params.services }} {{ if .enable }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-4"><span class="text-primary">{{ .heading }}</span></h2>
+
+        {{ range .service }}
+        <article class="article-list row align-items-center mb-5">
+          <div class="col-md-5 pt-3 pb-3">
+            <img class="w-100" src="{{ .image }}" />
+          </div>
+
+          <div class="col-md-7">
+            <div class="card-block service-content">
+              <h2 class="h4 text-uppercase">{{ .title }}</h2>
+              {{ .text | markdownify }}
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} {{ end }}
+<!-- /services -->
+
+{{end}}
