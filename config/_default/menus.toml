@@ -15,6 +15,10 @@ weight = 3
 
 [[main]]
 name = "Merchandise"
-url = "https://www.google.com/"
+url = "https://bocciamans-store.creator-spring.com/?"
 weight = 4
 
+[[main]]
+name = "Inside That Ad"
+url = "https://www.insidethatad.net"
+weight = 5
