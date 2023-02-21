@@ -265,11 +265,6 @@ textarea.form-control{
   }
 }
 
-iframe {
-  padding-top: 1rem;
-  // padding-bottom: 1rem;
-  padding-bottom: 0;
-}
 
 .blog-list {
   padding-top: 3rem;
@@ -278,4 +273,8 @@ iframe {
 .service-content a {
   color: #21a5e1;
   font-weight: 700;
+}
+
+p {
+  margin-top: 1rem;
 }
