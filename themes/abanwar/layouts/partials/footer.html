@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <a href="{{ site.BaseURL | absLangURL }}" class="d-block"><img loading="lazy" src="{{ site.Params.logo | absURL }}" class="img-fluid" alt="{{ site.Title }}"></a>
+        <a href="{{ site.Params.footer_image_link }}" class="d-block"><img loading="lazy" src="{{ site.Params.footer_image }}" class="img-fluid" alt="{{ site.Title }}" /></a>
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <ul class="list-inline mb-0">
@@ -15,7 +15,9 @@
       <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
         <ul class="list-inline social-icon mb-0">
           {{ range site.Params.social }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}" aria-label="social-profile"><i class="{{ .icon }}"></i></a></li>
+          <li class="list-inline-item">
+            <a href="{{ .link | safeURL }}" aria-label="social-profile"><i class="{{ .icon }}"></i></a>
+          </li>
           {{ end }}
         </ul>
       </div>
