@@ -16,44 +16,14 @@ In this video I walk you through the pros and cons of two iOS clipboard managers
 
 <!--more-->
 
-## Video
-
 {{< youtube uoh_bDvtduA >}}
 
-Lorem ipsum dolor sit amet. Qui galisum reprehenderit hic suscipit vero et dicta blanditiis ea animi optio ut distinctio natus. Aut voluptatem soluta qui recusandae quae et recusandae galisum rem quod fuga! Qui odit dolorem qui dolorum maiores sit distinctio praesentium vel quos doloribus eum nihil obcaecati. Et temporibus velit ea dignissimos eius eos voluptas voluptatem et ratione fuga non consectetur ratione eum architecto deleniti!
+## Clippo
+Is the paid clipboard manager that you can download from the [App store](https://apps.apple.com/us/app/clippo-clipboard-manager/id1092865336). To Start using the app, you have to copy the text you want to save in clipboard first, then open Clippo where you'll be asked if you want to save the text, then it will be saved in an internal list. It does have advanced options like sending copied text to the Mac but this feature doesn't work consitantly.  
+- Advanced settings
 
-### Explanation of commands [](https://gohugo.io/getting-started/quick-start/#explanation-of-commands)
+## Clipboard Manager Shortcut
+I prefer the clipboard manager shortcut over Clippo even though it is dependent on the [Data Jar](https://apps.apple.com/us/app/data-jar/id1453273600)app to store the copied content. The clipboard manager shortcut primarily works via notifications but in my video the application didn't work - just my luck, I guess.
 
-Create the [directory structure](https://gohugo.io/getting-started/directory-structure) for your project in the `quickstart` directory.
-
-```
-hugo new site quickstart
-
-```
-
-Change the current directory to the root of your project.
-
-```
-cd quickstart
-
-```
-
-Initialize an empty Git repository in the current directory.
-
-```
-git init
-```
-
-Et ipsum aliquam aut iste omnis vel omnis nihil qui officiis enim in minus enim sit reprehenderit deserunt aut natus magni. Ut molestias voluptatem sed quae sint aut praesentium necessitatibus aut voluptatibus soluta est tempore dolorem! Et autem fugiat est laborum dignissimos et aperiam dolore ex consequatur voluptatem aut deleniti molestiae non eveniet sint.
-
-Ea aliquam quos sed laudantium deleniti et ipsa alias ut dolorem commodi aut magni eaque ut doloribus similique. Sed enim sequi ut voluptatem cupiditate sed numquam illum. Et architecto consequatur eum cupiditate veritatis aut sapiente inventore et ipsam galisum.
-
-## Heading
-
-### Subheading
-
-### An image
-
-Lorem ipsum dolor sit amet. Qui galisum reprehenderit hic suscipit vero et dicta blanditiis ea animi optio ut distinctio natus.
-
-![](/img/photo1.jpg)
+## Conclusion
+I'll always prefer native, free apps over over paid, third-party ones. 
