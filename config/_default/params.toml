@@ -4,7 +4,7 @@ logoWidth = 120
 logoHeight = 120
 
 # footer image
-footer_image = "/images/transparent.png"
+footer_image = "/images/lefttransparent.png"
 footer_image_link = "/"
 
 # favicon
