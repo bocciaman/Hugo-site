@@ -1,7 +1,7 @@
 ---
 title: "Comparing two iOS clipboard manager options"
 description: "In this video I walk you through the pros and cons of two iOS clipboard managers. One is called Clippo and it's an app you can purchase from the App Store. The other is a clipboard manager shortcut that I downloaded from snows YouTuber Christopher Lawley."
-date: 2023-02-18
+date: 2023-02-17
 url: /comparing-two-ios-clipboard-manager-options/
 image: /img/yt1.jpg
 categories:

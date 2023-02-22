@@ -9,7 +9,7 @@ categories:
 tags:
   - Automaton
   - Keyboard Maestro
-draft: true
+draft: false
 ---
 
 {{< youtube uoh_it0wyeX0FOk >}}
