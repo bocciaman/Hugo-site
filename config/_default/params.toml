@@ -21,14 +21,14 @@ mainSections = ["posts"]
 contact_form_action = "#" # contact form works with : https://formspree.io
 
 # copyright
-copyright = ""
+copyright = "2023"
 rssLimit = 20
 
 # dark_mode_toggle *** true or false ***
-dark_mode_toggle = false
+dark_mode_toggle = true
 
 # search *** true or false ***
-search = false
+search = true
 
 header_search_layout = "expanded" # "expanded" or "popupable"
 # Menu align *** "left", "right" or "center" (if Search is disable Menu will align in Right) ***
