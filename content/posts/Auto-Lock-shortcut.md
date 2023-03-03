@@ -21,12 +21,12 @@ In this video, I show you how to create a shortcut for the auto-lock screen. The
 
 The app created in this video did not fully solve the problem it was intended to solve. The shortcut took you straight to the lock screen settings page but there was no way for you to select a different time interval via auomation. 
 
-## The Code
+### The Code
 
 ```
 prefs:root=DISPLAY&path=AUTOLOCK
 ```
 
-## Conclusion
+### Conclusion
 
 The app really didn't accomplish its goal but it was a cool attempt. 
