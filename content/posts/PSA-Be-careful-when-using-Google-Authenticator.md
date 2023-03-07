@@ -5,12 +5,12 @@ date: 2022-11-14
 url: /PSA-Be-careful-when-using-Google-Authenticator/
 image: /img/Authenticator.png
 categories:
-  - one
+  - iOS
 tags:
-  - one
-  - two
-  - three
-draft: true
+  - Google Authenticator
+  - iOS
+  - 2FA
+draft: false
 ---
 
 In this video I share with you a scary experience I  had using Google's Authenticator App. The Authenticator App is Google's 2FA app that latches on to your specific device and when you transfer your device the codes don't transfer over like other apps.
