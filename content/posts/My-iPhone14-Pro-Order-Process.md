@@ -1,7 +1,7 @@
 ---
 title: "My IPhone 14 Pro Order Process"
 description: ""
-date: 2023-03-08
+date: 2022-10-19
 url: /My-iPhone-14-Pro-Order-Process/
 image: /img/iPhone.png
 categories:
