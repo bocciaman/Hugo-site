@@ -36,6 +36,23 @@ The pipe command simply ties two seperate commands togetyher so they can be run 
 mkdir -p parent_folder/{folder1,folder2,folder3,folder4,folder5}
 ```
 
+## AppleScript
+
+```applescript
+set desktopPath to (path to desktop) as text
+set newFolder to "My Folder"
+
+tell application "Finder"
+	set parentFolder to make new folder at desktopPath with properties {name:newFolder}
+	
+	repeat with i from 1 to 5
+		set subFolder to make new folder at parentFolder with properties {name:"Subfolder " & i}
+	end repeat
+	
+	open parentFolder
+end tell
+```
+
 ## Conclusion
 
 If I get to adding the AppleScript script for opening the folder, I will. 
