@@ -33,7 +33,7 @@ The pipe command simply ties two seperate commands togetyher so they can be run 
 ## The Command
 
 ```
-mkdir -p parent_folder/{folder1,folder2,folder3,folder4,folder5}
+mkdir -p test6folder/{red,white,blue,purple,yellow} | open test6folder
 ```
 
 ## AppleScript
