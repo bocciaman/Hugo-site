@@ -1,7 +1,7 @@
 ---
 title: "Be Careful When Withdrawing From BlockFi"
 description: "BlockFi haulting withdraws."
-date: 2023-03-19
+date: 2022-09-03
 url: /Be-Careful-when-Withdrawing-from-BlockFi/
 image: /img/PicBlockFi.png
 categories:
