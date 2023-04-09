@@ -26,11 +26,11 @@ The first method, the traditional trash method, is the most straightforward and 
 
 ## Third-Party Method
 
-The second method, using the free third-party app AppCleaner, ensures that all the files associated with the application are removed from your Mac. The video shows you how to download and install AppCleaner and how to use it to remove an application from your Mac. AppCleaner is a great tool to use if you want to ensure that all the files associated with an application are completely removed from your Mac.
+The second method, using the free third-party app [AppCleaner](https://freemacsoft.net/appcleaner/), ensures that all the files associated with the application are removed from your Mac. The video shows you how to download and install AppCleaner and how to use it to remove an application from your Mac. AppCleaner is a great tool to use if you want to ensure that all the files associated with an application are completely removed from your Mac.
 
 ## Command line
 
-The third method, using the Homebrew uninstall command, is for those who are comfortable using the command line. The video links to a separate video on how to install Homebrew for the first time, and then shows you how to use the Homebrew uninstall command to remove an application from your Mac. This method can be useful for those who prefer using the command line or want to automate the uninstallation process.
+The third method, using the Homebrew uninstall command, is for those who are comfortable using the command line. The video links to a separate video on how to install [Homebrew](https://brew.sh) for the first time, and then shows you how to use the Homebrew uninstall command to remove an application from your Mac. This method can be useful for those who prefer using the command line or want to automate the uninstallation process.
 
 ## Conclusion
 
