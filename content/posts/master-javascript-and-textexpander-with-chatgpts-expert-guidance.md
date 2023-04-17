@@ -14,7 +14,7 @@ tags:
   - Apple
   - productivity
   - ChatGBT
-draft: true
+draft: false
 ---
 
 In this video, I  demonstrate how I used ChatGBT to create javascript code to use in a TextExpander snippet. You can sign up now for [TextExpander](https://shareasale.com/r.cfm?b=1244193&amp;u=2423013&amp;m=81274&amp;urllink=&amp;afftrack=) and save 20%.
