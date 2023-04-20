@@ -1,5 +1,4 @@
-# baseURL = "https://abanwar.com/"
-baseURL = "/" # remove this one, and replace it with the one above when the domain name is set up
+baseURL = "https://abanwar.com/"
 title = "A.B. Anwar"
 # theme
 theme = "abanwar"
