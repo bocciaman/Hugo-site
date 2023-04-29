@@ -113,7 +113,7 @@ input_placeholder = "Enter your email"
 
 # Google Ads
 [googlead]
-enable = false
+enable = true
 
 # cookies
 [cookies]
