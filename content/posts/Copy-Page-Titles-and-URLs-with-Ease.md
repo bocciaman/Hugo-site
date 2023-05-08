@@ -48,4 +48,4 @@ tell application "Safari" to return URL of current tab of window 1
 
 ## Conclusion
 
-So, if you're ready to take your Safari browsing experience to the next level, then be sure to watch this video and learn how to copy page titles and URLs with ease. Don't forget to leave a comment below and let me know what you think! Stay tuned to this channel, this automation has already been improved upon in part 2 of this video series. 
+So, if you're ready to take your Safari browsing experience to the next level, then be sure to watch this video and learn how to copy page titles and URLs with ease. Don't forget to leave a comment below and let me know what you think! Stay tuned to this channel, this automation has already been improved upon in part 2 of this video series. You can sign up now for [TextExpander](https://shareasale.com/r.cfm?b=1244193&amp;u=2423013&amp;m=81274&amp;urllink=&amp;afftrack=) and save 20%.

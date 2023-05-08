@@ -69,6 +69,10 @@ name = "Instagram"
 icon = "fa-brands fa-instagram"
 link = "https://www.instagram.com/bocciaman/"
 
+[[social]]
+name = "Instagram"
+icon = "fa-brands fa-github"
+link = "https://github.com/bocciaman"
 
 
 ######################## Site Variables #########################
