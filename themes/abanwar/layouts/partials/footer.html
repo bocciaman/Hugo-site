@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <span>{{ site.Params.copyright | markdownify }}</span>
+      <span>Copyright &copy; {{ dateFormat "2006" now }} {{ site.Params.copyright | markdownify }}</span>
     </div>
   </div>
 </footer>
