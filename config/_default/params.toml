@@ -70,10 +70,14 @@ link = "https://www.youtube.com/@AutomationMaestro"
 # link = "https://www.instagram.com/bocciaman/"
 
 [[social]]
-name = "Instagram"
+name = "GitHub"
 icon = "fa-brands fa-github"
 link = "https://github.com/bocciaman"
 
+[[social]]
+name = "Reddit"
+icon = "fa-brands fa-reddit"
+link = "https://www.reddit.com/user/bocciaman"
 
 ######################## Site Variables #########################
 
