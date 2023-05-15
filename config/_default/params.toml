@@ -8,7 +8,7 @@ footer_image = "/images/lefttransparent.png"
 footer_image_link = "/"
 
 # favicon
-favicon = "images/favicon.png"
+favicon = "images/favicon.ico"
 
 # meta data
 author = "AB Anwar"
