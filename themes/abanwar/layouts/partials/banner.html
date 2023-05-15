@@ -3,17 +3,28 @@
     <div class="list-row">
       <h1 class="mainpagetitle">{{ .Title }}</h1>
       <h4 class="banner-social">
-        {{ "<!-- about me -->" | safeHTML }} {{ with site.Params.social }}
-        <ul class="list-unstyled list-inline">
-          {{ range . }}
-          <li class="banner-social mr-3">
-            <a href="{{ .link }}" aria-label="Social Profile"><i class="{{ .icon }}"></i></a>
-          </li>
-          {{ end }}
-        </ul>
+        {{ "<!-- about me -->" | safeHTML }}
+        {{ with site.Params.social }}
+          <ul class="list-unstyled list-inline">
+            {{ range . }}
+              <li class="banner-social mr-3">
+                <a
+                  href="{{ .link }}"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Social Profile"
+                  ><i class="{{ .icon }}"></i
+                ></a>
+              </li>
+            {{ end }}
+          </ul>
         {{ end }}
       </h4>
     </div>
-    <p class="banner-para">This site will hopefully grow to become my little corner of the Internet. Mostly I'll be sharing longer length blog posts that accompany the videos on my YouTube channel.</p>
+    <p class="banner-para">
+      This site will hopefully grow to become my little corner of the Internet.
+      Mostly I'll be sharing longer length blog posts that accompany the videos
+      on my YouTube channel.
+    </p>
   </div>
 </section>
