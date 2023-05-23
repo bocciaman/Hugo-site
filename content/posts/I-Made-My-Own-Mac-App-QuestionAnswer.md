@@ -6,7 +6,7 @@ url: /I-Made-My-Own-Mac-App-QuestionAnswer/
 image: /img/MyApp.webp
 categories:
   - Alfred
-  -Bash script
+  - Bash script
 tags:
   - Alfred
   - bash
