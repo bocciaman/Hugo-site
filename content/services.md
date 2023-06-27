@@ -5,20 +5,14 @@ layout: services
 
 # services
 services:
-  enable: false
+  enable: true
   heading:
   service:
-    - title: "Mac Power Users"
-      image: "/img/mpu_artwork.jpg"
+    - title: "My Fiverr Gigs"
+      image: "/img/fiverr_logo.webp"
       text: |-
-        "Learn about getting the most from your Apple technology with focused topics and workflow guests. Creating Mac Power Users, one geek at a time since 2009." 
+        "Learn about about the services I offer on Fiverr." 
 
-        [some link](link) - [link](link) - [link](link)
+        [My Fiverr Services](https://www.fiverr.com/bocciaman?public_mode=true)
 
-    - title: "Focused"
-      image: "/img/focused_artwork.jpg"
-      text: |-
-        "Mike Schmitz and I talk about the biggest challenge of these days, staying focused in a connected world."
-
-        [some link](link) - [link](link) - [link](link)
 ---
