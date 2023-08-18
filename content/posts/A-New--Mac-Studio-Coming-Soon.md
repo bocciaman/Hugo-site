@@ -15,11 +15,11 @@ draft: false
 
 ## Video
 
-{{< YouTube vu84-jg-IWo >}}
+{{< youtube vu84-jg-IWo >}}
 
 Back in July I finally got a a new desktop Mac that will be my daily driver for the forseeable future. Here are the full specs for it:
 
-*2023 Mac Studio*
+_2023 Mac Studio_
 
 - 32GB unified memory
 - 2TB SSD storage
@@ -28,5 +28,6 @@ Back in July I finally got a a new desktop Mac that will be my daily driver for 
 - Apple M2 Max with 12‑core CPU, 38‑core GPU, 16‑core Neural Engine
 - Apple full Magic Keyboard with Touch ID - Arabic keyboard
 
-*Monitor*
+_Monitor_
+
 - Dell S2422HZ - Not a good purchase - but it will do for now, I hope to replace it in a few years.
