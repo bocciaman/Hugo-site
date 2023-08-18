@@ -10,7 +10,7 @@ tags:
   - Daily Driver
   - new mac
   - new
-draft: false
+draft: true
 ---
 
 ## Video
