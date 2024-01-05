@@ -17,8 +17,10 @@ weight = 3
 name = "Merchandise"
 url = "https://bocciamans-store.creator-spring.com/?"
 weight = 4
+target = "_blank"
 
 [[main]]
 name = "Inside That Ad"
 url = "https://www.insidethatad.net"
 weight = 5
+target = "_blank"
