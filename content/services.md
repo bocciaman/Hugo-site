@@ -5,7 +5,7 @@ layout: services
 
 # services
 services:
-  enable: false
+  enable: true
   heading:
   service:
     - title: "My Fiverr Gigs"
