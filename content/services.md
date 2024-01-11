@@ -11,4 +11,7 @@ services:
     - title: "My Fiverr Gigs"
       image: "/img/fiverr_logo.webp"
       text: "Learn about the services I offer on Fiverr. [My Fiverr Services](https://www.fiverr.com/bocciaman?public_mode=true)"
+    - title: "My eBay Listings"
+      image: "/img/ebaylogo.webp"
+      text: "Come checkout my eBay listings. [eBay listings](https://www.ebay.com/usr/bocciagod)"
 ---
