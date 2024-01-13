@@ -46,7 +46,7 @@ code_copy_button = true # Turn on/off the code-copy-button for code-fields
 
 [[social]]
 name = "Twitter"
-icon = "fa-brands fa-x-twitter"
+icon = "fa-brands fa-twitter"
 link = "https://twitter.com/bocciaman"
 
 [[social]]
