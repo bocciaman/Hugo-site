@@ -17,4 +17,8 @@ services:
     - title: "My Etsy Products"
       image: "/img/etsy.webp"
       text: "Learn about the digital products I offer on Etsy. [Checkout my products](https://digitalstudiobyab.etsy.com)"
+    - title: "My Gumroad Products"
+      image: "/img/Gumroad.webp"
+      text: "Learn about the digital products I offer on Gumroad. [Checkout my products](https://bocciaman.gumroad.com/l/uboxq)"
+
 ---
