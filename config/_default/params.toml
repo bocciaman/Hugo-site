@@ -45,8 +45,13 @@ code_copy_button = true # Turn on/off the code-copy-button for code-fields
 # social icons 
 
 [[social]]
+name = "Buy me a coffee"
+icon = "Fa-duotone fa-mug-saucer"
+link = "https://www.buymeacoffee.com/AbdallahA"
+
+[[social]]
 name = "Twitter"
-icon = "fa-brands fa-x-twitter"
+icon = "fa-brands fa-twitter"
 link = "https://twitter.com/bocciaman"
 
 [[social]]
