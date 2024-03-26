@@ -68,4 +68,4 @@ else:
         print("Ramadan has not started yet.")
 ```
 ## Conclusion
- I realize that the script is not for everyone but create it definitely brought me joy. I won't be offended if you find it useless.
+ I realize that the script is not for everyone but create it definitely brought me joy. I won't be offended if you find it useless. finally, you can find the [Alfred Workflow](https://github.com/bocciaman/Alfred-workflows/tree/main) in my GitHub repo.
