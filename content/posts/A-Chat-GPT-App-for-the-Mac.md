@@ -7,7 +7,7 @@ image: /img/ChatGPTpost.webp
 categories:
   - macOS
 tags:
- - ChatGPT
+- ChatGPT
 - Mac
 - Mac automation
 - tutorials
