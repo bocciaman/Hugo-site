@@ -4,9 +4,10 @@ description: "Subscribe"
 draft: false
 ---
 
-# Sign up to let me know if I can Have the honor of giving you my Cutco presentation!
+## Sign up to let me know if I can have the honor of giving you my Cutco presentation!
 
 I promise I won’t spam you. :-)
+
 
 <form name="subscribe" method="POST" data-netlify="true">
   <label for="name">Name:</label>
