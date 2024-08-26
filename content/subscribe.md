@@ -22,4 +22,4 @@ I promise I won’t spam you. :-)
   <input type="submit" value="Sign Me Up!">
 </form>
 
-Thank you for your support, and I look forward to Hearing from!
+Thank you for your support, and I look forward to hearing from you!
