@@ -3,7 +3,8 @@ title = "A.B. Anwar"
 # theme
 theme = "abanwar"
 # post pagination
-paginate = "10"
+[pagination]
+  pagerSize = 10
 # post excerpt
 summaryLength = "10"
 # disqus short name

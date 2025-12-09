@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
 description: ""
-date: {{ now.Format "2006-01-02" }}
-url: /{{ .Name }}/
+date: {{ .Date }}
+url: /{{ .TranslationBaseName | urlize }}/
 image: /img/velja.png
 categories:
   - one
