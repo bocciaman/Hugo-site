@@ -13,7 +13,7 @@ tags:
 draft: False
 ---
 <p align="center">
-  <img src="/img/AB2025.jpeg" alt="A.B. Anwar in 2025" />
+  <img src="/img/AB2025.jpeg" alt="A.B. Anwar in 2025" width="250"/>
 </p>
 
 My YouTube channel hasn’t been active in over a year, and I want to share why. Life took an unexpected turn, and a series of difficult events pushed me into a place I never anticipated.
