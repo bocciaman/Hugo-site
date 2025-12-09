@@ -16,7 +16,8 @@ draft: False
   <img src="/img/AB2025.jpeg" alt="A.B. Anwar in 2025" width="250"/>
 </p>
 
-My YouTube channel hasn’t been active in over a year, and I want to share why. Life took an unexpected turn, and a series of difficult events pushed me into a place I never anticipated.
+## Why I Stepped Away
+My [YouTube](https://www.youtube.com/@AutomationMaestro) channel hasn’t been active in over a year, and I want to share why. Life took an unexpected turn, and a series of difficult events pushed me into a place I never anticipated.
 
 On May 20th, 2025, I lost my job as a Senior Marketing Analyst at my previous company. What followed was four exhausting months of searching for work. I applied to 125 different positions—yes, I counted—and received rejection after rejection. By October 2024, after months of uncertainty and frustration, I decided to take a leap and accept a position abroad with my family’s company.
 
@@ -26,6 +27,7 @@ Another curveball was the shift from working on macOS to being fully on a Window
 
 All of these changes combined left me feeling stuck, unmotivated, and disconnected—not just from my channel, but from myself.
 
+## Looking Ahead
 But here’s the good news.
 
 In January 2026, I plan to move back to the United States and return to a remote workflow that gives me the flexibility, tools, and environment I need to create again. Once I’m settled back stateside, the channel will pick back up. I’ve missed making videos. I’ve missed sharing tips, tutorials, and ideas with all of you. And I’m genuinely excited to return with a fresh mindset and better content than ever.
