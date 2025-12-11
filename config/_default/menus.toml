@@ -29,3 +29,9 @@ target = "_blank"  # Open in a new tab
 # name = "Subscribe"
 # url = "/subscribe/"
 # weight = 6
+
+[[main]]
+name = "DigitalStudioByAB"
+url = "https://www.etsy.com/shop/digitalstudiobyab"
+weight = 6
+target = "_blank"  # Open in a new tab
