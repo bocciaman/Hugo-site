@@ -25,7 +25,7 @@ url = "https://www.insidethatad.net"
 weight = 5
 target = "_blank"  # Open in a new tab
 
-[[main]]
-name = "Subscribe"
-url = "/subscribe/"
-weight = 6
+# [[main]]
+# name = "Subscribe"
+# url = "/subscribe/"
+# weight = 6
