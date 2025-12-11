@@ -3,14 +3,15 @@ title: "I'm a TextExpander Affiliate"
 description: ""
 date: 2025-12-11T17:14:14+03:00
 url: /im-a-textexpander-affiliate/
-image: /img/velja.png
+image: /img/te-screenshots-workswith.png
 categories:
-  - one
+  - Mac
+  - iOS
 tags:
-  - one
-  - two
-  - three
-draft: true
+  - TextExpander
+  - Affiliate program
+  - Snippet 
+draft: False
 ---
 <p align="center">
   <a href="https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus" target="_blank" rel="noopener noreferrer">
