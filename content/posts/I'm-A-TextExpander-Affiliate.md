@@ -20,11 +20,11 @@ draft: False
 </p>
 
 
-Thanks to TextExpander for allowing me to become an affiliate for one pf the best applications on the Mac platform. Ever wanted to write text blocks that you use repeatedly instantaneously? Well, if so, TextExpander is your answer so keep reading.
+Thanks to TextExpander for allowing me to become an affiliate for one of the best applications on the Mac platform. Ever wanted to write text blocks that you use repeatedly instantaneously? Well, if so, TextExpander is your answer so keep reading.
 
 [![TextExpander: Communicate Smarter](https://cdn3.brettterpstra.com/uploads/2022/03/te-bt-graphics-communicatesmarter.jpg "TextExpander: Communicate Smarter")](https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus)
 
-If you’ve been a viewer of my YouTube channel for a while, you’ve probably seen me showcase the time-saving magic of **[TextExpander](https://textexpander.com/?red=abdall&utm_source=chatgpt.com&utm_medium=revshare&utm_affiliate_network=reditus)**. It’s a powerhouse tool for cutting down on repetitive typing. What many people don’t realize, though, is that TextExpander can also insert dynamic content like dates, timestamps, and even run snippets built in languages such as Bash or JavaScript.
+If you’ve been a viewer of my [YouTube channel](https://www.youtube.com/@AutomationMaestro) for a while, you’ve probably seen me showcase the time-saving magic of **[TextExpander](https://textexpander.com/?red=abdall&utm_source=chatgpt.com&utm_medium=revshare&utm_affiliate_network=reditus)**. It’s a powerhouse tool for cutting down on repetitive typing. What many people don’t realize, though, is that TextExpander can also insert dynamic content like dates, timestamps, and even run snippets built in languages such as Bash or JavaScript.
 
 And yes — you can absolutely use AI tools like ChatGPT to help generate those little pieces of code for you.
 
