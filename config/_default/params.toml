@@ -79,10 +79,10 @@ name = "Reddit"
 icon = "fa-brands fa-reddit"
 link = "https://www.reddit.com/user/bocciaman"
 
-# [[social]]
-# name = "Bluesky"
-# icon = "fa-brands fa-bluesky"
-# link = "https://bsky.app/profile/bocciaman.bsky.social"
+[[social]]
+name = "Bluesky"
+icon = "fa-brands fa-bluesky"
+link = "https://bsky.app/profile/bocciaman.bsky.social"
 
 
 ######################## Site Variables #########################
