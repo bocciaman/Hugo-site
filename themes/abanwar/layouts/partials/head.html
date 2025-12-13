@@ -2,24 +2,45 @@
 <title>{{ .Title }}</title>
 
 <meta name="author" content="{{ site.Params.author }}" />
-<meta name="description" content="{{ with .Params.description }}{{.}}{{else}}{{ with site.Params.description }}{{.}}{{end}}{{end}}" />
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}" />
 
 {{ with site.Params.keywords }}
-<meta name="keywords" content="{{ . }}" />{{ end }} {{ with site.Params.author }} <meta name="author" content="{{ . }}" />{{ end }} {{ hugo.Generator }} {{ "<!-- mobile responsive meta -->" | safeHTML}}
+<meta name="keywords" content="{{ . }}" />
+{{ end }}
+{{ with site.Params.author }}
+<meta name="author" content="{{ . }}" />
+{{ end }}
+{{ hugo.Generator }}
+{{ "<!-- mobile responsive meta -->" | safeHTML }}
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
-{{ "<!-- Favicon -->" | safeHTML}}
+{{ "<!-- Favicon -->" | safeHTML }}
 <link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon" />
+
+<!-- Font Awesome 6.6 (CSS) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 
 <!-- google analytics -->
 {{ template "_internal/google_analytics.html" . }}
 
 <!-- RSS Feed Addition -->
-{{ range .AlternativeOutputFormats -}} {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} {{ end -}}
+{{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<!-- Font Awesome 5 (old local JS) - commented out -->
+<!--
 <script defer src="/fontawesome/js/brands.js"></script>
 <script defer src="/fontawesome/js/solid.js"></script>
 <script defer src="/fontawesome/js/regular.js"></script>
 <script defer src="/fontawesome/js/fontawesome.js"></script>
+-->
+
 <!-- Google Anchor Ad -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
