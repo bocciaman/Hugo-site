@@ -21,7 +21,7 @@ mainSections = ["posts"]
 contact_form_action = "#" # contact form works with : https://formspree.io
 
 # copyright
-copyright = "Abdallah Anwar"
+copyright = "A.B. Anwar"
 rssLimit = 20
 
 # dark_mode_toggle *** true or false ***
