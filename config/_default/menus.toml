@@ -19,19 +19,19 @@ url = "https://bocciamans-store.creator-spring.com/?"
 weight = 4
 target = "_blank"  # Open in a new tab
 
-[[main]]
-name = "Inside That Ad"
-url = "https://www.insidethatad.net"
-weight = 5
-target = "_blank"  # Open in a new tab
+# [[main]]
+# name = "Inside That Ad"
+# url = "https://www.insidethatad.net"
+# weight = 5
+# target = "_blank"  # Open in a new tab
 
 # [[main]]
 # name = "Subscribe"
 # url = "/subscribe/"
 # weight = 6
 
-[[main]]
-name = "DigitalStudioByAB"
-url = "https://www.etsy.com/shop/digitalstudiobyab"
-weight = 6
-target = "_blank"  # Open in a new tab
+# [[main]]
+# name = "DigitalStudioByAB"
+# url = "https://www.etsy.com/shop/digitalstudiobyab"
+# weight = 6
+# target = "_blank"  # Open in a new tab
