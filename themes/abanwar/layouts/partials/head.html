@@ -1,4 +1,14 @@
 <meta charset="utf-8" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G1EY9W8NTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G1EY9W8NTQ');
+</script>
+
 <title>{{ .Title }}</title>
 
 <meta name="author" content="{{ site.Params.author }}" />
@@ -7,10 +17,13 @@
 {{ with site.Params.keywords }}
 <meta name="keywords" content="{{ . }}" />
 {{ end }}
+
 {{ with site.Params.author }}
 <meta name="author" content="{{ . }}" />
 {{ end }}
+
 {{ hugo.Generator }}
+
 {{ "<!-- mobile responsive meta -->" | safeHTML }}
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
@@ -24,9 +37,6 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
-
-<!-- google analytics -->
-{{ template "_internal/google_analytics.html" . }}
 
 <!-- RSS Feed Addition -->
 {{ range .AlternativeOutputFormats -}}
