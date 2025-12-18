@@ -28,3 +28,16 @@ home = ["HTML", "AMP", "RSS", "JSON"]
       lineNumbersInTable = false
       tabWidth = 4
       noClasses = false
+
+# footer links (menu)
+[menu]
+
+  [[menu.footer]]
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 10
+
+  [[menu.footer]]
+  name = "Terms of Service"
+  url = "/terms/"
+  weight = 20
