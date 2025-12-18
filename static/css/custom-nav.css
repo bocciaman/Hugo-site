@@ -1,29 +1,39 @@
 /* ==================================================
-   Footer menu links: readable in dark mode
-   (covers common dark mode toggles)
+   Footer should ALWAYS stay white (even in dark mode)
    ================================================== */
 
-/* Dark mode ON: match any of these patterns */
-html[data-theme="dark"] footer .nav-link,
-body[data-theme="dark"] footer .nav-link,
-html.dark footer .nav-link,
-body.dark footer .nav-link,
-body.dark-mode footer .nav-link {
-  color: #ffffff !important;
+footer {
+  background: #ffffff !important;
+}
+
+/* Keep footer text readable */
+footer,
+footer a,
+footer .nav-link {
+  color: #111111 !important;
+}
+
+/* Remove any "dark button" backgrounds applied by dark mode */
+footer .nav-link,
+footer .nav-link:hover,
+footer .nav-link:focus {
+  background: transparent !important;
+  text-decoration: none;
+}
+
+/* If your theme is styling list items / link wrappers as blocks */
+footer .list-inline-item,
+footer .list-inline-item a {
   background: transparent !important;
 }
 
-/* Hover/focus */
-html[data-theme="dark"] footer .nav-link:hover,
-body[data-theme="dark"] footer .nav-link:hover,
-html.dark footer .nav-link:hover,
-body.dark footer .nav-link:hover,
-body.dark-mode footer .nav-link:hover,
-html[data-theme="dark"] footer .nav-link:focus,
-body[data-theme="dark"] footer .nav-link:focus,
-html.dark footer .nav-link:focus,
-body.dark footer .nav-link:focus,
-body.dark-mode footer .nav-link:focus {
-  color: #ffffff !important;
-  text-decoration: underline;
+/* Social icons: prevent dark backgrounds in the footer */
+footer .social-icon a,
+footer .social-icon li {
+  background: transparent !important;
+}
+
+/* Optional: keep icons dark on white */
+footer .social-icon i {
+  color: #111111 !important;
 }
