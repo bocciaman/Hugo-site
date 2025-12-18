@@ -1,31 +1,18 @@
 /* =========================================================
-   Footer opt-out: keep footer white + normal link styling
-   even when body.dark-mode is active
+   Footer menu styling (no .nav-link usage)
    ========================================================= */
 
-body.dark-mode footer {
-  background: #fff !important;
+footer {
+  background-color: #ffffff;
 }
 
-/* Override ANY dark-mode link styling inside footer */
-body.dark-mode footer a,
-body.dark-mode footer a:visited,
-body.dark-mode footer a:hover,
-body.dark-mode footer a:focus {
-  color: #111 !important;
-  background: transparent !important;
-  filter: none !important;
-  opacity: 1 !important;
-  mix-blend-mode: normal !important;
+footer .footer-menu-link {
+  color: #111111;
+  background: transparent;
+  text-decoration: none;
 }
 
-/* If the dark "box" is coming from the LI or padding class */
-body.dark-mode footer li,
-body.dark-mode footer .list-inline-item,
-body.dark-mode footer .p-2,
-body.dark-mode footer .nav-link {
-  background: transparent !important;
-  filter: none !important;
-  opacity: 1 !important;
-  box-shadow: none !important;
+footer .footer-menu-link:hover,
+footer .footer-menu-link:focus {
+  text-decoration: underline;
 }

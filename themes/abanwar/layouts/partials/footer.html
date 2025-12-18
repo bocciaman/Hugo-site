@@ -22,7 +22,7 @@
         <ul class="list-inline mb-0">
           {{ range site.Menus.footer }}
             <li class="list-inline-item">
-              <a class="nav-link d-inline-block p-2" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              <a class="footer-menu-link d-inline-block px-3 py-2" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>
