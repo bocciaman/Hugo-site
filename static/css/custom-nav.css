@@ -1,39 +1,72 @@
-/* ==================================================
-   Footer should ALWAYS stay white (even in dark mode)
-   ================================================== */
+/* =========================================================
+   GLOBAL FOOTER OVERRIDE
+   Footer ALWAYS stays white (light mode & dark mode)
+   ========================================================= */
 
-footer {
-  background: #ffffff !important;
+/* Force footer background to white */
+html body footer {
+  background-color: #ffffff !important;
+  border-top-color: #e5e5e5 !important;
 }
 
-/* Keep footer text readable */
-footer,
-footer a,
-footer .nav-link {
+/* Force all footer text to dark color */
+html body footer,
+html body footer a,
+html body footer span,
+html body footer li {
   color: #111111 !important;
 }
 
-/* Remove any "dark button" backgrounds applied by dark mode */
-footer .nav-link,
-footer .nav-link:hover,
-footer .nav-link:focus {
+/* Remove dark backgrounds / button styles from footer links */
+html body footer a,
+html body footer .nav-link,
+html body footer .nav-link:visited,
+html body footer .nav-link:hover,
+html body footer .nav-link:focus {
   background: transparent !important;
+  box-shadow: none !important;
   text-decoration: none;
 }
 
-/* If your theme is styling list items / link wrappers as blocks */
-footer .list-inline-item,
-footer .list-inline-item a {
+/* Ensure hover is subtle, not button-like */
+html body footer .nav-link:hover,
+html body footer .nav-link:focus {
+  text-decoration: underline;
+}
+
+/* Kill dark blocks around footer menu items */
+html body footer .list-inline-item,
+html body footer .list-inline-item a {
   background: transparent !important;
 }
 
-/* Social icons: prevent dark backgrounds in the footer */
-footer .social-icon a,
-footer .social-icon li {
+/* Social icons: keep them dark on white */
+html body footer .social-icon a,
+html body footer .social-icon li {
   background: transparent !important;
 }
 
-/* Optional: keep icons dark on white */
-footer .social-icon i {
+html body footer .social-icon i {
+  color: #111111 !important;
+}
+
+/* =========================================================
+   SAFETY NET: neutralize dark-mode footer styles
+   (no matter how the theme toggles dark mode)
+   ========================================================= */
+
+html.dark footer,
+body.dark footer,
+body.dark-mode footer,
+html[data-theme="dark"] footer,
+body[data-theme="dark"] footer {
+  background-color: #ffffff !important;
+}
+
+html.dark footer *,
+body.dark footer *,
+body.dark-mode footer *,
+html[data-theme="dark"] footer *,
+body[data-theme="dark"] footer * {
   color: #111111 !important;
 }
