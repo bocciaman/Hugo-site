@@ -1,43 +1,31 @@
 /* =========================================================
-   FINAL FIX — Footer must stay light in dark mode
-   Theme uses: body.dark-mode
+   Footer opt-out: keep footer white + normal link styling
+   even when body.dark-mode is active
    ========================================================= */
 
-/* Force footer background to stay white */
 body.dark-mode footer {
-  background-color: #ffffff !important;
+  background: #fff !important;
 }
 
-/* Override the theme rule:
-   body.dark-mode a.nav-link { color: #222; }
-*/
-body.dark-mode footer a.nav-link,
-body.dark-mode footer a.nav-link:visited {
-  color: #111111 !important;
+/* Override ANY dark-mode link styling inside footer */
+body.dark-mode footer a,
+body.dark-mode footer a:visited,
+body.dark-mode footer a:hover,
+body.dark-mode footer a:focus {
+  color: #111 !important;
   background: transparent !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
 }
 
-/* Hover / focus */
-body.dark-mode footer a.nav-link:hover,
-body.dark-mode footer a.nav-link:focus {
-  color: #111111 !important;
-  text-decoration: underline;
-  background: transparent !important;
-}
-
-/* Remove button-style blocks */
+/* If the dark "box" is coming from the LI or padding class */
+body.dark-mode footer li,
 body.dark-mode footer .list-inline-item,
-body.dark-mode footer .list-inline-item a {
+body.dark-mode footer .p-2,
+body.dark-mode footer .nav-link {
   background: transparent !important;
+  filter: none !important;
+  opacity: 1 !important;
   box-shadow: none !important;
-}
-
-/* Social icons — keep dark on white */
-body.dark-mode footer .social-icon a,
-body.dark-mode footer .social-icon li {
-  background: transparent !important;
-}
-
-body.dark-mode footer .social-icon i {
-  color: #111111 !important;
 }
