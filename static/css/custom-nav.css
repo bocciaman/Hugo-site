@@ -1,0 +1,18 @@
+/* =========================
+   Dark mode footer link fix
+   ========================= */
+
+body.dark footer .nav-link,
+body.dark footer .nav-link:visited {
+  color: #ffffff !important;
+}
+
+body.dark footer .nav-link:hover,
+body.dark footer .nav-link:focus {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+body.dark footer .nav-link {
+  background: transparent !important;
+}
