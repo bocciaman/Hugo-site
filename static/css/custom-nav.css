@@ -1,18 +1,29 @@
-/* =========================
-   Dark mode footer link fix
-   ========================= */
+/* ==================================================
+   Footer menu links: readable in dark mode
+   (covers common dark mode toggles)
+   ================================================== */
 
+/* Dark mode ON: match any of these patterns */
+html[data-theme="dark"] footer .nav-link,
+body[data-theme="dark"] footer .nav-link,
+html.dark footer .nav-link,
 body.dark footer .nav-link,
-body.dark footer .nav-link:visited {
+body.dark-mode footer .nav-link {
   color: #ffffff !important;
+  background: transparent !important;
 }
 
+/* Hover/focus */
+html[data-theme="dark"] footer .nav-link:hover,
+body[data-theme="dark"] footer .nav-link:hover,
+html.dark footer .nav-link:hover,
 body.dark footer .nav-link:hover,
-body.dark footer .nav-link:focus {
+body.dark-mode footer .nav-link:hover,
+html[data-theme="dark"] footer .nav-link:focus,
+body[data-theme="dark"] footer .nav-link:focus,
+html.dark footer .nav-link:focus,
+body.dark footer .nav-link:focus,
+body.dark-mode footer .nav-link:focus {
   color: #ffffff !important;
   text-decoration: underline;
-}
-
-body.dark footer .nav-link {
-  background: transparent !important;
 }
