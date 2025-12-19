@@ -1,5 +1,56 @@
 <!-- main footer -->
-<footer class="py-4 bg-light border-top">
+<footer class="py-4 bg-light border-top footer-no-dark">
+  <style>
+    /* Keep footer "light" even when dark mode is active */
+    body.dark-mode footer.footer-no-dark {
+      background-color: #fff !important;
+      color: #111 !important;
+    }
+
+    /* Kill the dark boxes / filters applied by broad dark-mode rules */
+    body.dark-mode footer.footer-no-dark a,
+    body.dark-mode footer.footer-no-dark a:visited,
+    body.dark-mode footer.footer-no-dark a:hover,
+    body.dark-mode footer.footer-no-dark a:focus {
+      color: #111 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: none !important;
+      opacity: 1 !important;
+      mix-blend-mode: normal !important;
+      text-decoration: none;
+    }
+
+    /* Specifically target your footer menu links */
+    body.dark-mode footer.footer-no-dark .footer-menu-link {
+      background: transparent !important;
+      color: #111 !important;
+    }
+
+    /* Social icons: ensure the <a> wrapper doesn't get a dark background */
+    body.dark-mode footer.footer-no-dark .social-icon a {
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: none !important;
+      opacity: 1 !important;
+    }
+
+    /* Ensure icon color stays readable on white footer */
+    body.dark-mode footer.footer-no-dark .social-icon i {
+      color: #111 !important;
+    }
+
+    /* If any LI/padding classes are getting backgrounds, wipe them */
+    body.dark-mode footer.footer-no-dark li,
+    body.dark-mode footer.footer-no-dark .list-inline-item,
+    body.dark-mode footer.footer-no-dark .px-3,
+    body.dark-mode footer.footer-no-dark .py-2 {
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: none !important;
+    }
+  </style>
+
   <div class="container">
 
     <!-- Top row: logo | footer menu | social -->
