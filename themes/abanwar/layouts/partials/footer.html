@@ -1,13 +1,17 @@
 <!-- main footer -->
 <footer class="py-4 bg-light border-top footer-no-dark">
   <style>
-    /* Keep footer "light" even when dark mode is active */
+    /* =========================================================
+       Footer should stay LIGHT even when dark mode is active
+       ========================================================= */
+
     body.dark-mode footer.footer-no-dark {
       background-color: #fff !important;
       color: #111 !important;
     }
 
-    /* Remove dark-mode "box" effects, but DO NOT kill hover styling */
+    /* Remove dark-mode "box" effects for footer links ONLY.
+       IMPORTANT: do NOT include :hover/:focus here, or it will override your hover color. */
     body.dark-mode footer.footer-no-dark a,
     body.dark-mode footer.footer-no-dark a:visited {
       color: #111 !important;
@@ -16,22 +20,26 @@
       filter: none !important;
       opacity: 1 !important;
       mix-blend-mode: normal !important;
+      text-decoration: none !important;
     }
 
-    /* Footer menu links: normal link styling (works in light + dark mode) */
-    footer.footer-no-dark a.footer-menu-link {
-      color: #111;
-      text-decoration: none;
+    /* Footer menu links: base style (light + dark) */
+    footer.footer-no-dark .footer-menu-link {
+      color: #111 !important;
+      background: transparent !important;
+      text-decoration: none !important;
       display: inline-block;
       padding: 8px 12px;
       transition: color 0.2s ease, text-decoration 0.2s ease;
     }
 
-    /* Hover style you want */
-    footer.footer-no-dark a.footer-menu-link:hover,
-    footer.footer-no-dark a.footer-menu-link:focus {
+    /* Hover style you want (wins in dark mode + light mode) */
+    body.dark-mode footer.footer-no-dark .footer-menu-link:hover,
+    body.dark-mode footer.footer-no-dark .footer-menu-link:focus,
+    footer.footer-no-dark .footer-menu-link:hover,
+    footer.footer-no-dark .footer-menu-link:focus {
       color: #9AC4F8 !important;
-      text-decoration: underline;
+      text-decoration: underline !important;
     }
 
     /* Social icons: ensure the <a> wrapper doesn't get a dark background */
@@ -59,10 +67,8 @@
   </style>
 
   <div class="container">
-
     <!-- Top row: logo | footer menu | social -->
     <div class="row align-items-center">
-
       <!-- Logo -->
       <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
         <a href="{{ site.Params.footer_image_link }}" class="d-block">
@@ -103,7 +109,6 @@
           {{ end }}
         </ul>
       </div>
-
     </div>
 
     <!-- Bottom row: copyright -->
@@ -113,7 +118,6 @@
         {{ site.Params.copyright | markdownify }}
       </span>
     </div>
-
   </div>
 </footer>
 <!-- /footer -->
