@@ -7,24 +7,31 @@
       color: #111 !important;
     }
 
-    /* Kill the dark boxes / filters applied by broad dark-mode rules */
+    /* Remove dark-mode "box" effects, but DO NOT kill hover styling */
     body.dark-mode footer.footer-no-dark a,
-    body.dark-mode footer.footer-no-dark a:visited,
-    body.dark-mode footer.footer-no-dark a:hover,
-    body.dark-mode footer.footer-no-dark a:focus {
+    body.dark-mode footer.footer-no-dark a:visited {
       color: #111 !important;
       background: transparent !important;
       box-shadow: none !important;
       filter: none !important;
       opacity: 1 !important;
       mix-blend-mode: normal !important;
-      text-decoration: none;
     }
 
-    /* Specifically target your footer menu links */
-    body.dark-mode footer.footer-no-dark .footer-menu-link {
-      background: transparent !important;
-      color: #111 !important;
+    /* Footer menu links: normal link styling (works in light + dark mode) */
+    footer.footer-no-dark a.footer-menu-link {
+      color: #111;
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 12px;
+      transition: color 0.2s ease, text-decoration 0.2s ease;
+    }
+
+    /* Hover style you want */
+    footer.footer-no-dark a.footer-menu-link:hover,
+    footer.footer-no-dark a.footer-menu-link:focus {
+      color: #9AC4F8 !important;
+      text-decoration: underline;
     }
 
     /* Social icons: ensure the <a> wrapper doesn't get a dark background */
