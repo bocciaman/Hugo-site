@@ -33,5 +33,10 @@ target = "_blank"  # Open in a new tab
 # [[main]]
 # name = "DigitalStudioByAB"
 # url = "https://www.etsy.com/shop/digitalstudiobyab"
-# weight = 6
+# weight = 7
 # target = "_blank"  # Open in a new tab
+
+[[main]]
+name = "Contact me"
+url = "/contact/"
+weight = 8
