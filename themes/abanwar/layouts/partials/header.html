@@ -43,6 +43,22 @@
           {{ end }}
           {{ end }}
 
+          {{/* Sections dropdown (auto from Categories taxonomy) */}}
+          {{ with site.Taxonomies.categories }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sections
+            </a>
+            <div class="dropdown-menu">
+              {{ range $name, $taxonomy := . }}
+              <a class="dropdown-item" href="{{ (printf "categories/%s/" ($name | urlize)) | absLangURL }}">
+                {{ $name }}
+              </a>
+              {{ end }}
+            </div>
+          </li>
+          {{ end }}
+
           <!-- Language List -->
           {{ if .IsTranslated }}
           <li class="nav-item">
