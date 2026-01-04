@@ -1,18 +1,40 @@
-{{ "<!-- Search -->" | safeHTML }}
 {{ if site.Params.googlead.enable }}
 {{ with site.Params.googlead }}
 
 <div class="widget">
   <h5 class="widget-title">Affiliate Programs</h5>
 
+  <!-- Categories Dropdown -->
+  {{ with site.Taxonomies.categories }}
+    <div style="margin-bottom:14px;">
+      <label for="category-dropdown" style="display:block; font-weight:600; margin-bottom:6px;">
+        Browse Categories
+      </label>
+
+      <select
+        id="category-dropdown"
+        style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px;"
+        onchange="if(this.value){ window.location.href=this.value; }"
+      >
+        <option value="">Select a category…</option>
+
+        {{ range $name, $taxonomy := . }}
+          <option value="{{ (printf "categories/%s/" ($name | urlize)) | absLangURL }}">
+            {{ $name }} ({{ len $taxonomy.Pages }})
+          </option>
+        {{ end }}
+      </select>
+    </div>
+  {{ end }}
+
   <!-- TextExpander Affiliate Link -->
-  <a 
+  <a
     href="https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus"
     target="_blank"
     rel="noopener noreferrer"
     style="display:flex; align-items:center; margin-bottom:14px; text-decoration:none; font-weight:500;"
   >
-    <img 
+    <img
       src="/img/TextExpander-app-icon-2022-1024.jpg"
       alt="TextExpander"
       style="width:28px; height:28px; margin-right:8px;"

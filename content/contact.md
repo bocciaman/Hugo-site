@@ -4,7 +4,7 @@ description: "Get in touch with A.B. Anwar"
 Draft: false
 ---
 
-If you’d like to get in touch, please use the form below or email me directly.
+If you’d like to get in touch, please use the form below.
 
 ---
 
