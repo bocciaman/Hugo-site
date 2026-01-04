@@ -44,7 +44,6 @@
   }
 
   /* Ordered Lists */
-
   .content ol li {
     list-style-type: none;
     counter-increment: item;
@@ -61,6 +60,7 @@
     padding: 3px 8px;
     border-radius: 3px;
   }
+
   .notices p::before {
     position: absolute;
     top: 2px;
@@ -75,5 +75,16 @@
     top: 7px;
     left: 10px;
     color: {{ with site.Params.variables }} {{.white}} {{ end }};
+  }
+
+  /* Sections dropdown height control (prevents mega-long dropdown) */
+  .sections-dropdown-menu {
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .sections-dropdown-menu .dropdown-item {
+    white-space: nowrap;
   }
 </style>
