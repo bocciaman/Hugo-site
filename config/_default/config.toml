@@ -41,3 +41,8 @@ home = ["HTML", "AMP", "RSS", "JSON"]
   name = "Terms of Service"
   url = "/terms/"
   weight = 20
+
+[[menu.footer]]
+name = "Sitemap"
+url = "/sitemap.xml"
+weight = 30
