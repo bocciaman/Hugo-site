@@ -3,7 +3,10 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
-      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}"><img loading="lazy" class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" width="{{ site.Params.logoWidth }}" height="{{ site.Params.logoHeight }}"></a>
+      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+        <img loading="lazy" class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" width="{{ site.Params.logoWidth }}" height="{{ site.Params.logoHeight }}">
+      </a>
+
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-label="navigation">
         <i class="fas fa-bars h4 mb-0 text-dark"></i>
       </button>
@@ -12,35 +15,63 @@
         {{ $menu_align:= site.Params.menu_align }}
 
         {{ if site.Params.search }}
-        {{ if eq $menu_align "right" }}
-        <ul class="navbar-nav ml-auto mr-auto mr-lg-0">
-        {{ else if eq $menu_align "left" }}
-        <ul class="navbar-nav mr-auto ml-auto ml-lg-0 pl-0 pl-lg-3">
+          {{ if eq $menu_align "right" }}
+            <ul class="navbar-nav ml-auto mr-auto mr-lg-0">
+          {{ else if eq $menu_align "left" }}
+            <ul class="navbar-nav mr-auto ml-auto ml-lg-0 pl-0 pl-lg-3">
+          {{ else }}
+            <ul class="navbar-nav mx-auto">
+          {{ end }}
         {{ else }}
-        <ul class="navbar-nav mx-auto">
-        {{ end }}
-        {{ else }}
-        <ul class="navbar-nav ml-auto mr-auto mr-lg-0">
+          <ul class="navbar-nav ml-auto mr-auto mr-lg-0">
         {{ end }}
 
           {{ range site.Menus.main }}
-          {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              {{ .Name }}
-            </a>
-            <div class="dropdown-menu">
-              {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}  rel="noopener noreferrer" target="_blank" {{ end }}>{{ .Name }}</a>
-              {{ end }}
-            </div>
-          </li>
-          {{ else }}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}  rel="noopener noreferrer" target="_blank" {{ end }}>{{ .Name }}</a>
-          </li>
+            {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{ .Name }}
+                </a>
+                <div class="dropdown-menu">
+                  {{ range .Children }}
+                    <a class="dropdown-item" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
+                      {{ .Name }}
+                    </a>
+                  {{ end }}
+                </div>
+              </li>
+            {{ else }}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
           {{ end }}
+
+          {{/* Sections dropdown (auto from posts' front matter categories) */}}
+          {{ $cats := slice }}
+          {{ range site.RegularPages }}
+            {{ with .Params.categories }}
+              {{ range . }}
+                {{ $cats = $cats | append . }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ $cats = uniq $cats }}
+          {{ $cats = sort $cats }}
+
+          {{ if gt (len $cats) 0 }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sections
+              </a>
+              <div class="dropdown-menu">
+                {{ range $cats }}
+                  <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
+                {{ end }}
+              </div>
+            </li>
           {{ end }}
 
           <!-- Language List -->
@@ -51,52 +82,65 @@
                 {{ $siteLanguages := site.Languages}}
                 {{ $pageLang := .Page.Lang}}
                 {{ range .Page.AllTranslations }}
-                {{ $translation := .}}
-                {{ range $siteLanguages }}
-                {{ if eq $translation.Lang .Lang }}
-                {{ $selected := false }}
-                {{ if eq $pageLang .Lang}}
-                <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-                </option>
-                {{ else }}
-                <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-                {{ end }}
-                {{ end }}
-                {{ end }}
+                  {{ $translation := .}}
+                  {{ range $siteLanguages }}
+                    {{ if eq $translation.Lang .Lang }}
+                      {{ if eq $pageLang .Lang}}
+                        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+                      {{ else }}
+                        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
                 {{ end }}
               </select>
             </span>
           </li>
           {{ end }}
+
         </ul>
 
         <!-- Dark Mode Addition-->
         {{- partial "toggle" -}}
 
         {{ if site.Params.search }}
-        {{ $search_layout := site.Params.header_search_layout }}
-        {{ "<!-- search -->" | safeHTML }}
-        {{ if eq $search_layout "expanded" }}
-        <div class="search ml-lg-4">
-          <div class="search-wrapper-expanded d-flex">
-            <form action="{{ `search` | absLangURL }}" class="w-100">
-              <input class="search-box" id="search-query" name="s" type="search" placeholder="Type & Hit Enter..." required>
-            </form>
-            <button class="search-btn pl-0 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></button>
-          </div>
-        </div>
-        {{ else if eq $search_layout "popupable" }}
-        <div class="search">
-          <button id="searchOpen" class="search-btn ml-lg-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></button>
-          <div class="search-wrapper">
-            <form action="{{ `search` | absLangURL }}" class="h-100">
-              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter..." required>
-              <button type="button" id="searchClose" class="search-close"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></button>
-            </form>
-          </div>
-        </div>
+          {{ $search_layout := site.Params.header_search_layout }}
+          {{ "<!-- search -->" | safeHTML }}
+
+          {{ if eq $search_layout "expanded" }}
+            <div class="search ml-lg-4">
+              <div class="search-wrapper-expanded d-flex">
+                <form action="{{ `search` | absLangURL }}" class="w-100">
+                  <input class="search-box" id="search-query" name="s" type="search" placeholder="Type & Hit Enter..." required>
+                </form>
+                <button class="search-btn pl-0 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          {{ else if eq $search_layout "popupable" }}
+            <div class="search">
+              <button id="searchOpen" class="search-btn ml-lg-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+              <div class="search-wrapper">
+                <form action="{{ `search` | absLangURL }}" class="h-100">
+                  <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter..." required>
+                  <button type="button" id="searchClose" class="search-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          {{ end }}
         {{ end }}
-        {{ end }}
+
       </div>
     </nav>
   </div>
