@@ -2,32 +2,41 @@ baseURL = "https://abanwar.com/"
 title = "A.B. Anwar"
 # theme
 theme = "abanwar"
+
 # post pagination
 [pagination]
   pagerSize = 10
+
 # post excerpt
 summaryLength = "10"
+
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
+
 # google analytics
 # googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
 
 # disable language
-disableLanguages = [""] # desable language from here
+# NOTE: This was set to [""] which is not a valid language code.
+# If you're not using multilingual, it's safest to remove it.
+# If you are using multilingual, replace with real language codes.
+# disableLanguages = [""]
 
 [outputs]
-home = ["HTML", "AMP", "RSS", "JSON"]
+  home = ["HTML", "AMP", "RSS", "JSON"]
+
 [markup.goldmark.renderer]
-    unsafe = true
+  unsafe = true
+
 [markup.highlight]
-      codeFences = true
-      guessSyntax = true
-      hl_Lines = ""
-      lineNoStart = 1
-      lineNos = false
-      lineNumbersInTable = false
-      tabWidth = 4
-      noClasses = false
+  codeFences = true
+  guessSyntax = true
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = false
+  tabWidth = 4
+  noClasses = false
 
 # Taxonomies (needed for Categories dropdown)
 [taxonomies]
@@ -36,18 +45,17 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 
 # footer links (menu)
 [menu]
+  [[menu.footer]]
+    name = "Privacy Policy"
+    url = "/privacy/"
+    weight = 10
 
   [[menu.footer]]
-  name = "Privacy Policy"
-  url = "/privacy/"
-  weight = 10
+    name = "Terms of Service"
+    url = "/terms/"
+    weight = 20
 
   [[menu.footer]]
-  name = "Terms of Service"
-  url = "/terms/"
-  weight = 20
-
-[[menu.footer]]
-name = "Sitemap"
-url = "/sitemap.xml"
-weight = 30
+    name = "Sitemap"
+    url = "/sitemap.xml"
+    weight = 30
