@@ -29,6 +29,11 @@ home = ["HTML", "AMP", "RSS", "JSON"]
       tabWidth = 4
       noClasses = false
 
+# Taxonomies (needed for Categories dropdown)
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
 # footer links (menu)
 [menu]
 
