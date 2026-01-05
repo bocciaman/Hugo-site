@@ -3,18 +3,18 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
-      <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
-        <img loading="lazy" class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" width="{{ .Site.Params.logoWidth }}" height="{{ .Site.Params.logoHeight }}">
+      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+        <img loading="lazy" class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" width="{{ site.Params.logoWidth }}" height="{{ site.Params.logoHeight }}">
       </a>
 
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-label="navigation">
-        <i class="fa-solid fa-bars h4 mb-0 text-dark"></i>
+        <i class="fas fa-bars h4 mb-0 text-dark"></i>
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navigation">
-        {{ $menu_align:= .Site.Params.menu_align }}
+        {{ $menu_align:= site.Params.menu_align }}
 
-        {{ if .Site.Params.search }}
+        {{ if site.Params.search }}
           {{ if eq $menu_align "right" }}
             <ul class="navbar-nav ml-auto mr-auto mr-lg-0">
           {{ else if eq $menu_align "left" }}
@@ -26,7 +26,7 @@
           <ul class="navbar-nav ml-auto mr-auto mr-lg-0">
         {{ end }}
 
-          {{ range .Site.Menus.main }}
+          {{ range site.Menus.main }}
             {{ if .HasChildren }}
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,20 +34,26 @@
                 </a>
                 <div class="dropdown-menu">
                   {{ range .Children }}
-                    <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                    <a class="dropdown-item" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
+                      {{ .Name }}
+                    </a>
                   {{ end }}
                 </div>
               </li>
             {{ else }}
               <li class="nav-item">
-                <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                <a class="nav-link" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
+                  {{ .Name }}
+                </a>
               </li>
             {{ end }}
           {{ end }}
 
-          {{/* Sections dropdown (auto from posts' front matter categories) */}}
+          {{/* Sections dropdown (use params.sections_dropdown if provided; else fall back to all categories) */}}
+          {{ $allowed := site.Params.sections_dropdown }}
+
           {{ $cats := slice }}
-          {{ range .Site.RegularPages }}
+          {{ range site.RegularPages }}
             {{ with .Params.categories }}
               {{ range . }}
                 {{ $cats = $cats | append . }}
@@ -57,12 +63,24 @@
           {{ $cats = uniq $cats }}
           {{ $cats = sort $cats }}
 
+          {{/* If allowed list exists, filter cats to only those */}}
+          {{ if $allowed }}
+            {{ $filtered := slice }}
+            {{ range $allowed }}
+              {{ $want := . }}
+              {{ if in $cats $want }}
+                {{ $filtered = $filtered | append $want }}
+              {{ end }}
+            {{ end }}
+            {{ $cats = $filtered }}
+          {{ end }}
+
           {{ if gt (len $cats) 0 }}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sections
               </a>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu sections-dropdown-menu">
                 {{ range $cats }}
                   <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
                 {{ end }}
@@ -75,13 +93,13 @@
           <li class="nav-item">
             <span class="nav-link pr-lg-0">
               <select class="border-0" id="select-language" style="cursor:pointer;background:transparent" onchange="location = this.value;">
-                {{ $siteLanguages := .Site.Languages }}
-                {{ $pageLang := .Page.Lang }}
+                {{ $siteLanguages := site.Languages}}
+                {{ $pageLang := .Page.Lang}}
                 {{ range .Page.AllTranslations }}
-                  {{ $translation := . }}
+                  {{ $translation := .}}
                   {{ range $siteLanguages }}
                     {{ if eq $translation.Lang .Lang }}
-                      {{ if eq $pageLang .Lang }}
+                      {{ if eq $pageLang .Lang}}
                         <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
                       {{ else }}
                         <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
@@ -99,8 +117,8 @@
         <!-- Dark Mode Addition-->
         {{- partial "toggle" -}}
 
-        {{ if .Site.Params.search }}
-          {{ $search_layout := .Site.Params.header_search_layout }}
+        {{ if site.Params.search }}
+          {{ $search_layout := site.Params.header_search_layout }}
           {{ "<!-- search -->" | safeHTML }}
 
           {{ if eq $search_layout "expanded" }}
