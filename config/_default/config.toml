@@ -1,5 +1,6 @@
 baseURL = "https://abanwar.com/"
 title = "A.B. Anwar"
+
 # theme
 theme = "abanwar"
 
@@ -14,13 +15,7 @@ summaryLength = "10"
 disqusShortname = "" # get your shortname form here : https://disqus.com
 
 # google analytics
-# googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
-
-# disable language
-# NOTE: This was set to [""] which is not a valid language code.
-# If you're not using multilingual, it's safest to remove it.
-# If you are using multilingual, replace with real language codes.
-# disableLanguages = [""]
+# googleAnalytics = "" # example: UA-123-45
 
 [outputs]
   home = ["HTML", "AMP", "RSS", "JSON"]
@@ -42,6 +37,17 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+# Params
+[params]
+  sections_dropdown = [
+    "Automation",
+    "MacOS",
+    "iOS",
+    "AppleScript",
+    "Keyboard Maestro",
+    "Hazel"
+  ]
 
 # footer links (menu)
 [menu]
