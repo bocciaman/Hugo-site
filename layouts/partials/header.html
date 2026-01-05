@@ -49,7 +49,9 @@
             {{ end }}
           {{ end }}
 
-          {{/* Sections dropdown (auto from posts' front matter categories) */}}
+          {{/* Sections dropdown (use params.sections_dropdown if provided; else fall back to all categories) */}}
+          {{ $allowed := site.Params.sections_dropdown }}
+
           {{ $cats := slice }}
           {{ range site.RegularPages }}
             {{ with .Params.categories }}
@@ -60,6 +62,18 @@
           {{ end }}
           {{ $cats = uniq $cats }}
           {{ $cats = sort $cats }}
+
+          {{/* If allowed list exists, filter cats to only those */}}
+          {{ if $allowed }}
+            {{ $filtered := slice }}
+            {{ range $allowed }}
+              {{ $want := . }}
+              {{ if in $cats $want }}
+                {{ $filtered = $filtered | append $want }}
+              {{ end }}
+            {{ end }}
+            {{ $cats = $filtered }}
+          {{ end }}
 
           {{ if gt (len $cats) 0 }}
             <li class="nav-item dropdown">
@@ -145,4 +159,4 @@
     </nav>
   </div>
 </header>
-{{ "<!-- /navigation -->" | safeHTML }}
+{{ "<!-- /navigation -->" | safeHTML }
