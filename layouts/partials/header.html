@@ -53,8 +53,8 @@
               Sections dropdown:
               - Build all categories from posts
               - If params.sections_dropdown exists:
-                  show ONLY categories that match the allow-list
-                  and keep the allow-list order
+                  show ONLY categories that match (case-insensitive)
+                  keep allow-list order
           --------------------------- */}}
 
           {{/* Collect ALL categories present in content */}}
@@ -68,7 +68,7 @@
           {{ end }}
           {{ $allCats = uniq $allCats }}
 
-          {{/* Get allow-list from config (may be nil) */}}
+          {{/* Get allow-list from config */}}
           {{ $allowed := site.Params.sections_dropdown }}
 
           <li class="nav-item dropdown">
@@ -78,19 +78,31 @@
 
             <div class="dropdown-menu sections-dropdown-menu">
 
-              {{/* If allow-list exists and has items, filter */}}
               {{ if and $allowed (gt (len $allowed) 0) }}
 
                 {{ $rendered := 0 }}
+
+                {{/* For each allowed item, find a real category that matches case-insensitively */}}
                 {{ range $allowed }}
                   {{ $wanted := . }}
-                  {{ if in $allCats $wanted }}
-                    <a class="dropdown-item" href="{{ (printf "/categories/%s/" ($wanted | urlize)) | absLangURL }}">{{ $wanted }}</a>
+                  {{ $wantedKey := lower (trim $wanted " ") }}
+
+                  {{ $match := "" }}
+                  {{ range $allCats }}
+                    {{ $cat := . }}
+                    {{ $catKey := lower (trim $cat " ") }}
+                    {{ if eq $catKey $wantedKey }}
+                      {{ $match = $cat }}
+                    {{ end }}
+                  {{ end }}
+
+                  {{ if ne $match "" }}
+                    <a class="dropdown-item" href="{{ (printf "/categories/%s/" ($match | urlize)) | absLangURL }}">{{ $match }}</a>
                     {{ $rendered = add $rendered 1 }}
                   {{ end }}
                 {{ end }}
 
-                {{/* If none of the allow-list matched actual categories, fall back so you don’t get an empty menu */}}
+                {{/* If allow-list matched nothing, fall back to all categories */}}
                 {{ if eq $rendered 0 }}
                   {{ $sorted := sort $allCats }}
                   {{ range $sorted }}
