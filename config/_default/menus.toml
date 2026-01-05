@@ -39,4 +39,4 @@ target = "_blank"  # Open in a new tab
 [[main]]
 name = "Contact me"
 url = "/contact/"
-weight = 8
+weight = 9

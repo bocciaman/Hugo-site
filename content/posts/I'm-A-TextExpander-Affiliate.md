@@ -1,6 +1,6 @@
 ---
 title: "I'm a TextExpander Affiliate"
-description: ""
+description: "Joined the affiliate program."
 date: 2025-12-11T17:14:14+03:00
 url: /im-a-textexpander-affiliate/
 image: /img/te-screenshots-workswith.png
