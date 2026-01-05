@@ -6,6 +6,7 @@ url: /Daily-Automation-Apps-I-Use/
 image: /img/AppsUsed.webp
 categories:
   - Automation
+  - Scripts
 tags:
   - Automation
   - Hazel
