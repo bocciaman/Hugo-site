@@ -48,45 +48,67 @@
               </li>
             {{ end }}
           {{ end }}
-<!-- DEBUG sections_dropdown: {{ jsonify site.Params.sections_dropdown }} -->
-          {{/* Sections dropdown (use params.sections_dropdown if provided; else fall back to all categories) */}}
-          {{ $allowed := site.Params.sections_dropdown }}
 
-          {{ $cats := slice }}
+          {{/* ---------------------------
+              Sections dropdown:
+              - Build all categories from posts
+              - If params.sections_dropdown exists:
+                  show ONLY categories that match the allow-list
+                  and keep the allow-list order
+          --------------------------- */}}
+
+          {{/* Collect ALL categories present in content */}}
+          {{ $allCats := slice }}
           {{ range site.RegularPages }}
             {{ with .Params.categories }}
               {{ range . }}
-                {{ $cats = $cats | append . }}
+                {{ $allCats = $allCats | append . }}
               {{ end }}
             {{ end }}
           {{ end }}
-          {{ $cats = uniq $cats }}
-          {{ $cats = sort $cats }}
+          {{ $allCats = uniq $allCats }}
 
-          {{/* If allowed list exists, filter cats to only those */}}
-          {{ if $allowed }}
-            {{ $filtered := slice }}
-            {{ range $allowed }}
-              {{ $want := . }}
-              {{ if in $cats $want }}
-                {{ $filtered = $filtered | append $want }}
-              {{ end }}
-            {{ end }}
-            {{ $cats = $filtered }}
-          {{ end }}
+          {{/* Get allow-list from config (may be nil) */}}
+          {{ $allowed := site.Params.sections_dropdown }}
 
-          {{ if gt (len $cats) 0 }}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sections
-              </a>
-              <div class="dropdown-menu sections-dropdown-menu">
-                {{ range $cats }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sections
+            </a>
+
+            <div class="dropdown-menu sections-dropdown-menu">
+
+              {{/* If allow-list exists and has items, filter */}}
+              {{ if and $allowed (gt (len $allowed) 0) }}
+
+                {{ $rendered := 0 }}
+                {{ range $allowed }}
+                  {{ $wanted := . }}
+                  {{ if in $allCats $wanted }}
+                    <a class="dropdown-item" href="{{ (printf "/categories/%s/" ($wanted | urlize)) | absLangURL }}">{{ $wanted }}</a>
+                    {{ $rendered = add $rendered 1 }}
+                  {{ end }}
+                {{ end }}
+
+                {{/* If none of the allow-list matched actual categories, fall back so you don’t get an empty menu */}}
+                {{ if eq $rendered 0 }}
+                  {{ $sorted := sort $allCats }}
+                  {{ range $sorted }}
+                    <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
+                  {{ end }}
+                {{ end }}
+
+              {{ else }}
+
+                {{/* No allow-list -> show everything (sorted) */}}
+                {{ $sorted := sort $allCats }}
+                {{ range $sorted }}
                   <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
                 {{ end }}
-              </div>
-            </li>
-          {{ end }}
+
+              {{ end }}
+            </div>
+          </li>
 
           <!-- Language List -->
           {{ if .IsTranslated }}
@@ -159,6 +181,4 @@
     </nav>
   </div>
 </header>
-{{ "<!-- /navigation -->" | safeHTML }
-
-<!-- USING SITE OVERRIDE HEADER -->
+{{ "<!-- /navigation -->" | safeHTML }}
