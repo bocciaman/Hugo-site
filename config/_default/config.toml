@@ -33,13 +33,20 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
   tabWidth = 4
   noClasses = false
 
-# Taxonomies (needed for Categories dropdown)
+# -------------------------------
+# TAXONOMIES (CATEGORIES + TAGS)
+# -------------------------------
 [taxonomies]
   category = "categories"
   tag = "tags"
 
-# Params
+# -------------------------------
+# PARAMS
+# -------------------------------
 [params]
+
+  # ONLY these categories will appear
+  # in the "Sections" dropdown
   sections_dropdown = [
     "Automation",
     "MacOS",
@@ -47,8 +54,11 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
     "Scripts"
   ]
 
-# footer links (menu)
+# -------------------------------
+# FOOTER LINKS (MENU)
+# -------------------------------
 [menu]
+
   [[menu.footer]]
     name = "Privacy Policy"
     url = "/privacy/"
