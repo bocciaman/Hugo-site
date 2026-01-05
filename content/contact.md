@@ -1,33 +1,42 @@
 ---
 title: "Contact Me"
 description: "Get in touch with A.B. Anwar"
-Draft: false
+draft: false
+url: "/contact/"
 ---
 
 If you’d like to get in touch, please use the form below.
 
 ---
 
-<form action="bocciaman@gmail.com" method="POST" enctype="text/plain">
+<form name="contact" method="POST" data-netlify="true" action="/thank-you/">
+
+  <!-- REQUIRED for Netlify Forms -->
+  <input type="hidden" name="form-name" value="contact" />
 
   <p>
     <label for="name"><strong>Name</strong></label><br>
-    <input type="text" id="name" name="Name" required style="width:100%; padding:8px;">
+    <input type="text" id="name" name="name" required style="width:100%; padding:8px;">
   </p>
 
   <p>
     <label for="email"><strong>Email</strong></label><br>
-    <input type="email" id="email" name="Email" required style="width:100%; padding:8px;">
+    <input type="email" id="email" name="email" required style="width:100%; padding:8px;">
   </p>
 
   <p>
     <label for="subject"><strong>Subject</strong></label><br>
-    <input type="text" id="subject" name="Subject" required style="width:100%; padding:8px;">
+    <input type="text" id="subject" name="subject" required style="width:100%; padding:8px;">
   </p>
 
   <p>
     <label for="message"><strong>Message</strong></label><br>
-    <textarea id="message" name="Message" rows="6" required style="width:100%; padding:8px;"></textarea>
+    <textarea id="message" name="message" rows="6" required style="width:100%; padding:8px;"></textarea>
+  </p>
+
+  <!-- Optional: basic spam reduction (Netlify honeypot) -->
+  <p style="display:none;">
+    <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
   </p>
 
   <p>
