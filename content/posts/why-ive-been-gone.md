@@ -5,7 +5,7 @@ date: 2025-12-09T15:19:22+03:00
 url: /why-ive-been-gone/
 image: /img/ABA2025.jpg
 categories:
-  - Mac
+  - Miscellaneous
 tags:
   - Personal Story
   - Gone
