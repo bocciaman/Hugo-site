@@ -18,7 +18,7 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
 # googleAnalytics = "" # example: UA-123-45
 
 [outputs]
-  home = ["HTML", "AMP", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]
 
 [markup.goldmark.renderer]
   unsafe = true
