@@ -44,9 +44,7 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
     "Automation",
     "MacOS",
     "iOS",
-    "AppleScript",
-    "Keyboard Maestro",
-    "Hazel"
+    "Scripts"
   ]
 
 # footer links (menu)
