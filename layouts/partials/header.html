@@ -26,29 +26,6 @@
           <ul class="navbar-nav ml-auto mr-auto mr-lg-0">
         {{ end }}
 
-          {{ range site.Menus.main }}
-            {{ if .HasChildren }}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {{ .Name }}
-                </a>
-                <div class="dropdown-menu">
-                  {{ range .Children }}
-                    <a class="dropdown-item" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
-                      {{ .Name }}
-                    </a>
-                  {{ end }}
-                </div>
-              </li>
-            {{ else }}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
-                  {{ .Name }}
-                </a>
-              </li>
-            {{ end }}
-          {{ end }}
-
           {{/* ---------------------------
               Sections dropdown:
               - Build all categories from posts
@@ -71,56 +48,84 @@
           {{/* Get allow-list from config */}}
           {{ $allowed := site.Params.sections_dropdown }}
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sections
-            </a>
+          {{/* Main menu items, but insert Sections after "About" */}}
+          {{ range site.Menus.main }}
+            {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{ .Name }}
+                </a>
+                <div class="dropdown-menu">
+                  {{ range .Children }}
+                    <a class="dropdown-item" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
+                      {{ .Name }}
+                    </a>
+                  {{ end }}
+                </div>
+              </li>
+            {{ else }}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ .URL | absLangURL }}" {{ if in .URL "http" }}rel="noopener noreferrer" target="_blank"{{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
 
-            <div class="dropdown-menu sections-dropdown-menu">
+            {{/* INSERT Sections dropdown right after About */}}
+            {{ if eq .Name "About" }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sections
+                </a>
 
-              {{ if and $allowed (gt (len $allowed) 0) }}
+                <div class="dropdown-menu sections-dropdown-menu">
 
-                {{ $rendered := 0 }}
+                  {{ if and $allowed (gt (len $allowed) 0) }}
 
-                {{/* For each allowed item, find a real category that matches case-insensitively */}}
-                {{ range $allowed }}
-                  {{ $wanted := . }}
-                  {{ $wantedKey := lower (trim $wanted " ") }}
+                    {{ $rendered := 0 }}
 
-                  {{ $match := "" }}
-                  {{ range $allCats }}
-                    {{ $cat := . }}
-                    {{ $catKey := lower (trim $cat " ") }}
-                    {{ if eq $catKey $wantedKey }}
-                      {{ $match = $cat }}
+                    {{/* For each allowed item, find a real category that matches case-insensitively */}}
+                    {{ range $allowed }}
+                      {{ $wanted := . }}
+                      {{ $wantedKey := lower (trim $wanted " ") }}
+
+                      {{ $match := "" }}
+                      {{ range $allCats }}
+                        {{ $cat := . }}
+                        {{ $catKey := lower (trim $cat " ") }}
+                        {{ if eq $catKey $wantedKey }}
+                          {{ $match = $cat }}
+                        {{ end }}
+                      {{ end }}
+
+                      {{ if ne $match "" }}
+                        <a class="dropdown-item" href="{{ (printf "/categories/%s/" ($match | urlize)) | absLangURL }}">{{ $match }}</a>
+                        {{ $rendered = add $rendered 1 }}
+                      {{ end }}
                     {{ end }}
+
+                    {{/* If allow-list matched nothing, fall back to all categories */}}
+                    {{ if eq $rendered 0 }}
+                      {{ $sorted := sort $allCats }}
+                      {{ range $sorted }}
+                        <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
+                      {{ end }}
+                    {{ end }}
+
+                  {{ else }}
+
+                    {{/* No allow-list -> show everything (sorted) */}}
+                    {{ $sorted := sort $allCats }}
+                    {{ range $sorted }}
+                      <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
+                    {{ end }}
+
                   {{ end }}
+                </div>
+              </li>
+            {{ end }}
 
-                  {{ if ne $match "" }}
-                    <a class="dropdown-item" href="{{ (printf "/categories/%s/" ($match | urlize)) | absLangURL }}">{{ $match }}</a>
-                    {{ $rendered = add $rendered 1 }}
-                  {{ end }}
-                {{ end }}
-
-                {{/* If allow-list matched nothing, fall back to all categories */}}
-                {{ if eq $rendered 0 }}
-                  {{ $sorted := sort $allCats }}
-                  {{ range $sorted }}
-                    <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
-                  {{ end }}
-                {{ end }}
-
-              {{ else }}
-
-                {{/* No allow-list -> show everything (sorted) */}}
-                {{ $sorted := sort $allCats }}
-                {{ range $sorted }}
-                  <a class="dropdown-item" href="{{ (printf "/categories/%s/" (. | urlize)) | absLangURL }}">{{ . }}</a>
-                {{ end }}
-
-              {{ end }}
-            </div>
-          </li>
+          {{ end }}
 
           <!-- Language List -->
           {{ if .IsTranslated }}
