@@ -39,10 +39,10 @@ target = "_blank"  # Open in a new tab
 [[main]]
 name = "Contact me"
 url = "/contact/"
-weight = 9
+weight = 10
 
 [[main]]
 name = "YouTube"
 url = "https://www.youtube.com/@AutomationMaestro"
-weight = 10
+weight = 9
 target = "_blank"  # Open in a new tab
