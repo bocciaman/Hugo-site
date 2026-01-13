@@ -10,6 +10,7 @@ I'm a marketing professional, a Paralympic hopeful in the sport of Boccia, and a
 
 This site will grow to become my little corner of the Internet. I'll share longer-length blog posts accompanying my Mac automation-focused YouTube videos, other attempts at starting an online business, and my interests in general.
 
+{{< raw >}}
 <script>
 (function () {
   const startDate = new Date(2019, 9, 14); // 9 = October (months are 0-based)
@@ -30,3 +31,4 @@ This site will grow to become my little corner of the Internet. I'll share longe
   document.getElementById("yt-years-ago").textContent = text;
 })();
 </script>
+{{< /raw >}}
