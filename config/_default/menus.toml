@@ -43,6 +43,6 @@ weight = 10
 
 [[main]]
 name = "YouTube"
-url = "https://www.youtube.com/@AutomationMaestro"
+url = "https://www.youtube.com/@AutomationMaestro?sub_confirmation=1"
 weight = 9
 target = "_blank"  # Open in a new tab
