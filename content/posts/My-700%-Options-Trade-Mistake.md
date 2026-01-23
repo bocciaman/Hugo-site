@@ -19,8 +19,6 @@ Every options trader eventually has a story about **the trade that taught them t
 
 If you’re trading credit spreads, cash-secured puts, or building an options income strategy, this is the kind of real-world experience you rarely see shared honestly. No fake guru wins. No hindsight perfection. Just a real trader documenting a real mistake so it doesn’t happen again.
 
----
-
 ## This is a doozy
 
 I made an options trading error that always seems to cost more than the wins that I actually get. In this video, I explain how I opened a **put credit spread with $20-wide strikes** — far wider than I normally trade. That extra width dramatically increased volatility and risk exposure.  
@@ -29,15 +27,11 @@ Almost immediately after entry, the position moved sharply against me. At one po
 
 And that’s the key point: **Most options losses are decided the moment you click “Confirm.”**
 
----
-
 ## Video Breakdown
 
 {{< youtube 5bDlqhrRIog >}}
 
 In the video, I walk through the exact position, the platform screen, and the thought process that led me into the trade. If you're following my channel or trading journal, this is part of my commitment to **publicly documenting real trades — wins and mistakes alike**.
-
----
 
 ## First Mistake — Breaking My Own Trading Plan
 
@@ -58,8 +52,6 @@ In reality, it was impatience disguised as strategy.
 
 The trades I shared in my [first options video](https://abanwar.com/finally-sharing-my-options-trades/) were much more disciplined. This one wasn’t. And as Murphy’s Law goes — **what can go wrong, will go wrong**.
 
----
-
 ## Second Mistake — Ignoring a Warning Sign I Didn’t Understand
 
 ![Minus Chain CSP Tracker](/img/minuschain.webp)
@@ -77,8 +69,6 @@ Nine times out of ten, when you ignore confusion at entry, the market will event
 In this case, that minus sign was a platform-specific indicator tied to how the chain was being displayed. It didn’t cause the loss directly — but it was a clear signal that I wasn’t fully in control of the situation when entering the trade.
 
 And in options trading, uncertainty at entry is unacceptable.
-
----
 
 ## Third Mistake — Letting Greed Override Risk Management
 
@@ -102,8 +92,6 @@ Less frequent, well-planned trading keeps you in the game. Overtrading and chasi
 
 The market isn’t going anywhere. There will always be another opportunity tomorrow. But there may not be another account if you blow this one up.
 
----
-
 ## Where the Trade Stands Now
 
 As of writing this post, the trade is still open. It may recover. It may not. Time will tell.
@@ -114,8 +102,6 @@ But regardless of outcome, the damage was done the moment I:
 - Sized risk inconsistently  
 
 That combination is what creates big drawdowns.
-
----
 
 ## The Real Takeaway
 
@@ -134,8 +120,6 @@ My path forward is simple:
 
 The goal remains the same: **build a systematic, sustainable options income strategy** — but with better discipline and cleaner execution.
 
----
-
 ## Final Thoughts
 
 If you’re trading options, especially put credit spreads, learn from this post. Losses happen. But **avoidable losses hurt the most**.
@@ -149,7 +133,9 @@ Better results.
 
 The journey continues.
 
----
+## Some of my options trading tools
+- [Robinhood invite link](https://join.robinhood.com/abdalla62) and we’ll both get to pick our own 1 free stock As a gift.
+- [The Unlucky Investor's Guide to Options Trading](https://amzn.to/49DldKl)
 
 **Disclaimer:**  
 I am not a financial advisor. This post is for educational and entertainment purposes only. Always manage your own risk and remember my trades are my own opinions.
