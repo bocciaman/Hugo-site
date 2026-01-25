@@ -5,7 +5,7 @@ date: 2026-01-25T09:44:02-08:00
 url: /my-honest-review-of-the-chefman-electric-kettle-with-tea-infuser/
 image: /img/chefmankettle.jpg
 categories:
-  - one
+  - Amazon affiliate
 tags:
   - Electric kettle
   - Tea infuser
