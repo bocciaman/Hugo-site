@@ -10,7 +10,7 @@ tags:
   - UPS
   - Surge Protector
   - Apartment Essentials
-draft: False
+draft: true
 ---
 
 Moving into a new apartment is exciting — but it also comes with a long checklist of essentials. Furniture, kitchenware, lighting, cleaning supplies — the list goes on. While most people focus on couches and beds, I realized something important during my move:
