@@ -7,11 +7,14 @@ image: /img/trading_SPY.webp
 categories:
   - Options Investing
 tags:
-  - one
-  - two
-  - three
+  - Put credit spread
+  - Options investing
+  - Options tracking
 draft: False
 ---
+## Video
+{{< youtube YZ9EvbNNlSc >}}
+
 One of the biggest mistakes new options traders make is jumping into trades without a repeatable system. Random entries, emotional exits, and no tracking usually lead to inconsistent results.
 
 That’s why every trade I take follows the same framework:
