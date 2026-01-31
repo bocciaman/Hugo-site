@@ -13,7 +13,7 @@ tags:
 draft: False
 ---
 ## Video
-{{< youtube YZ9EvbNNlSc >}}
+{{< youtube 3HqbLEBFk_U >}}
 
 One of the biggest mistakes new options traders make is jumping into trades without a repeatable system. Random entries, emotional exits, and no tracking usually lead to inconsistent results.
 

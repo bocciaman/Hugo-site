@@ -29,7 +29,7 @@ And that’s the key point: **Most options losses are decided the moment you cli
 
 ## Video Breakdown
 
-{{< youtube 5bDlqhrRIog >}}
+{{< youtube UKnkT1anY5o >}}
 
 In the video, I walk through the exact position, the platform screen, and the thought process that led me into the trade. If you're following my channel or trading journal, this is part of my commitment to **publicly documenting real trades — wins and mistakes alike**.
 

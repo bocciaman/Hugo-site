@@ -15,7 +15,7 @@ draft: false
 ---
 
 ## Video
-{{< youtube tRwtl_zBzao >}}
+{{< youtube NbLoZVaH-PU >}}
 
 ## I'm Back for Real
 I'm finally back for real this time. Today marks the first day that I've posted a video since August of 2025. I wrote about why I haven't posted much in my [Why I've Been Gone](https://abanwar.com/why-ive-been-gone/) blog post. This video has a different style than the ones I'm usually making about Mac automation. This one is similar to a YouTube Short — but it really isn’t. I explained that I’ll be making more videos about options, investing, and walking through the four positions that I currently have open in my Robinhood account.
