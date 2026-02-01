@@ -12,7 +12,7 @@ tags:
   -  risk management
   -   market volatility
   -    trading discipline
-draft: true
+draft: False
 ---
 
 ## Video
