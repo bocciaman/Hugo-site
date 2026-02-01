@@ -6,7 +6,6 @@ url: /finally-sharing-my-options-trades/
 image: /img/option2.webp
 categories:
   - Options Investing
-  - Miscellaneous
 tags:
   - Options trading
   - Investing
