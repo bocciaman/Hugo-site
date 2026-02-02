@@ -10,7 +10,7 @@ tags:
   - Shortcuts
   - iOS automation
   - Productivity Shortcuts
-draft: true
+draft: false
 ---
 
 ## Video
