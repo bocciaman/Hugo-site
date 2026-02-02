@@ -64,4 +64,4 @@ Having instant access to the gold spot price might seem like a small thing, but 
 
 In the accompanying video, I walk through exactly how the shortcut works, how I use it, and why I think simple automation like this can quietly improve everyday decision-making. Sometimes the best tools aren’t the most complex—they’re the ones that disappear into your routine and just work. 
 
-For even more iOS automation fun, check out my post about my [Reading Log Shortcut](https://youtu.be/0KZuRxE3R0Y).
+For even more iOS automation fun, check out my post about my [Reading Log Shortcut](https://abanwar.com/my-reading-log-shortcut/).
