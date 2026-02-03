@@ -13,16 +13,16 @@ name = "Services"
 url = "/services/"
 weight = 3
 
-[[main]]
-name = "Merchandise"
-url = "https://bocciamans-store.creator-spring.com/?"
-weight = 4
-target = "_blank"  # Open in a new tab
+# [[main]]
+# name = "Merchandise"
+# url = "https://bocciamans-store.creator-spring.com/?"
+# weight = 5
+# target = "_blank"  # Open in a new tab
 
 # [[main]]
 # name = "Inside That Ad"
 # url = "https://www.insidethatad.net"
-# weight = 5
+# weight = 7
 # target = "_blank"  # Open in a new tab
 
 # [[main]]
@@ -30,11 +30,11 @@ target = "_blank"  # Open in a new tab
 # url = "/subscribe/"
 # weight = 6
 
-# [[main]]
-# name = "DigitalStudioByAB"
-# url = "https://www.etsy.com/shop/digitalstudiobyab"
-# weight = 7
-# target = "_blank"  # Open in a new tab
+[[main]]
+name = "DigitalStudioByAB"
+url = "https://digitalstudiobyab.etsy.com"
+weight = 4
+target = "_blank"  # Open in a new tab
 
 [[main]]
 name = "Contact me"
