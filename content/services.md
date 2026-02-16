@@ -20,5 +20,7 @@ services:
     - title: "My Gumroad Products"
       image: "/img/Gumroad.webp"
       text: "Learn about the digital products I offer on Gumroad. [Checkout my products](https://bocciaman.gumroad.com/)"
-
+    - title: "Grindizer TV Series"
+      image: "/img/grindizer.webp"
+      text: "Make a payment through CashApp and I'll send it upon request in a zip file. [Use $CashApp](https://cash.app/$AanwarAB)"
 ---
