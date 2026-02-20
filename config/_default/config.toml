@@ -8,9 +8,6 @@ theme = "abanwar"
 [pagination]
   pagerSize = 10
 
-# post excerpt
-summaryLength = "10"
-
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
 
