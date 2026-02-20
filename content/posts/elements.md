@@ -10,7 +10,6 @@ categories:
 tags:
   - headings
   - code
-draft: true
 ---
 
 # H1 Heading
