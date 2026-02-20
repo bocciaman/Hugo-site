@@ -1,4 +1,5 @@
 <article class="mb-4 pb-2">
+  {{ $excerptLength := .Site.Params.excerpt_length | default 180 }}
   {{ $excerpt := .Summary }}
   {{ $paragraphs := findRE `(?s)<p>.*?</p>` .Content 1 }}
   {{ if gt (len $paragraphs) 0 }}
@@ -11,7 +12,7 @@
     <a href="{{ `categories/` | absLangURL }}{{ . | urlize | lower }}">{{ . | title }}</a>
     {{ end }}
   </div>
-  <p>{{ $excerpt | plainify | htmlUnescape }}</p>
+  <p>{{ $excerpt | plainify | htmlUnescape | truncate $excerptLength }}</p>
   <a href="{{ .Permalink }}" class="btn btn-sm btn-transparent pl-0">read more</a>
   <div style="border: 1px #eee solid; margin-top:40px"></div>
 </article>

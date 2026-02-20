@@ -16,6 +16,7 @@ description = "Personal website for Abdallah Anwar, also known as A.B."
 
 # homepage main section
 mainSections = ["posts"]
+excerpt_length = 180 # Excerpt length on article cards
 
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
@@ -162,4 +163,3 @@ link = "plugins/search/search.js"
 [[plugins.js]]
 link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
 attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
-
