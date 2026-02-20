@@ -1,4 +1,9 @@
 <article class="article-list row align-items-center mb-5">
+  {{ $excerpt := .Summary }}
+  {{ $paragraphs := findRE `(?s)<p>.*?</p>` .Content 1 }}
+  {{ if gt (len $paragraphs) 0 }}
+    {{ $excerpt = index $paragraphs 0 }}
+  {{ end }}
   {{ if .Params.image }}
   <div class="col-md-5">
     <!--a href="{{ .Permalink }}"><img loading="lazy" class="w-100" src="{{ .Params.image | absURL }}" alt="post-image"></a-->
@@ -8,7 +13,7 @@
   <div class="col-md-7">
     <div class="card-block">
       <h2 class="h4"><a class="post-title" href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
-      <p>{{.Summary | truncate 100}}</p>
+      <p>{{ $excerpt | plainify | htmlUnescape | truncate 100 }}</p>
       <div class="mt-3 post-meta">
         <a href="{{ `author/` | absLangURL }}{{ .Params.Author | urlize | lower }}">{{ .Params.Author | title }}</a> <span class="mx-1">|</span> {{ .PublishDate.Format "Jan 2, 2006" }} <span class="mx-1">|</span> {{ range .Params.Categories }}
         <a href="{{ `categories/` | absLangURL }}{{ . | urlize | lower }}">{{ . | title }}</a>
