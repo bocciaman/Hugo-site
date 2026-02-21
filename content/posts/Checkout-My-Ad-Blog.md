@@ -14,8 +14,6 @@ tags:
 draft: false
 ---
 
-# Checkout My Ad Blog
-
 Every year, the Super Bowl delivers more than just football. It delivers a cultural moment. And for many of us, the commercials are just as important as the game itself.
 
 The 2026 Super Bowl was no different.
