@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main class="storefront">
+  <h1>{{ .Title }}</h1>
+
+  {{ if .Content }}
+    <div class="storefront-intro">{{ .Content }}</div>
+  {{ end }}
+
+  <div class="product-grid">
+    {{ range site.Data.products.items }}
+      <article class="product-card">
+        <a class="product-link" href="{{ .link }}" target="_blank" rel="nofollow noopener">
+          <img class="product-img" src="{{ .image }}" alt="{{ .name }}">
+          <h3 class="product-name">{{ .name }}</h3>
+        </a>
+
+        {{ if .desc }}
+          <p class="product-desc">{{ .desc }}</p>
+        {{ end }}
+
+        <a class="buy-btn" href="{{ .link }}" target="_blank" rel="nofollow noopener">View on Amazon</a>
+      </article>
+    {{ end }}
+  </div>
+</main>
+{{ end }}
