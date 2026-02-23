@@ -98,9 +98,10 @@
       <!-- Categories (checkbox filter) -->
       <div class="sf-box">
         <h3 class="sf-title">Categories</h3>
-        <label class="sf-check"><input type="checkbox" value="gear" checked> Gear</label>
-        <label class="sf-check"><input type="checkbox" value="studio" checked> Studio</label>
-        <label class="sf-check"><input type="checkbox" value="setup" checked> Setup</label>
+        <!-- IMPORTANT: Start unchecked so "no category checked" shows all items -->
+        <label class="sf-check"><input type="checkbox" value="gear"> Gear</label>
+        <label class="sf-check"><input type="checkbox" value="studio"> Studio</label>
+        <label class="sf-check"><input type="checkbox" value="setup"> Setup</label>
       </div>
     </aside>
 
@@ -141,23 +142,29 @@
 
     function filterProducts() {
       const q = (search && search.value ? search.value : '').trim().toLowerCase();
+
+      // Gather checked categories
       const activeCategories = checkboxes
         .filter(cb => cb.checked)
         .map(cb => cb.value);
 
       cards.forEach(card => {
         const name = (card.getAttribute('data-name') || '').toLowerCase();
+
+        // Normalize categories to lowercase + trimmed
         const categories = (card.getAttribute('data-categories') || '')
           .split(',')
-          .map(s => s.trim())
+          .map(s => s.trim().toLowerCase())
           .filter(Boolean);
 
         const matchesSearch = name.includes(q);
 
-        // If no categories are checked, show everything that matches search
+        // YOUR REQUESTED BEHAVIOR:
+        // - If NO categories checked => show ALL items (that match search)
+        // - If categories checked => show ONLY items in ANY checked category (AND match search)
         const matchesCategory = activeCategories.length === 0
           ? true
-          : activeCategories.some(cat => categories.includes(cat));
+          : activeCategories.some(cat => categories.includes(cat.toLowerCase()));
 
         card.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
       });
@@ -166,7 +173,7 @@
     if (search) search.addEventListener('input', filterProducts);
     checkboxes.forEach(cb => cb.addEventListener('change', filterProducts));
 
-    // Apply filters on initial load
+    // Apply on initial load
     filterProducts();
   })();
   </script>
