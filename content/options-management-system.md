@@ -20,7 +20,7 @@ draft: False
   <img src="/img/bundleimage.webp" alt="Options Trading Management System Bundle" />
 </p>
 
-## A structured workflow for managing credit spreads, CSPs, and covered calls — including 21-DTE management and performance analytics.
+### A structured workflow for managing credit spreads, CSPs, and covered calls — including 21-DTE management and performance analytics.
 
 Most retail options traders:
 
