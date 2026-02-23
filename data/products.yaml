@@ -1,20 +1,18 @@
 items:
-  - name: Late 2020 Apple MacBook Air with Apple M1 Chip (13.3 inch, 16GB RAM, 256GB SSD) Space Gray
+  - name: MacBook Air M1 (16GB)
     image: /img/store/mymac.jpg
-    desc: the MacBook Air I'm currently using to create most of my content.
-    link: https://amzn.to/4qO17Co
+    desc: The MacBook Air I'm currently using to create most of my content.
+    link: https://amzn.to/4q017Co
+    categories: ["Gear"]
 
-  - name: Hollyland Lark A1 Wireless Microphone for iPhone 17/16/15 & Android for YouTube
+  - name: Hollyland Lark A1 Wireless Mic
     image: /img/store/hollyland.jpg
-    desc: Clean, simple USB Microphone for YouTube.
+    desc: Clean, simple USB microphone for YouTube.
     link: https://amzn.to/4kNlHBn
+    categories: ["Gear"]
 
-  - name: Ipad Tripod Stand, with 65 inch Height Adjustable iPad Stand Holder & iPad
+  - name: iPad Tripod Stand
     image: /img/store/tripod.jpg
     desc: I bought two of these at once to set up both an iPhone and an iPad mini.
     link: https://amzn.to/4avdLBp
-
-  #- name: example title
-  # image: /img/store/Myimage.jpg
-  # desc: I bought two of these at once to set up both an iPhone and an iPad mini.
-  # link: you are link
+    categories: ["Gear"]

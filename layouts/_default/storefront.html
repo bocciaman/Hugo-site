@@ -95,7 +95,7 @@
         <input id="sfSearch" class="sf-search" type="search" placeholder="Search products..." />
       </div>
 
-      <!-- Optional: simple “Categories” (static for now) -->
+      <!-- Categories (checkbox filter) -->
       <div class="sf-box">
         <h3 class="sf-title">Categories</h3>
         <label class="sf-check"><input type="checkbox" value="gear" checked> Gear</label>
@@ -115,7 +115,9 @@
 
       <div id="sfGrid" class="product-grid">
         {{ range site.Data.products.items }}
-          <article class="product-card" data-name="{{ .name | lower }}">
+          <article class="product-card"
+            data-name="{{ .name | lower }}"
+            data-categories="{{ with .categories }}{{ delimit . "," }}{{ end }}">
             <a class="product-link" href="{{ .link }}" target="_blank" rel="nofollow noopener">
               <img class="product-img" src="{{ .image }}" alt="{{ .name }}">
               <h3 class="product-name">{{ .name }}</h3>
@@ -130,21 +132,43 @@
 
   </div>
 
-  <!-- Minimal JS: search filter only (safe, page-scoped) -->
+  <!-- Search + category filtering (page-scoped) -->
   <script>
-    (function () {
-      const search = document.getElementById('sfSearch');
-      const cards = Array.from(document.querySelectorAll('#sfGrid .product-card'));
-      if (!search) return;
+  (function () {
+    const search = document.getElementById('sfSearch');
+    const cards = Array.from(document.querySelectorAll('#sfGrid .product-card'));
+    const checkboxes = Array.from(document.querySelectorAll('.sf-check input'));
 
-      search.addEventListener('input', () => {
-        const q = (search.value || '').trim().toLowerCase();
-        cards.forEach(card => {
-          const name = card.getAttribute('data-name') || '';
-          card.style.display = name.includes(q) ? '' : 'none';
-        });
+    function filterProducts() {
+      const q = (search && search.value ? search.value : '').trim().toLowerCase();
+      const activeCategories = checkboxes
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+
+      cards.forEach(card => {
+        const name = (card.getAttribute('data-name') || '').toLowerCase();
+        const categories = (card.getAttribute('data-categories') || '')
+          .split(',')
+          .map(s => s.trim())
+          .filter(Boolean);
+
+        const matchesSearch = name.includes(q);
+
+        // If no categories are checked, show everything that matches search
+        const matchesCategory = activeCategories.length === 0
+          ? true
+          : activeCategories.some(cat => categories.includes(cat));
+
+        card.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
       });
-    })();
+    }
+
+    if (search) search.addEventListener('input', filterProducts);
+    checkboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+
+    // Apply filters on initial load
+    filterProducts();
+  })();
   </script>
 
 </main>
