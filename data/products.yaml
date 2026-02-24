@@ -16,3 +16,39 @@ items:
     desc: I bought two of these at once to set up both an iPhone and an iPad mini.
     link: https://amzn.to/4avdLBp
     categories: ["Gear"]
+
+  - name: JoyJolt Faye Crystal Whiskey Glasses (Set of 6)
+    image: /img/store/whiskey-glasses.jpg
+    desc: 10oz lowball crystal glasses, dishwasher safe.
+    link: https://amzn.to/4qS8zfC
+    categories: ["home"]
+
+  - name: 1500 Supreme Collection Queen Sheet Set
+    image: /img/store/sheets.jpg
+    desc: Extra soft luxury hotel bed sheets.
+    link: https://amzn.to/3ZSXr7q
+    categories: ["home"]
+
+  - name: iHealth Track Smart Blood Pressure Monitor
+    image: /img/store/blood-pressure.jpg
+    desc: Bluetooth upper arm monitor for iOS & Android.
+    link: https://amzn.to/46qqBOV
+    categories: ["health"]
+
+  - name: Button Hook & Zipper Pull Assist Tool
+    image: /img/store/button-hook.jpg
+    desc: One-handed button assist and zipper pull tool.
+    link: https://amzn.to/4tQUJwH
+    categories: ["accessibility"]
+
+  - name: Home Techpro Rug Pad Gripper
+    image: /img/store/rug-gripper.jpg
+    desc: Non-slip rug corner grippers for hardwood floors.
+    link: https://amzn.to/40t29c4
+    categories: ["home"]
+
+  - name: Windex Pre-Moistened Glass Cleaning Wipes (38ct)
+    image: /img/store/windex-wipes.jpg
+    desc: Convenient glass and surface cleaning wipes.
+    link: https://amzn.to/4axtSOR
+    categories: ["home"]
