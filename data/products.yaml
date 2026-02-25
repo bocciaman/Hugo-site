@@ -52,3 +52,15 @@ items:
     desc: Convenient glass and surface cleaning wipes.
     link: https://amzn.to/4axtSOR
     categories: ["home"]
+
+  - name: Frostorm 1.6 Cu Ft Mini Fridge Freezer
+    image: /img/store/fridge.jpg
+    desc: Compact 1.6 cu ft mini fridge + freezer — great for dorms, offices, gaming setups or small spaces.
+    link: https://amzn.to/4tRzNWw
+    categories: ["home"]
+
+  - name: Men’s Crew Styling Gel
+    image: /img/store/crew.jpg
+    desc: Professional finish styling gel for men — provides long-lasting hold without flaking.
+    link: https://amzn.to/3ZSaXrZ
+    categories: ["grooming"]
