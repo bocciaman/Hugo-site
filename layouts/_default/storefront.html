@@ -98,7 +98,7 @@
       <!-- Categories (checkbox filter) -->
       <div class="sf-box">
         <h3 class="sf-title">Categories</h3>
-        <!-- IMPORTANT: Start unchecked so "no category checked" shows all items -->
+        <!-- Start unchecked so "no category checked" shows all items -->
         <label class="sf-check"><input type="checkbox" value="gear"> Gear</label>
         <label class="sf-check"><input type="checkbox" value="studio"> Studio</label>
         <label class="sf-check"><input type="checkbox" value="setup"> Setup</label>
@@ -133,6 +133,29 @@
 
   </div>
 
+  <!-- Structured Data for SEO (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {{ range $index, $item := site.Data.products.items }}
+        {
+          "@type": "Product",
+          "position": {{ add $index 1 }},
+          "name": {{ $item.name | jsonify }},
+          "image": {{ ($item.image | absURL) | jsonify }},
+          "description": {{ $item.desc | default "" | jsonify }},
+          "url": {{ $item.link | jsonify }}
+        }{{ if lt (add $index 1) (len site.Data.products.items) }},{{ end }}
+        {{ end }}
+      ]
+    }
+  }
+  </script>
+
   <!-- Search + category filtering (page-scoped) -->
   <script>
   (function () {
@@ -143,15 +166,15 @@
     function filterProducts() {
       const q = (search && search.value ? search.value : '').trim().toLowerCase();
 
-      // Gather checked categories
+      // Checked categories
       const activeCategories = checkboxes
         .filter(cb => cb.checked)
-        .map(cb => cb.value);
+        .map(cb => (cb.value || '').toLowerCase());
 
       cards.forEach(card => {
         const name = (card.getAttribute('data-name') || '').toLowerCase();
 
-        // Normalize categories to lowercase + trimmed
+        // Normalize categories
         const categories = (card.getAttribute('data-categories') || '')
           .split(',')
           .map(s => s.trim().toLowerCase())
@@ -159,12 +182,12 @@
 
         const matchesSearch = name.includes(q);
 
-        // YOUR REQUESTED BEHAVIOR:
+        // Requested behavior:
         // - If NO categories checked => show ALL items (that match search)
         // - If categories checked => show ONLY items in ANY checked category (AND match search)
         const matchesCategory = activeCategories.length === 0
           ? true
-          : activeCategories.some(cat => categories.includes(cat.toLowerCase()));
+          : activeCategories.some(cat => categories.includes(cat));
 
         card.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
       });

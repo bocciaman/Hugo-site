@@ -12,4 +12,4 @@ I don’t list random trending items. Every product here has either improved my 
 
 From tech and content-creation gear to home essentials and everyday upgrades — these are items I trust.
 
-*Disclosure: As an Amazon Associate, I earn from qualifying purchases at no additional cost to you.*
+**Disclosure:** As an Amazon Associate, I earn from qualifying purchases at no additional cost to you.
