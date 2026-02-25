@@ -17,6 +17,9 @@ tags:
 draft: False
 ---
 
+## Video
+{{< youtube dE1b7ISWShg >}}
+
 In this **Portfolio Update (02-24-2026)**, I break down my open options positions and answer one of the most searched questions in options trading:
 
 **Why am I down on my options trade when the stock is above my strike price?**
