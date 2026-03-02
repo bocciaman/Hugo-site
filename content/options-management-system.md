@@ -72,7 +72,7 @@ This system helps bring structure, discipline, and clarity to your options tradi
 ## See It In Action
 {{< youtube Grn7rufXqxE >}}
 
-## [Get The System] (https://bocciaman.gumroad.com/l/optsystem)
+## [Get The System](https://bocciaman.gumroad.com/l/optsystem)
 
 ## Important
 
