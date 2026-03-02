@@ -70,13 +70,9 @@ This system replaces scattered spreadsheets with a single structured workflow.
 This system helps bring structure, discipline, and clarity to your options trading workflow.
 
 ## See It In Action
-
 {{< youtube Grn7rufXqxE >}}
 
-## Get The System
-
-👉 **Purchase Here:**  
-[purchase the Options Trading Management Tracker System](https://bocciaman.gumroad.com/l/optsystem)
+## [Get The System] (https://bocciaman.gumroad.com/l/optsystem)
 
 ## Important
 
