@@ -71,12 +71,12 @@ This system helps bring structure, discipline, and clarity to your options tradi
 
 ## See It In Action
 
-(Demo video will be embedded here.)
+{{< youtube Grn7rufXqxE >}}
 
 ## Get The System
 
 👉 **Purchase Here:**  
-(Add your Stripe or Gumroad link here)
+[purchase the Options Trading Management Tracker System](https://bocciaman.gumroad.com/l/optsystem)
 
 ## Important
 
