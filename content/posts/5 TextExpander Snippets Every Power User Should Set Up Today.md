@@ -25,10 +25,10 @@ If you type the same things over and over — your address, your email sign-off,
 
 The fastest win in TextExpander is automating how you close emails. Instead of typing "Best, Abdallah" dozens of times a day, set up a snippet keyed to your initials.
 
-For example, I use `av!` which expands to:
+For example, I use `ab!` which expands to:
 
 > Best,
-> AV
+> A.B.
 
 That's it. Two characters and a punctuation mark, and your sign-off is done. **The trick is choosing an abbreviation you'd never type by accident** — that's why adding a punctuation character like `!` works so well. Pick something you can type with one hand without breaking your flow.
 
