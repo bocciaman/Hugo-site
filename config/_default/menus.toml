@@ -51,3 +51,4 @@ target = "_blank"  # Open in a new tab
 name = "Media Kit"
 url = "/media-kit.pdf"
 weight = 11
+target = "_blank"  # Open in a new tab
