@@ -11,6 +11,14 @@ I'm a marketing professional, a Paralympic hopeful in the sport of Boccia, and a
 This site will hopefully grow to become my little corner of the Internet. I'll share longer-length blog posts accompanying my Mac automation-focused YouTube videos, other attempts at starting online businesses, investing and my interests in general.
 
 {{< raw >}}
+<div style="margin-top: 1.5rem;">
+  <a href="/media-kit.pdf" download class="btn btn-primary">
+    <i class="fas fa-download mr-2"></i>Download My Media Kit
+  </a>
+</div>
+{{< /raw >}}
+
+{{< raw >}}
 <script>
 (function () {
   const startDate = new Date(2019, 9, 14);
