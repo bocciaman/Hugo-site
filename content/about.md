@@ -9,15 +9,6 @@ Hi, my name is A.B.,
 I'm a marketing professional, a Paralympic hopeful in the sport of Boccia, and a relatively new YouTuber. Recently (a.k.a., <span id="yt-years-ago"></span>), I started a [YouTube channel](https://www.youtube.com/@AutomationMaestro) to share some excellent macOS-based automation with people. I aim to teach people how to make their Macs and iOS devices work for them rather than vice versa. And yes, there are a couple of videos on my channel before I started posting regularly, but officially, my first [Keyboard Maestro video](https://www.youtube.com/watch?v=xsf3EIVerCY) premiered on October 14, 2019.
 
 This site will hopefully grow to become my little corner of the Internet. I'll share longer-length blog posts accompanying my Mac automation-focused YouTube videos, other attempts at starting online businesses, investing and my interests in general.
-
-{{< raw >}}
-<div style="margin-top: 1.5rem;">
-  <a href="/media-kit.pdf" download class="btn btn-primary">
-    <i class="fas fa-download mr-2"></i>Download My Media Kit
-  </a>
-</div>
-{{< /raw >}}
-
 {{< raw >}}
 <script>
 (function () {

@@ -30,11 +30,11 @@ weight = 3
 # url = "/subscribe/"
 # weight = 6
 
-[[main]]
-name = "DigitalStudioByAB"
-url = "https://digitalstudiobyab.etsy.com"
-weight = 4
-target = "_blank"  # Open in a new tab
+# [[main]]
+# name = "DigitalStudioByAB"
+# url = "https://digitalstudiobyab.etsy.com"
+# weight = 4
+# target = "_blank"  # Open in a new tab
 
 [[main]]
 name = "Contact me"
@@ -46,3 +46,8 @@ name = "YouTube"
 url = "https://www.youtube.com/@AutomationMaestro?sub_confirmation=1"
 weight = 9
 target = "_blank"  # Open in a new tab
+
+[[main]]
+name = "Media Kit"
+url = "/media-kit.pdf"
+weight = 11
