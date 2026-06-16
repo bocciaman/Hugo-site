@@ -107,12 +107,6 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-{{ "<!-- Google Ads -->" | safeHTML }}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4393393337555122",
-    enable_page_level_ads: true,
-    overlays: { bottom: true },
-  });
-</script>
+{{ "<!-- Google AdSense -->" | safeHTML }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4393393337555122"
+     crossorigin="anonymous"></script>
