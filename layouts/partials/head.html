@@ -1,0 +1,118 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+{{ "<!-- Google tag (gtag.js) -->" | safeHTML }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G1EY9W8NTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G1EY9W8NTQ');
+</script>
+
+{{ "<!-- Title -->" | safeHTML }}
+{{ if .IsHome }}
+<title>{{ site.Title }}</title>
+{{ else }}
+<title>{{ .Title }} | {{ site.Title }}</title>
+{{ end }}
+
+{{ "<!-- Canonical URL -->" | safeHTML }}
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{ "<!-- Primary Meta Tags -->" | safeHTML }}
+<meta name="author" content="{{ site.Params.author }}" />
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}" />
+{{ with site.Params.keywords }}<meta name="keywords" content="{{ . }}" />{{ end }}
+{{ hugo.Generator }}
+
+{{ "<!-- Open Graph / Facebook -->" | safeHTML }}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}" />
+{{ if .Params.image }}
+<meta property="og:image" content="{{ .Params.image | absURL }}" />
+{{ else }}
+<meta property="og:image" content="{{ "/img/logo.png" | absURL }}" />
+{{ end }}
+<meta property="og:site_name" content="{{ site.Title }}" />
+
+{{ "<!-- Twitter Card -->" | safeHTML }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@bocciaman" />
+<meta name="twitter:creator" content="@bocciaman" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}" />
+{{ if .Params.image }}
+<meta name="twitter:image" content="{{ .Params.image | absURL }}" />
+{{ else }}
+<meta name="twitter:image" content="{{ "/img/logo.png" | absURL }}" />
+{{ end }}
+
+{{ "<!-- JSON-LD Structured Data -->" | safeHTML }}
+{{ if .IsPage }}
+{{ if or (eq .Section "posts") (eq .Section "post") (eq .Section "blog") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ with .Params.description }}{{ . | jsonify }}{{ else }}{{ .Summary | plainify | truncate 160 | jsonify }}{{ end }},
+  "url": {{ .Permalink | jsonify }},
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  {{ if .Params.image }}"image": {{ .Params.image | absURL | jsonify }},{{ end }}
+  "author": {
+    "@type": "Person",
+    "name": {{ site.Params.author | jsonify }},
+    "url": {{ site.BaseURL | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.Title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "/img/logo.png" | absURL | jsonify }}
+    }
+  }
+}
+</script>
+{{ end }}
+{{ else if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.Title | jsonify }},
+  "url": {{ site.BaseURL | jsonify }},
+  "description": {{ site.Params.description | jsonify }}
+}
+</script>
+{{ end }}
+
+{{ "<!-- Favicon -->" | safeHTML }}
+<link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon" />
+
+{{ "<!-- Font Awesome 6.6 (CSS) -->" | safeHTML }}
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+{{ "<!-- RSS Feed -->" | safeHTML }}
+{{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{ "<!-- Google Ads -->" | safeHTML }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4393393337555122",
+    enable_page_level_ads: true,
+    overlays: { bottom: true },
+  });
+</script>

@@ -12,7 +12,8 @@ favicon = "images/favicon.ico"
 
 # meta data
 author = "AB Anwar"
-description = "Personal website for Abdallah Anwar, also known as A.B."
+description = "Personal website for Abdallah Anwar, also known as A.B. — Mac automation, iOS shortcuts, Alfred workflows, Keyboard Maestro, and productivity tips."
+keywords = "Mac automation, Alfred workflows, Keyboard Maestro, iOS shortcuts, TextExpander, productivity, macOS tips, Apple automation"
 
 # homepage main section
 mainSections = ["posts"]
