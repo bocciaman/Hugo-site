@@ -11,6 +11,7 @@ tags:
   - Search
   - Automation
 draft: false
+youtube_id: "a3rmMiSop7U"
 ---
 In this video I  walk you through the process of upgrading from Alfred 4 to Alfred 5.
 

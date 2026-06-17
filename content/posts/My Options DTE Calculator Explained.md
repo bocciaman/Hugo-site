@@ -11,6 +11,7 @@ tags:
   - Automation
   - Days To Expiration (DTE)
 draft: False
+youtube_id: "OC-jh_j5j_4"
 ---
 
 ## Video

@@ -13,6 +13,7 @@ tags:
   - Mac
   - Automation
 draft: false
+youtube_id: "f6Ad8c8NJ-E"
 ---
 
 ## Video

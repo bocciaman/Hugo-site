@@ -10,6 +10,7 @@ tags:
   - clipboard
   - managers
 draft: false
+youtube_id: "uoh_bDvtduA"
 ---
 
 In this video I walk you through the pros and cons of two iOS clipboard managers. One is called Clippo and it's an app you can purchase from the App Store. The other is a clipboard manager shortcut that I downloaded from snows YouTuber Christopher Lawley.

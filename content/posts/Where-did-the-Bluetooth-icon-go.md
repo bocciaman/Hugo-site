@@ -13,6 +13,7 @@ tags:
   - tutorials
   - Apple
 draft: false
+youtube_id: "6UfLFXdwUq0"
 ---
 
 In this video, I  show you how to enable the Bluetooth Icon in macOS Sonoma. It isn't available via the same place that it was in older macOS versions. Now you must opn the control center settings to enable the icon to appear in the menu bar. 

@@ -15,6 +15,7 @@ tags:
   - automation
   - Apple
 draft: false
+youtube_id: "uT2oKtZUY2g"
 ---
 
 In this video, I show three iOS commands with a Harry Potter theme. Yes, I know this is a relatively short video, but I thought it would be a fun one to share with everybody. There are three Harry Potter voice command that could be viewed as Harry Potter spells.

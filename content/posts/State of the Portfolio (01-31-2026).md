@@ -13,6 +13,7 @@ tags:
   -   market volatility
   -    trading discipline
 draft: False
+youtube_id: "LjdL2T6_FQI"
 ---
 
 ## Video

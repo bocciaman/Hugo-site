@@ -15,6 +15,7 @@ tags:
   - Clipboard Automation
   - Alfred Workflows
 draft: False
+youtube_id: "vq2-qD6YXAY"
 ---
 
 ## Video

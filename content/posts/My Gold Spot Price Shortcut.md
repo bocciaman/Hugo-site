@@ -11,6 +11,7 @@ tags:
   - iOS automation
   - Productivity Shortcuts
 draft: false
+youtube_id: "7Ho5OqqbQCI"
 ---
 
 ## Video

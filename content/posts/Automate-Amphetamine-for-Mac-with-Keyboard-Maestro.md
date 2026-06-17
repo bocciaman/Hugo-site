@@ -13,6 +13,7 @@ tags:
   - Automation
   - Keyboard Shortcut
 draft: false
+youtube_id: "8UESvHjr_f8"
 ---
 ## Video
 {{< youtube 8UESvHjr_f8 >}}

@@ -11,6 +11,7 @@ tags:
   - Fig
   - tutorial
 draft: false
+youtube_id: "TAWHG4w8uJk"
 ---
 
 ## Video

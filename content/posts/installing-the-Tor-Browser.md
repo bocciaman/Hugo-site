@@ -13,6 +13,7 @@ tags:
   - Homebrew
   - install
 draft: false
+youtube_id: "ZK3qNjjZ-MY"
 ---
 
 In this video, I show you how to install the Tor browser via Homebrew and run it like any other Mac app. If you have Homebrew installed on your system simply launch your favorite terminal application and type:

@@ -11,6 +11,7 @@ tags:
   - iPhone 14
   - Automation
 draft: false
+youtube_id: "V3Bc7e6JvK"
 ---
 
 In this video, I go through my process of ordering the iPhone 14 Pro. Yes, I know, its relatively short and not like my usual automation video. But this still a Mac/iPhone automation channel and more automation videos are coming.

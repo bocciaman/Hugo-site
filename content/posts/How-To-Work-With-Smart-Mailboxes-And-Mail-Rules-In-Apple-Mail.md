@@ -11,6 +11,7 @@ tags:
   - Mail Rules
   - Smart Mailboxes
 draft: False
+youtube_id: "xKw_OcLDj4Q"
 ---
 
 A tutorial on how to setup mail rules and work with Smart Mailboxes in Apple Mail.

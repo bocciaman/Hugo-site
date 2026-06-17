@@ -15,6 +15,7 @@ tags:
   - Crypto
 
 draft: false
+youtube_id: "ykbdKGp7IVg"
 ---
 
 In this video, I dicussed how BlockFi was starting to pause withdraws. 

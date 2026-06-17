@@ -11,6 +11,7 @@ tags:
   - iOS
   - 2FA
 draft: false
+youtube_id: "_-7kaL0I3J0"
 ---
 
 In this video I share with you a scary experience I  had using Google's Authenticator App. The Authenticator App is Google's 2FA app that latches on to your specific device and when you transfer your device the codes don't transfer over like other apps.

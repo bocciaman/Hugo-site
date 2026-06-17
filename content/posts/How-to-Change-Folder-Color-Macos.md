@@ -15,6 +15,7 @@ tags:
   - Apple
   - productivity
 draft: false
+youtube_id: "PQNKXbyL_A4"
 ---
 
 In this video, I will be showing you how to create custom color folders in macOS Monterey. If you're tired of the default blue folder icons on your Mac, this tutorial is perfect for you. But you must know that there is no way to automate this process. 

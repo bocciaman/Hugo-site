@@ -12,6 +12,7 @@ tags:
   - bash
   - Chatgpt
 draft: false
+youtube_id: "t-tw2v6BW_I"
 ---
 
 In the world of Mac, apps and software like Brett Terpstra's [QuickQuestion](https://brettterpstra.com/projects/quickquestion/), Alfred, and ChatGPT from OpenAI provide powerful tools for automation and efficiency. It's possible to combine these tools to create a highly personalized Mac app that can not only serve your unique needs but also provide an interesting learning experience.

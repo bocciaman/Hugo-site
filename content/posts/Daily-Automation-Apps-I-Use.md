@@ -14,6 +14,7 @@ tags:
   - Bunch
   - TextExpander
 draft: False
+youtube_id: "dsB89flMCoY"
 ---
 
 In today's fast-paced digital world, efficiency is key. Automation tools not only streamline your workflow but also open up new avenues for creativity and precision. In this comprehensive guide, I'll introduce you to four powerhouse apps that have revolutionized my daily routine: Hazel, TextExpander, Keyboard Maestro, and Bunch.

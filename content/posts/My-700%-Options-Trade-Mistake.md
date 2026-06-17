@@ -11,6 +11,7 @@ tags:
   - Options investing
   - investing journey
 draft: False
+youtube_id: "UKnkT1anY5o"
 ---
 
 ## A Painful Lesson in Options Trading Discipline

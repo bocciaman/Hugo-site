@@ -12,6 +12,7 @@ tags:
   - Shortcuts
   - Productivity
 draft: false
+youtube_id: "CzS4KMC-uCY"
 ---
 
 In this video, I show you how I run shortcuts through the Alfred search bar. The shortcut I run in this particular demonstration is the "Calculate Tip" shortcut. Finally, I share the website where you can download and install the Alfred workflow for yourself.

@@ -11,6 +11,7 @@ tags:
   - Automation
   - Python Script
 draft: False
+youtube_id: "0UMttQ4ajvM"
 ---
 
 ## Video

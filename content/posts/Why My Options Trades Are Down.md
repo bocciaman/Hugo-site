@@ -15,6 +15,7 @@ tags:
   - Income Investing
   - Time Decay
 draft: False
+youtube_id: "dE1b7ISWShg"
 ---
 
 ## Video

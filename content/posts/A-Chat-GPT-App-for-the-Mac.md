@@ -15,6 +15,7 @@ tags:
 - productivity
 - AI
 draft: False
+youtube_id: "ej17lZ0BqwY"
 ---
 ## Video
 

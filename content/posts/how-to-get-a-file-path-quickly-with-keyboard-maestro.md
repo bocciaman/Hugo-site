@@ -12,6 +12,7 @@ tags:
   - Keyboard Maestro
   - Automation
 draft: false
+youtube_id: "3rs0Z2sSZsk"
 ---
 
 In this video, I  created an AppleScript to use with a Keyboard Maestro macro to quickly get the file path of any Finder folder you have open.

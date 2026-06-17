@@ -14,6 +14,7 @@ tags:
   - Email Templates
   - Snippets
 draft: false
+youtube_id: "ft2qdVgN_8g"
 ---
 
 ## Video

@@ -12,6 +12,7 @@ tags:
   - Automation
   - Shortcut
 draft: False
+youtube_id: "0KZuRxE3R0Y"
 ---
 ## Video
 {{< youtube 0KZuRxE3R0Y >}}

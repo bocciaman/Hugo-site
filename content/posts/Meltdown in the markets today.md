@@ -11,6 +11,7 @@ tags:
   - investing journal
   - portfolio management
 draft: False
+youtube_id: "1GRRfzXGVRo"
 ---
 
 ## Video

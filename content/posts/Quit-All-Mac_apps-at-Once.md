@@ -14,6 +14,7 @@ tags:
   - Mac
   - Apple
 draft: False
+youtube_id: "xcxpCUd-LBA"
 ---
 
 ## Video

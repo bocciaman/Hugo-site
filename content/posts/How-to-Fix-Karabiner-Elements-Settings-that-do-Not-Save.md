@@ -11,6 +11,7 @@ tags:
   - Mac Mini
   - Hidden folder 
 draft: false
+youtube_id: "VIZxSum1GwA"
 ---
 
 n this video, I show you the process I went through to fix the Karabiner Elements problem of not saving any modifications. The problem was preventing me from turning the caps lock key on my Apple Magic keyboard into a Hyper key.

@@ -11,6 +11,7 @@ tags:
   - Investing
   - Investing Journey
 draft: false
+youtube_id: "NbLoZVaH-PU"
 ---
 
 ## Video

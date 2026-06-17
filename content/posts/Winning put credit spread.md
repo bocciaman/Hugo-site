@@ -11,6 +11,7 @@ tags:
   - SPY
   - Investing Journey
 draft: False
+youtube_id: "euHFE_0cH4U"
 ---
 ## Video Walkthrough
 

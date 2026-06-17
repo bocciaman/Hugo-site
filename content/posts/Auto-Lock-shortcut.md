@@ -11,6 +11,7 @@ tags:
   - Shortcut
   - iPadOS
 draft: false
+youtube_id: "C3IrhpAqGQ8"
 ---
 
 In this video, I show you how to create a shortcut for the auto-lock screen. The shortcut is useful when listening to voice memo playbacks because the iPad doesn't seem to continue playing when the screen turns off. The command needed for the shortcut to work is below. 

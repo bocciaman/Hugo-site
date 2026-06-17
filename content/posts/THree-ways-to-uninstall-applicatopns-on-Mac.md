@@ -11,6 +11,7 @@ tags:
   - Homebrew
   - AppCleaner
 draft: false
+youtube_id: "xD1it3zUVR4"
 ---
 
 ## Video

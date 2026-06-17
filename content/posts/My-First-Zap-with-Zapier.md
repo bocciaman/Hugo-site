@@ -12,6 +12,7 @@ tags:
   - online automation
   - Zapier
 draft: false
+youtube_id: "GmAr6sQLfyo"
 ---
 
 In this video, I'll be giving you an introduction to Zapier, the powerful automation tool that connects your favorite apps and services.

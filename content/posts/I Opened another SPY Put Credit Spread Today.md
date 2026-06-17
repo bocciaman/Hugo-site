@@ -11,6 +11,7 @@ tags:
   - Options investing
   - Options tracking
 draft: False
+youtube_id: "3HqbLEBFk_U"
 ---
 ## Video
 {{< youtube 3HqbLEBFk_U >}}

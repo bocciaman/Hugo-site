@@ -12,6 +12,7 @@ tags:
   - desktop
   - declutter
 draft: false
+youtube_id: "JAH_11YelCI"
 ---
 In this video I discuss Hazel, a folder monitoring application to help keep your desktop tidy and neat. 
 

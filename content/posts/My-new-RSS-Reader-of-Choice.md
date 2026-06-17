@@ -11,6 +11,7 @@ tags:
   - FreshRSS
   - Mac automation
 draft: false
+youtube_id: "lY8-3jsQ-yM"
 ---
 
 ### Navigating the Information Deluge with FreshRSS

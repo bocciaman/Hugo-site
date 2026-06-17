@@ -13,6 +13,7 @@ tags:
   - Ubuntu
   - Installation
 draft: False
+youtube_id: "rYXXUZjwvAU"
 ---
 
 ## Introduction

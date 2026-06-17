@@ -12,6 +12,7 @@ tags:
   - pipe
   - command
 draft: false
+youtube_id: "BftRV7myH8U"
 ---
 
 In this video, we will be using a simple command in the terminal to create a main folder, and then creating five subfolders within it - all in one go!

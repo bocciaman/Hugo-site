@@ -13,6 +13,7 @@ tags:
   - Productivity
   - Automation
 draft: False
+youtube_id: "omQEcWJQB9s"
 ---
 
 ## Video

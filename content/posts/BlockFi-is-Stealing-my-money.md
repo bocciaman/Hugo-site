@@ -11,6 +11,7 @@ tags:
   - BlockFi
   - Stealing
 draft: false
+youtube_id: "PbDcQj5Yv58"
 ---
 
 In this video, I show you the letter I was sent by BlockFi where they tell me they are in the process of stealing my money. They have stopped all withdraws.

@@ -10,6 +10,7 @@ tags:
   - Automaton
   - Keyboard Maestro
 draft: false
+youtube_id: "it0wyeX0FOk"
 ---
 
 {{< youtube it0wyeX0FOk >}}

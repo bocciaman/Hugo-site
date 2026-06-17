@@ -11,6 +11,7 @@ tags:
   - Daily Driver
   - new
 draft: false
+youtube_id: "vu84-jg-IWo"
 ---
 
 ## Video
