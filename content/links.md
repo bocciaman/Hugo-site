@@ -1,0 +1,33 @@
+---
+title: "Links"
+description: "A.B. Anwar's link in bio — social profiles, current recommendations, and latest YouTube video."
+date: 2026-06-20
+url: /links/
+layout: linkinbio
+draft: false
+buttons:
+  - label: "MacBook Air M1 (16GB)"
+    link: "https://amzn.to/4q017Co"
+    icon: "fa-solid fa-laptop"
+  - label: "iHealth Track Blood Pressure Monitor"
+    link: "https://amzn.to/46qqBOV"
+    icon: "fa-solid fa-heart-pulse"
+  - label: "Hollyland Lark A1 Wireless Mic"
+    link: "https://amzn.to/4kNlHBn"
+    icon: "fa-solid fa-microphone"
+  - label: "E-Book: Tame the Boring Stuff on Your Mac"
+    link: "https://amzn.to/4vxZLPh"
+    icon: "fa-solid fa-book"
+  - label: "Options Tracker Management System"
+    link: "https://bocciaman.gumroad.com/l/optsystem"
+    icon: "fa-solid fa-chart-line"
+  - label: "20% Off TextExpander Subscription"
+    link: "https://textexpander.com/?red=abdall"
+    icon: "fa-solid fa-keyboard"
+  - label: "Try Robinhood"
+    link: "https://join.robinhood.com/abdalla62"
+    icon: "fa-solid fa-feather"
+  - label: "Buy Me a Coffee"
+    link: "https://bit.ly/3PxF1o0"
+    icon: "fa-solid fa-mug-hot"
+---

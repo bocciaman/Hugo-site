@@ -86,6 +86,11 @@ name = "Bluesky"
 icon = "fa-brands fa-bluesky"
 link = "https://bsky.app/profile/bocciaman.bsky.social"
 
+[[social]]
+name = "TikTok"
+icon = "fa-brands fa-tiktok"
+link = "https://www.tiktok.com/@automationmaestro"
+
 
 ######################## Site Variables #########################
 
