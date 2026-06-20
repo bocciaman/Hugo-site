@@ -22,7 +22,7 @@
     body{
       margin:0;
       font-family: "PT Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-      background: linear-gradient(180deg, var(--secondary) 0%, var(--body-bg) 320px);
+      background: var(--body-bg);
       color: var(--text-dark);
       min-height: 100vh;
     }
@@ -132,9 +132,9 @@
 <body>
   <div class="lib-wrap">
 
-    <img class="lib-avatar" src="{{ "img/logo.png" | absURL }}" alt="{{ site.Params.author }}">
-    <h1 class="lib-name">{{ site.Params.author | default site.Title }}</h1>
-    <p class="lib-tagline">Mac Automation &middot; iOS Shortcuts &middot; Productivity</p>
+    <img class="lib-avatar" src="{{ "img/logo.png" | absURL }}" alt="{{ site.Title }}">
+    <h1 class="lib-name">{{ site.Title }}</h1>
+    <p class="lib-tagline">Mac Automation &middot; Options Investing &middot; Productivity</p>
 
     <div class="lib-handles">
       {{ range site.Params.social }}
