@@ -8,7 +8,7 @@
   <link rel="icon" href="{{ site.Params.favicon | absURL }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <meta name="robots" content="noindex, follow">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" crossorigin="anonymous" defer="defer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     :root{
       /* Palette pulled from the Boccia Man logo (images/transparent.png) */
@@ -50,20 +50,20 @@
       font-size: .95rem;
       color: var(--text);
     }
-    .lib-social{
+    .lib-handles{
       display:flex;
       justify-content:center;
       flex-wrap: wrap;
       gap: 14px;
       margin-bottom: 28px;
     }
-    .lib-social a{
+    .lib-handles a{
       color: var(--text-dark);
       font-size: 1.25rem;
       text-decoration:none;
       transition: color .15s ease, transform .15s ease;
     }
-    .lib-social a:hover{
+    .lib-handles a:hover{
       color: var(--primary);
       transform: translateY(-2px);
     }
@@ -136,7 +136,7 @@
     <h1 class="lib-name">{{ site.Params.author | default site.Title }}</h1>
     <p class="lib-tagline">Mac Automation &middot; iOS Shortcuts &middot; Productivity</p>
 
-    <div class="lib-social">
+    <div class="lib-handles">
       {{ range site.Params.social }}
         <a href="{{ .link | safeURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .name }}">
           <i class="{{ .icon }}"></i>
