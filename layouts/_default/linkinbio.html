@@ -11,11 +11,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" crossorigin="anonymous" defer="defer"></script>
   <style>
     :root{
-      --primary: {{ site.Params.variables.primary_color | default "#47c4f1" }};
-      --secondary: {{ site.Params.variables.secondary_color | default "#9AC4F8" }};
-      --text-dark: {{ site.Params.variables.text_color_dark | default "#222222" }};
-      --text: {{ site.Params.variables.text_color | default "#666666" }};
-      --body-bg: {{ site.Params.variables.body_color | default "#fff" }};
+      /* Palette pulled from the Boccia Man logo (images/transparent.png) */
+      --primary: #232058;
+      --secondary: #4b4789;
+      --text-dark: #333333;
+      --text: #666666;
+      --body-bg: #fff;
     }
     *{ box-sizing: border-box; }
     body{
@@ -131,7 +132,7 @@
 <body>
   <div class="lib-wrap">
 
-    <img class="lib-avatar" src="{{ "img/AB2025.jpeg" | absURL }}" alt="{{ site.Params.author }}">
+    <img class="lib-avatar" src="{{ "img/logo.png" | absURL }}" alt="{{ site.Params.author }}">
     <h1 class="lib-name">{{ site.Params.author | default site.Title }}</h1>
     <p class="lib-tagline">Mac Automation &middot; iOS Shortcuts &middot; Productivity</p>
 
