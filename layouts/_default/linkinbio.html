@@ -153,15 +153,36 @@
       {{ end }}
     </div>
 
-    {{ $videoPages := where site.RegularPages "Section" "posts" }}
-    {{ $videoPages = where $videoPages "Params.youtube_id" "!=" nil }}
-    {{ $videoPages = $videoPages.ByDate.Reverse }}
-    {{ with $videoPages }}
-      {{ $latest := index . 0 }}
+    {{/* Primary source: data/latest_video.json, generated at build time by
+         scripts/fetch-latest-video.js from the AutomationMaestro and ABInvests
+         YouTube channel feeds (Shorts excluded). */}}
+    {{ $videoID := "" }}
+    {{ $videoTitle := "" }}
+    {{ with site.Data.latest_video }}
+      {{ if .video_id }}
+        {{ $videoID = .video_id }}
+        {{ $videoTitle = .title }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Fallback: if the build-time fetch failed or found nothing, use the
+         most recent blog post that has a youtube_id set. */}}
+    {{ if not $videoID }}
+      {{ $videoPages := where site.RegularPages "Section" "posts" }}
+      {{ $videoPages = where $videoPages "Params.youtube_id" "!=" nil }}
+      {{ $videoPages = $videoPages.ByDate.Reverse }}
+      {{ with $videoPages }}
+        {{ $latest := index . 0 }}
+        {{ $videoID = $latest.Params.youtube_id }}
+        {{ $videoTitle = $latest.Title }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $videoID }}
       <div class="lib-video">
         <h2>Latest Video</h2>
         <div class="lib-video-frame">
-          <iframe src="https://www.youtube.com/embed/{{ $latest.Params.youtube_id }}" title="{{ $latest.Title }}" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/{{ $videoID }}" title="{{ $videoTitle }}" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     {{ end }}
