@@ -3,7 +3,6 @@ title: Privacy Policy
 description: Privacy Policy
 Draft: false
 ---
-# Privacy Policy
 
 A.B. Anwar (“we,” “us,” or “our”) operates the website https://abanwar.com (the “Service”).
 

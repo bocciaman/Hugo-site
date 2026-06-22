@@ -4,8 +4,6 @@ description: Terms of Service
 Draft: false
 ---
 
-# Terms of Service
-
 **Last updated:** December 18, 2025
 
 Please read these Terms of Service (“Terms”, “Terms of Service”) carefully before using https://abanwar.com (the “Service”) operated by A.B. Anwar (“us”, “we”, or “our”).

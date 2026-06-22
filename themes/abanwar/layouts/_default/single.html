@@ -16,7 +16,7 @@
 
       <div class="{{ if $has_sidebar }}col-lg-8{{ else }}col-lg-10{{ end }} {{ if eq $sidebar `left` }}order-1 order-lg-2{{ end }}">
         <div class="block shadow mb-4">
-          <h2>{{ .Title | markdownify }}</h2>
+          <h1>{{ .Title | markdownify }}</h1>
           <div class="mb-4 mt-3 post-meta">
             <a href="{{ `author/` | absLangURL }}{{ .Params.Author | urlize | lower }}">{{ .Params.Author | title }}</a> <span class="mx-2">|</span> {{ .PublishDate.Format "Jan 2, 2006" }}<span class="mx-2">|</span> {{ range .Params.Categories }}
             <a href="{{ `categories/` | absLangURL }}{{ . | urlize | lower }}">{{ . | title }}</a>
@@ -79,6 +79,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
+        <h1>{{ .Title | markdownify }}</h1>
         <div class="content">{{.Content}}</div>
       </div>
     </div>

@@ -14,7 +14,6 @@ tags:
   - Trading tracker
 draft: False
 ---
-# Options Trading Management System
 
 <p align="center">
   <img src="/img/bundleimage.webp" alt="Options Trading Management System Bundle" />

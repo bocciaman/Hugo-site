@@ -7,7 +7,7 @@
         <ul class="list-unstyled category-list list-inline align-items-center">
         {{ if eq .Permalink (`tags/` | absLangURL)}}
         <li class="d-block mb-5 pb-3 text-center">
-          <h3>Tags</h3>
+          <h1>Tags</h1>
         </li>
         {{ range site.Taxonomies.tags.ByCount }}
         <li class="category-item list-inline-item text-center shadow">
@@ -17,7 +17,7 @@
         {{ end }}
         {{ if eq .Permalink (`categories/` | absLangURL)}}
         <li class="d-block mb-5 pb-3 text-center">
-          <h3>Categories</h3>
+          <h1>Categories</h1>
         </li>
         {{ range site.Taxonomies.categories.ByCount }}
         <li class="category-item list-inline-item text-center shadow">
