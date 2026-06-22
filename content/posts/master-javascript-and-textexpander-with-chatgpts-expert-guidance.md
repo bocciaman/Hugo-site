@@ -1,5 +1,5 @@
 ---
-title: "Master Javascript and Textexpander With Chatgpts Expert Guidance"
+title: "Mastering JavaScript & TextExpander With ChatGPT's Help"
 description: "Using ChatGBT and Javascript to create a TextExpander snippet"
 date: 2023-04-16
 url: /master-javascript-and-textexpander-with-chatgpts-expert-guidance/

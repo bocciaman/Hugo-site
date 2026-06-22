@@ -1,5 +1,5 @@
 ---
-title: "Fixing Right to Left Text Issues on IPhone When Using TextExpander"
+title: "Fixing Right-to-Left Text Issues With TextExpander on iPhone"
 description: "How I fixed Arabic and right-to-left text alignment problems on iOS when using TextExpander."
 date: 2026-02-09T20:30:17-08:00
 url: /fixing-right-to-left-text-issues-on-iphone-when-using-textexpander/

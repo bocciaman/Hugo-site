@@ -1,5 +1,5 @@
 ---
-title: "Why My Options Trades Are Down (Even Above the Strike) | Portfolio Update 02-24-2026"
+title: "Why My Options Trades Are Down Even Above the Strike"
 description: "Portfolio update explaining why options trades show losses even when stocks are above the strike price, plus new positions in CLM and CRF for monthly income strategy."
 date: 2026-02-24
 url: portfolio-update-02-24-2026-why-options-trades-are-down

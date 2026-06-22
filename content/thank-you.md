@@ -3,6 +3,7 @@ title: "Thank You"
 description: "Post email message."
 draft: false
 url: "/thank-you/"
+noindex: true
 ---
 
 Thanks — your message was sent successfully.  

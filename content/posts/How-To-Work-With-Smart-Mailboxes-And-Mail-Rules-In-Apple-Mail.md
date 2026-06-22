@@ -1,5 +1,5 @@
 ---
-title: "How to Work With Smart Mailboxes and Mail Rules in Apple Mail"
+title: "Smart Mailboxes & Mail Rules in Apple Mail"
 description: "A tutorial on how to setup mail rules and work with Smart mailboxes in Apple Mail"
 date: 2022-07-26
 url: /How-To-Work-With-Smart-Mailboxes-And-Mail-Rules-In-Apple-Mail/
