@@ -66,57 +66,71 @@
     }
   </style>
 
-  <div class="container">
-    <!-- Top row: logo | footer menu | social -->
-    <div class="row align-items-center">
-      <!-- Logo -->
-      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+  <div class="container-fluid px-4 px-lg-5">
+    <!-- Bookend layout: logo (left, facing right) ... centered content ... mirrored logo (right, facing left) -->
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+
+      <!-- Logo (left, facing right) -->
+      <div class="flex-shrink-0 mb-3 text-center">
         <a href="{{ site.Params.footer_image_link }}" class="d-block">
           <img
             loading="lazy"
-            src="{{ site.Params.footer_image }}"
+            src="/images/transparent.png"
             class="img-fluid"
+            style="max-width:200px;"
             alt="{{ site.Title }}"
           />
         </a>
       </div>
 
-      <!-- Footer menu -->
-      <div class="col-lg-4 text-center mb-4 mb-lg-0">
-        <ul class="list-inline mb-0">
+      <!-- Affiliate Links + footer menu + copyright + social, centered between the two logos -->
+      <div class="mb-3">
+        <div class="d-flex flex-wrap align-items-baseline gap-3 mb-1">
+          <strong>Affiliate Links</strong>
           {{ range site.Menus.footer }}
-            <li class="list-inline-item">
-              <a class="footer-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
+            <a class="footer-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
           {{ end }}
-        </ul>
+        </div>
+
+        <div class="mb-3">
+          <div><a class="footer-menu-link py-0" href="https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus" target="_blank" rel="noopener noreferrer">Try TextExpander</a></div>
+          <div><a class="footer-menu-link py-0" href="https://join.robinhood.com/abdalla62" target="_blank" rel="noopener noreferrer">Try Robinhood</a></div>
+        </div>
+
+        <div class="d-flex flex-wrap align-items-center gap-4">
+          <span class="text-muted small">
+            Copyright &copy; {{ dateFormat "2006" now }}
+            {{ site.Params.copyright | markdownify }}
+          </span>
+          <ul class="list-inline social-icon mb-0 d-flex gap-3">
+            {{ range site.Params.social }}
+              <li class="list-inline-item m-0">
+                <a
+                  href="{{ .link | safeURL }}"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="social-profile"
+                >
+                  <i class="{{ .icon }}"></i>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
       </div>
 
-      <!-- Social icons -->
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <ul class="list-inline social-icon mb-0 d-flex justify-content-lg-end justify-content-center gap-3">
-          {{ range site.Params.social }}
-            <li class="list-inline-item m-0">
-              <a
-                href="{{ .link | safeURL }}"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label="social-profile"
-              >
-                <i class="{{ .icon }}"></i>
-              </a>
-            </li>
-          {{ end }}
-        </ul>
+      <!-- Mirrored logo (right, facing left) -->
+      <div class="flex-shrink-0 mb-3 text-center">
+        <a href="{{ site.Params.footer_image_link }}" class="d-block">
+          <img
+            loading="lazy"
+            src="/images/transparent.png"
+            class="img-fluid"
+            style="max-width:200px; transform:scaleX(-1);"
+            alt=""
+          />
+        </a>
       </div>
-    </div>
-
-    <!-- Bottom row: copyright -->
-    <div class="text-center mt-4">
-      <span>
-        Copyright &copy; {{ dateFormat "2006" now }}
-        {{ site.Params.copyright | markdownify }}
-      </span>
     </div>
   </div>
 </footer>
