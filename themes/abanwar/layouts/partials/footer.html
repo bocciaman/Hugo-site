@@ -67,79 +67,92 @@
   </style>
 
   <div class="container">
-    <!-- Top row: logo | footer menu | social -->
+    <!-- Top row: logo | affiliate programs + footer menu | social + mirrored logo -->
     <div class="row align-items-center">
-      <!-- Logo -->
-      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+      <!-- Logo (left, facing right) -->
+      <div class="col-lg-2 text-center text-lg-start mb-4 mb-lg-0">
         <a href="{{ site.Params.footer_image_link }}" class="d-block">
           <img
             loading="lazy"
             src="{{ site.Params.footer_image }}"
             class="img-fluid"
+            style="max-width:140px;"
             alt="{{ site.Title }}"
           />
         </a>
       </div>
 
-      <!-- Footer menu -->
-      <div class="col-lg-4 text-center mb-4 mb-lg-0">
-        <ul class="list-inline mb-0">
-          {{ range site.Menus.footer }}
-            <li class="list-inline-item">
-              <a class="footer-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
+      <!-- Affiliate Programs + footer menu -->
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <div class="row">
+          {{ if site.Params.googlead.enable }}
+          <div class="col-md-5 text-center text-md-start mb-3 mb-md-0">
+            <h6 class="mb-2">Affiliate Programs</h6>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a
+                  class="footer-menu-link"
+                  href="https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Try TextExpander</a>
+              </li>
+              <li>
+                <a
+                  class="footer-menu-link"
+                  href="https://join.robinhood.com/abdalla62"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Try Robinhood</a>
+              </li>
+            </ul>
+          </div>
           {{ end }}
-        </ul>
+
+          <div class="col-md-7 text-center text-md-start">
+            <ul class="list-inline mb-0">
+              {{ range site.Menus.footer }}
+                <li class="list-inline-item">
+                  <a class="footer-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <!-- Social icons -->
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <ul class="list-inline social-icon mb-0 d-flex justify-content-lg-end justify-content-center gap-3">
-          {{ range site.Params.social }}
-            <li class="list-inline-item m-0">
-              <a
-                href="{{ .link | safeURL }}"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label="social-profile"
-              >
-                <i class="{{ .icon }}"></i>
-              </a>
-            </li>
-          {{ end }}
-        </ul>
+      <!-- Mirrored logo (right, facing left) + social icons (further right) -->
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <div class="d-flex align-items-center justify-content-lg-end justify-content-center gap-3">
+          <a href="{{ site.Params.footer_image_link }}" class="d-none d-lg-block flex-shrink-0">
+            <img
+              loading="lazy"
+              src="{{ site.Params.footer_image }}"
+              class="img-fluid"
+              style="max-width:80px; transform:scaleX(-1);"
+              alt=""
+            />
+          </a>
+          <ul class="list-inline social-icon mb-0 d-flex gap-3">
+            {{ range site.Params.social }}
+              <li class="list-inline-item m-0">
+                <a
+                  href="{{ .link | safeURL }}"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="social-profile"
+                >
+                  <i class="{{ .icon }}"></i>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
       </div>
     </div>
-
-    <!-- Affiliate Programs row -->
-    {{ if site.Params.googlead.enable }}
-    <div class="row justify-content-center mt-2">
-      <div class="col-lg-4 text-center">
-        <h6 class="mb-2">Affiliate Programs</h6>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a
-              class="footer-menu-link"
-              href="https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Try TextExpander</a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              class="footer-menu-link"
-              href="https://join.robinhood.com/abdalla62"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Try Robinhood</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    {{ end }}
 
     <!-- Bottom row: copyright -->
-    <div class="text-center mt-4">
+    <div class="text-center mt-1">
       <span>
         Copyright &copy; {{ dateFormat "2006" now }}
         {{ site.Params.copyright | markdownify }}
