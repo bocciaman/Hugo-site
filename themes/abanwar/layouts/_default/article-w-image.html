@@ -7,8 +7,7 @@
   {{ end }}
   {{ if .Params.image }}
   <div class="col-md-5">
-    <!--a href="{{ .Permalink }}"><img loading="lazy" class="w-100" src="{{ .Params.image | absURL }}" alt="post-image"></a-->
-    <a href="{{ .Permalink }}"><img class="w-100" src="{{ .Params.image | absURL }}" /></a>
+    <a href="{{ .Permalink }}"><img loading="lazy" class="w-100" width="1280" height="720" src="{{ .Params.image | absURL }}" alt="{{ .Title | markdownify }}"></a>
   </div>
   {{ end }}
   <div class="col-md-7">
