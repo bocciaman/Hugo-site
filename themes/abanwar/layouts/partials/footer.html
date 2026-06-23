@@ -67,10 +67,10 @@
   </style>
 
   <div class="container">
-    <!-- Top row: logo | footer menu | social -->
+    <!-- Top row: logo | affiliate programs + footer menu | social -->
     <div class="row align-items-center">
-      <!-- Logo -->
-      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+      <!-- Logo (narrower column, pushed to the far left) -->
+      <div class="col-lg-2 text-center text-lg-start mb-4 mb-lg-0 ps-lg-0">
         <a href="{{ site.Params.footer_image_link }}" class="d-block">
           <img
             loading="lazy"
@@ -81,19 +81,29 @@
         </a>
       </div>
 
-      <!-- Footer menu -->
-      <div class="col-lg-4 text-center mb-4 mb-lg-0">
-        <ul class="list-inline mb-0">
-          {{ range site.Menus.footer }}
-            <li class="list-inline-item">
-              <a class="footer-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
+      <!-- Affiliate Programs (left of menu) + footer menu -->
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <div class="d-flex flex-wrap align-items-start justify-content-center gap-4">
+          {{ if site.Params.googlead.enable }}
+          <div class="text-center text-md-start">
+            <h6 class="mb-1">Affiliate Programs</h6>
+            <div><a class="footer-menu-link py-0" href="https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus" target="_blank" rel="noopener noreferrer">Try TextExpander</a></div>
+            <div><a class="footer-menu-link py-0" href="https://join.robinhood.com/abdalla62" target="_blank" rel="noopener noreferrer">Try Robinhood</a></div>
+          </div>
           {{ end }}
-        </ul>
+
+          <ul class="list-inline mb-0">
+            {{ range site.Menus.footer }}
+              <li class="list-inline-item">
+                <a class="footer-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
       </div>
 
-      <!-- Social icons -->
-      <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Social icons (pushed further right, flush to the edge) -->
+      <div class="col-lg-3 mb-4 mb-lg-0 pe-lg-0">
         <ul class="list-inline social-icon mb-0 d-flex justify-content-lg-end justify-content-center gap-3">
           {{ range site.Params.social }}
             <li class="list-inline-item m-0">
