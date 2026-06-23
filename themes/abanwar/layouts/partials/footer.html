@@ -70,7 +70,7 @@
     <!-- Top row: logo | footer menu | social -->
     <div class="row align-items-center">
       <!-- Logo -->
-      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+      <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
         <a href="{{ site.Params.footer_image_link }}" class="d-block">
           <img
             loading="lazy"
@@ -82,14 +82,14 @@
       </div>
 
       <!-- Footer menu -->
-      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+      <div class="col-lg-6 text-center mb-4 mb-lg-0">
         <div class="d-inline-flex align-items-start text-start">
-          <div class="me-3" style="white-space:nowrap;">
+          <div class="me-4" style="white-space:nowrap;">
             <strong class="d-block py-0" style="padding:8px 12px;">Affiliate Links</strong>
             <div><a class="footer-menu-link py-0" href="https://textexpander.com/?red=abdall&utm_source=abdall&utm_medium=revshare&utm_affiliate_network=reditus" target="_blank" rel="noopener noreferrer">Try TextExpander</a></div>
             <div><a class="footer-menu-link py-0" href="https://join.robinhood.com/abdalla62" target="_blank" rel="noopener noreferrer">Try Robinhood</a></div>
           </div>
-          <ul class="list-inline mb-0">
+          <ul class="list-inline mb-0" style="white-space:nowrap;">
             {{ range site.Menus.footer }}
               <li class="list-inline-item">
                 <a class="footer-menu-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
@@ -100,7 +100,7 @@
       </div>
 
       <!-- Social icons -->
-      <div class="col-lg-4 mb-4 mb-lg-0">
+      <div class="col-lg-3 mb-4 mb-lg-0">
         <ul class="list-inline social-icon mb-0 d-flex justify-content-lg-end justify-content-center gap-3">
           {{ range site.Params.social }}
             <li class="list-inline-item m-0">
