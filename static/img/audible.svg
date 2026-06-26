@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Audible">
+  <defs>
+    <linearGradient id="audibleGrad" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FBA919"/>
+      <stop offset="1" stop-color="#F47C20"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="256" fill="url(#audibleGrad)"/>
+  <!-- open book -->
+  <path d="M96 196 L256 248 L416 196 L416 222 L256 274 L96 222 Z" fill="#ffffff"/>
+  <!-- sound-wave arcs -->
+  <g fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round">
+    <path d="M190 226 A70 70 0 0 0 322 226"/>
+    <path d="M168 214 A100 100 0 0 0 344 214"/>
+    <path d="M150 202 A130 130 0 0 0 362 202"/>
+  </g>
+</svg>
