@@ -84,6 +84,12 @@ If you maintain an options journal or trade tracker, this is where the automatio
 
 It’s a small change, but it removes several repetitive steps from a process you likely perform often.
 
+## Why the 60 and 21 DTE Dates Matter
+
+For anyone wondering why those two specific numbers, here's the quick context — though again, this post is about the automation, not investing advice. Many options sellers structure trades around a window: they open positions with a set number of days to expiration and then have a planned "management" date partway through, rather than holding every trade to the bitter end. The 60-day mark gives the position room to work, and the 21-day mark is a common point to review, roll, or close a trade before the final stretch where price behavior can get jumpy. Whatever your exact numbers are, the principle is the same: you have a couple of dates per trade that you need to know precisely and consistently. That repetition — same calculation, every single trade — is exactly the kind of thing that's begging to be automated, and it's why a tiny date calculator pays off far more than its size suggests.
+
+The nice thing about building it yourself with AppleScript is that the numbers aren't locked in. If your strategy uses 45 and 21, or 90 and 30, you just change the values in the script and it calculates your dates instead of mine. The tool bends to your system, not the other way around.
+
 ## Why Automation Matters
 
 This calculator is a great example of how automation doesn’t need to be complex to be effective. The script is focused on doing one thing well, and that’s exactly why it works.

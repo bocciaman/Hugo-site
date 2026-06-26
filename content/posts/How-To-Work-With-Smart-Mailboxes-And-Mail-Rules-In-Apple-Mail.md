@@ -60,6 +60,29 @@ Here are some tips for getting the most out of Smart Mailboxes:
 
 4. Archive old emails: You can create a Smart Mailbox that displays all emails that are older than a certain date. This can help you identify old emails that you no longer need and archive them to reduce clutter.
 
+## Mail Rules: The Other Half of the Equation
+
+Smart Mailboxes are fantastic for *viewing* your mail differently, but they don't actually change anything — they're filtered views, not actions. That's where **Mail Rules** come in, and the two features are best understood as partners. A Smart Mailbox shows you a slice of your existing mail; a Rule actively *does something* to messages as they arrive. If Smart Mailboxes are about organizing what you see, Rules are about automating what happens.
+
+With Rules, Apple Mail can automatically move, flag, mark as read, forward, or color-code incoming emails based on criteria you set — much like the criteria you'd use for a Smart Mailbox, but with real actions attached. For example, you could create a Rule that automatically files every newsletter into a "Reading" folder, or one that flags any email from your boss in red the moment it lands.
+
+### How to Create a Mail Rule
+
+Setting up a Rule is just as approachable as a Smart Mailbox:
+
+1. Open Apple Mail and go to **Mail → Settings** (or Preferences on older versions).
+2. Click the **Rules** tab, then click **Add Rule**.
+3. Give your rule a clear description so you'll remember what it does.
+4. Set the conditions — the same kind of attributes as Smart Mailboxes (From, Subject, and so on), and you can require that *any* or *all* conditions match.
+5. Choose the actions to perform when a message matches: move it to a mailbox, mark it as read, flag it, forward it, delete it, play a sound — Mail offers a long list.
+6. Click **OK** to save. Mail will ask if you want to apply the rule to existing messages in your inbox, which is a handy way to clean up retroactively.
+
+From that point on, every new message that matches gets handled automatically, before you even see it.
+
+### Smart Mailboxes vs. Rules: When to Use Which
+
+The key distinction is non-destructive viewing versus active processing. Reach for a **Smart Mailbox** when you want a live, always-up-to-date view of certain messages without moving them out of their real folders — perfect for "show me everything from my team" or "all unread flagged mail." Reach for a **Rule** when you want mail to be *acted on* automatically — filed, flagged, or forwarded — so your inbox stays manageable without manual sorting. Used together, they're a genuinely powerful combo: Rules keep your mail tidy as it arrives, and Smart Mailboxes give you flexible windows into it afterward.
+
 ## Conclusion
 
-Smart Mailboxes are a powerful feature of Apple Mail that can help you organize your emails and reduce clutter. By creating custom filters based on specific criteria, you can quickly and easily find the emails that are most important to you. So if you're an Apple Mail user, be sure to give Smart Mailboxes a try and see how they can improve your email management.
+Smart Mailboxes and Mail Rules are two of the most useful features in Apple Mail, and they complement each other beautifully. Smart Mailboxes let you create custom, real-time filtered views so you can instantly find the messages that matter most, while Rules automate the actual handling of incoming mail so your inbox more or less organizes itself. If you're an Apple Mail user drowning in messages, set up a couple of each — a Smart Mailbox for your most important senders and a Rule or two to auto-file the noise — and you'll quickly wonder how you managed without them. Give them a try and take control of your inbox.
