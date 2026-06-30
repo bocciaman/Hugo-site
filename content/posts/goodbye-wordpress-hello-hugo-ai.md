@@ -11,6 +11,7 @@ tags:
   - Hugo
   - Claude AI
 draft: false
+youtube_id: dnzkGKNKDOg
 ---
 ## Video
 {{< youtube dnzkGKNKDOg >}}
