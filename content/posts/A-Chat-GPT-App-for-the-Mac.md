@@ -1,5 +1,6 @@
 ---
 title: "A ChatGPT App for the Mac"
+author: "A.B. Anwar"
 description: "A hands-on look at the native ChatGPT desktop app for Mac — how it compares to the web version, what it handles well, and whether it earns a permanent spot in your Dock."
 date: 2024-05-27
 url: /A-Chat-GPT-App-for-the-Mac/

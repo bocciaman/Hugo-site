@@ -1,5 +1,6 @@
 ---
 title: "Mastering JavaScript & TextExpander With ChatGPT's Help"
+author: "A.B. Anwar"
 description: "How I used ChatGPT to write a JavaScript snippet for TextExpander that auto-generates a formatted support ticket — letting AI handle the code so you get the result."
 date: 2023-04-16
 url: /master-javascript-and-textexpander-with-chatgpts-expert-guidance/

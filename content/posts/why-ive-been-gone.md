@@ -1,5 +1,6 @@
 ---
 title: "Why I've Been Gone"
+author: "A.B. Anwar"
 description: "After more than a year away from the channel, I share the personal reasons behind my absence and why I'm returning to Mac automation and investing content in 2025."
 date: 2025-12-09T15:19:22+03:00
 url: /why-ive-been-gone/

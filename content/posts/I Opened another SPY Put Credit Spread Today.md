@@ -1,5 +1,6 @@
 ---
 title: "I Opened Another SPY Put Credit Spread Today"
+author: "A.B. Anwar"
 description: "A step-by-step breakdown of the SPY put credit spread I opened today, why I took the trade, and how I track every position using a Google Sheets journal."
 date: 2026-01-26T11:33:22-08:00
 url: /i-opened-another-spy-put-credit-spread-today/

@@ -1,5 +1,6 @@
 ---
 title: "I'm a TextExpander Affiliate"
+author: "A.B. Anwar"
 description: "I'm now a TextExpander affiliate — the Mac text-expansion app that lets you type long blocks of text, dates, and dynamic snippets from short abbreviations you define."
 date: 2025-12-11T17:14:14+03:00
 url: /im-a-textexpander-affiliate/

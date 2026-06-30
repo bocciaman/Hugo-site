@@ -1,5 +1,6 @@
 ---
 title: "Daily Automation Apps I Use"
+author: "A.B. Anwar"
 description: "Four Mac automation apps I use every day: Hazel for file organization, TextExpander for text snippets, Keyboard Maestro for macros, and Bunch for app environments."
 date: 2023-12-28
 url: /Daily-Automation-Apps-I-Use/

@@ -1,5 +1,6 @@
 ---
 title: "Upgrading to Alfred 5"
+author: "A.B. Anwar"
 description: "A step-by-step walkthrough of upgrading from Alfred 4 to Alfred 5 — what's new, how to migrate your workflows and license, and one important gotcha to avoid."
 date: 2022-08-11
 url: /Upgrading-to-Alfred-5/

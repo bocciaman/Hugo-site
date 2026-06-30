@@ -1,5 +1,6 @@
 ---
 title: "My Options DTE Calculator Explained"
+author: "A.B. Anwar"
 description: "I built an AppleScript-powered options DTE calculator that instantly shows your 60-day and 21-day management dates — removing the mental overhead of manual date math."
 date: 2026-02-04T03:07:14-08:00
 url: /my-options-dte-calculator-explained/

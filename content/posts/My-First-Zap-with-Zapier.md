@@ -1,5 +1,6 @@
 ---
 title: "My First Zap With Zapier"
+author: "A.B. Anwar"
 description: "My introduction to Zapier — what it is, how it connects web apps that can't communicate natively, and a walkthrough of the very first automation I built with it."
 date: 2023-02-28
 url: /My-First-Zap-with-Zapier/

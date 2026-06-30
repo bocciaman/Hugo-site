@@ -1,5 +1,6 @@
 ---
 title: "How to Run Shortcuts Through Alfred"
+author: "A.B. Anwar"
 description: "How to trigger any Apple Shortcut directly from the Alfred search bar using a free Alfred workflow — combining Mac Shortcuts speed with Alfred's instant-access launcher."
 date: 2022-08-02
 url: /How-to-Run-Shortcuts-Through-Alfred/

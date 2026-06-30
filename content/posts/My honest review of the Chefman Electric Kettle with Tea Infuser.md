@@ -1,5 +1,6 @@
 ---
 title: "My Honest Review of the Chefman Electric Kettle"
+author: "A.B. Anwar"
 description: "I bought the Chefman Electric Kettle with Tea Infuser from Amazon. Here’s my real-world experience using it daily for tea and coffee."
 date: 2026-01-25T09:44:02-08:00
 url: /my-honest-review-of-the-chefman-electric-kettle-with-tea-infuser/

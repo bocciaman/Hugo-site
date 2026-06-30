@@ -1,5 +1,6 @@
 ---
 title: "A Must-Have When Furnishing My New Apartment: APC 400VA UPS"
+author: "A.B. Anwar"
 description: "While furnishing my new apartment, I added a compact APC 400VA Uninterruptible Power Supply to protect my electronics and keep my internet running during power outages."
 date: 2026-01-26T11:33:22-08:00
 url: /apc-400va-ups-new-apartment/

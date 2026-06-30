@@ -1,5 +1,6 @@
 ---
 title: "Keyboard Maestro Automates Better Writing with Grammarly"
+author: "A.B. Anwar"
 description: "A Keyboard Maestro macro that pulls clipboard text, opens Grammarly, and pastes it in automatically for faster editing on your Mac."
 date: 2023-01-29
 url: /writing-with-grammarly/
@@ -14,6 +15,7 @@ youtube_id: "it0wyeX0FOk"
 ---
 ---
 title: "Keyboard Maestro Automates Better Writing with Grammarly"
+author: "A.B. Anwar"
 description: "Description goes here"
 date: 2023-01-29
 url: /writing-with-grammarly/

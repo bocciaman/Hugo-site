@@ -1,5 +1,6 @@
 ---
 title: "Track Weight Loss and Books Read With These 2 Shortcuts"
+author: "A.B. Anwar"
 description: "Two custom iPhone Shortcuts I built — one logs daily weight to Apple Health, the other tracks books read in Notes — no apps, no subscriptions, just clean automation."
 date: 2026-06-02T03:27:35-07:00
 url: /track-weight-loss-and-books-read-with-these-2-shortcuts/

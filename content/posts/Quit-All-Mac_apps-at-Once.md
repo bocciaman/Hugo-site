@@ -1,5 +1,6 @@
 ---
 title: "Quit All Mac Apps at Once"
+author: "A.B. Anwar"
 description: "Two ways to quit all open Mac apps at once: a Keyboard Maestro macro for power users and an Apple Shortcuts approach for everyone else, with a safe exclusion list."
 date: 2023-12-16
 url: /Quit-All-Mac_apps-at-Once/

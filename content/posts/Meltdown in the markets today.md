@@ -1,5 +1,6 @@
 ---
 title: "Meltdown in the Markets Today"
+author: "A.B. Anwar"
 description: "A candid look at a rough market day, how my SPY and QQQ options positions reacted, and the bigger questions I’m wrestling with as an options trader."
 date: 2026-01-29T13:23:33-08:00
 url: /meltdown-in-the-markets-today/

@@ -11,15 +11,11 @@
 
 <title>{{ .Title }}</title>
 
-<meta name="author" content="{{ site.Params.author }}" />
+<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ site.Params.author }}{{ end }}" />
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}" />
 
 {{ with site.Params.keywords }}
 <meta name="keywords" content="{{ . }}" />
-{{ end }}
-
-{{ with site.Params.author }}
-<meta name="author" content="{{ . }}" />
 {{ end }}
 
 {{ hugo.Generator }}

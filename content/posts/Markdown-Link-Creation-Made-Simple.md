@@ -1,5 +1,6 @@
 ---
 title: "Markdown Link Creation Made Simple"
+author: "A.B. Anwar"
 description: "An Alfred workflow using AppleScript that grabs the title and URL of the current Safari tab and instantly formats it as a Markdown link — ready to paste anywhere."
 date: 2024-04-01
 url: /Markdown-Link-Creation-Made-Simple/

@@ -1,5 +1,6 @@
 ---
 title: "PSA Be Careful When Using Google Authenticator"
+author: "A.B. Anwar"
 description: "A cautionary tale: Google Authenticator ties 2FA codes to your device, so switching phones can lock you out of accounts permanently. Here's what happened to me."
 date: 2022-11-14
 url: /PSA-Be-careful-when-using-Google-Authenticator/

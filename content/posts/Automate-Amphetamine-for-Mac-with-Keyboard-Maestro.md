@@ -1,5 +1,6 @@
 ---
 title: "Automate Amphetamine for Mac With Keyboard Maestro"
+author: "A.B. Anwar"
 description: "Use AppleScript and Keyboard Maestro to automate Amphetamine on your Mac — trigger a timed stay-awake session with a single keyboard shortcut, no menu-bar clicking required."
 date: 2024-05-12
 url: /Automate-Amphetamine-for-Mac-with-Keyboard-Maestro/

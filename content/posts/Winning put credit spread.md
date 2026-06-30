@@ -1,5 +1,6 @@
 ---
 title: "Winning Put Credit Spread"
+author: "A.B. Anwar"
 description: "I share my Monday put credit spread on the blog right after posting on YouTube"
 date: 2026-02-02T20:59:03-08:00
 url: /winning-put-credit-spread/

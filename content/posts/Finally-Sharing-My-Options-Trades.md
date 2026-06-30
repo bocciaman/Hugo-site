@@ -1,5 +1,6 @@
 ---
 title: "Finally Sharing My Options Trades"
+author: "A.B. Anwar"
 description: "I'm back after months away — walking through my four open put credit spread positions on SPY and QQQ and kicking off a new options investing series on the channel."
 date: 2026-01-18T08:22:23-08:00
 url: /finally-sharing-my-options-trades/

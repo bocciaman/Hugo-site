@@ -1,5 +1,6 @@
 ---
 title: "Shortcut Auto Lock on Ipad"
+author: "A.B. Anwar"
 description: ""
 date: 2023-02-24
 url: /shortcut-auto-lock-on-ipad/

@@ -1,5 +1,6 @@
 ---
 title: "How to Remote Control Your Mac With Keyboard Maestro"
+author: "A.B. Anwar"
 description: "How to trigger any Keyboard Maestro macro on your Mac from your iPhone or iPad using an iOS Shortcut — turning your phone into a remote control for your desktop."
 date: 2022-09-13
 url: /How-to-Remote-Control-Your-Mac-with-Keyboard-Maestro/

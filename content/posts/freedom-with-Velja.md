@@ -1,5 +1,6 @@
 ---
 title: "Take Back Your Browser Freedom With Velja"
+author: "A.B. Anwar"
 description: "Velja is a free Mac menu bar app that lets you choose which browser opens each link — route Zoom calls, work links, and personal links to different browsers automatically."
 date: 2023-01-09
 url: /freedom-with-Velja/

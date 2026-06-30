@@ -1,5 +1,6 @@
 ---
 title: "5 TextExpander Snippets Every Power User Should Set Up Today"
+author: "A.B. Anwar"
 description: "Save hours every week with these five essential TextExpander snippets — from email sign-offs to dynamic date calculations and reusable address fields."
 date: 2026-05-04T16:47:57-07:00
 url: /5-textexpander-snippets-every-power-user-should-set-up-today/

@@ -1,5 +1,6 @@
 ---
 title: "Copy Page Titles and URLs With Ease"
+author: "A.B. Anwar"
 description: "Use TextExpander and AppleScript together to copy any Safari page title and URL as formatted text in one keystroke — a simple automation that saves dozens of clicks a day."
 date: 2023-04-23
 url: /Copy-Page-Titles-and-URLs-with-Ease/

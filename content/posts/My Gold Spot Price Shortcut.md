@@ -1,5 +1,6 @@
 ---
 title: "My Gold Spot Price Shortcut"
+author: "A.B. Anwar"
 description: "An iOS Shortcut that displays the current gold spot price instantly — no browser, no searching, no ads. Built for investors and traders who check gold prices regularly."
 date: 2026-02-01T19:43:54-08:00
 url: /my-gold-spot-price-shortcut/

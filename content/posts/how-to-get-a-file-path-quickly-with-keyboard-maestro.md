@@ -1,5 +1,6 @@
 ---
 title: "How to Get a File Path Quickly With Keyboard Maestro"
+author: "A.B. Anwar"
 description: "Quickly display the path of a file quickly using Keyboard Maestro and AppleScript."
 date: 2022-08-23
 url: /How-to-Get-a-File-Path-Quickly-with-Keyboard-Maestro/
