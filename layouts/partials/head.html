@@ -63,44 +63,41 @@
 {{ if .IsPage }}
 {{ if or (eq .Section "posts") (eq .Section "post") (eq .Section "blog") }}
 {{ with .Params.youtube_id }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": {{ $.Title | jsonify }},
-  "description": {{ with $.Params.description }}{{ . | jsonify }}{{ else }}{{ $.Summary | plainify | truncate 160 | jsonify }}{{ end }},
-  "thumbnailUrl": {{ printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" . | jsonify }},
-  "uploadDate": {{ $.PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "embedUrl": {{ printf "https://www.youtube.com/embed/%s" . | jsonify }},
-  "contentUrl": {{ printf "https://www.youtube.com/watch?v=%s" . | jsonify }}
-}
-</script>
+{{ $videoDesc := "" }}{{ with $.Params.description }}{{ $videoDesc = . }}{{ else }}{{ $videoDesc = $.Summary | plainify | truncate 160 }}{{ end }}
+{{ $videoObj := dict
+  "@context" "https://schema.org"
+  "@type" "VideoObject"
+  "name" $.Title
+  "description" $videoDesc
+  "thumbnailUrl" (printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" .)
+  "uploadDate" ($.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+  "embedUrl" (printf "https://www.youtube.com/embed/%s" .)
+  "contentUrl" (printf "https://www.youtube.com/watch?v=%s" .)
+}}
+<script type="application/ld+json">{{ $videoObj | jsonify | safeJS }}</script>
 {{ end }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title | jsonify }},
-  "description": {{ with .Params.description }}{{ . | jsonify }}{{ else }}{{ .Summary | plainify | truncate 160 | jsonify }}{{ end }},
-  "url": {{ .Permalink | jsonify }},
-  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  {{ if .Params.image }}"image": {{ .Params.image | absURL | jsonify }},{{ end }}
-  "author": {
-    "@type": "Person",
-    "name": {{ site.Params.author | jsonify }},
-    "url": {{ site.BaseURL | jsonify }}
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": {{ site.Title | jsonify }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ "/img/logo.png" | absURL | jsonify }}
-    }
-  }
-}
-</script>
+{{ $desc := "" }}{{ with .Params.description }}{{ $desc = . }}{{ else }}{{ $desc = .Summary | plainify | truncate 160 }}{{ end }}
+{{ $authorName := site.Params.author }}{{ with .Params.author }}{{ $authorName = . }}{{ end }}
+{{ $authorURL := "author/a-b-anwar/" | absURL }}
+{{ $author := dict "@type" "Person" "@id" $authorURL "name" $authorName "url" $authorURL }}
+{{ $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url" ("/img/logo.png" | absURL)) }}
+{{ $mainEntity := dict "@type" "WebPage" "@id" .Permalink }}
+{{ $blogObj := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "mainEntityOfPage" $mainEntity
+  "headline" .Title
+  "description" $desc
+  "url" .Permalink
+  "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "author" $author
+  "publisher" $publisher
+}}
+{{ if .Params.image }}
+  {{ $blogObj = merge $blogObj (dict "image" (dict "@type" "ImageObject" "url" (.Params.image | absURL))) }}
+{{ end }}
+<script type="application/ld+json">{{ $blogObj | jsonify | safeJS }}</script>
 {{ end }}
 {{ else if .IsHome }}
 <script type="application/ld+json">

@@ -1,7 +1,7 @@
 ---
 title: "I Made My Own Mac App: QuestionAnswer"
 author: "A.B. Anwar"
-description: "How I built a personal Mac Qdescription: "I made my own Mac app"A app using Alfred and a Bash script — with ChatGPT's help — that retrieves saved answers instantly without leaving the Alfred search bar."
+description: "How I built a personal Mac Q&A app using Alfred and a Bash script — with ChatGPT's help — that retrieves saved answers instantly without leaving the Alfred search bar."
 date: 2023-05-22
 url: /I-Made-My-Own-Mac-App-QuestionAnswer/
 image: /img/MyApp.webp
