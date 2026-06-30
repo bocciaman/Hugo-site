@@ -10,7 +10,7 @@ tags:
   - wordPress
   - Hugo
   - Claude AI
-draft: true
+draft: false
 ---
 ## Video
 {{< youtube dnzkGKNKDOg >}}
