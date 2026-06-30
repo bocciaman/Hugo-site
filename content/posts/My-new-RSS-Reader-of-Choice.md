@@ -1,6 +1,6 @@
 ---
 title: "My New RSS Reader of Choice"
-description: "Why FreshRSS for RSS"
+description: "Why I switched to FreshRSS as my self-hosted RSS reader — full control of your feeds, no algorithm, no subscription fee, running locally via a Docker container."
 date: 2023-11-04
 url: /My-new-RSS-Reader-of-Choice/
 image: /img/FreshRSS.webp

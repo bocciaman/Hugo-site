@@ -1,6 +1,6 @@
 ---
 title: "My 700% Options Trade Mistake"
-description: "I made one hell of a mistake on a put credit spread."
+description: "I turned a put credit spread into a 700% paper loss — here's exactly what went wrong, why I broke my own trading rules, and what I learned about options discipline."
 date: 2026-01-22T20:52:20-08:00
 url: /my-700-options-trade-mistake/
 image: /img/optionsmistake.webp

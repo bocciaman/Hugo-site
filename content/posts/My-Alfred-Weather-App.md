@@ -1,6 +1,6 @@
 ---
 title: "My Alfred Weather App"
-description: "The app I created for custom weather information."
+description: "I built a custom Alfred weather workflow using a Python script and a free weather API — get current conditions and forecasts right from Alfred without opening a browser."
 date: 2024-02-18
 url: /My-Alfred-Weather-App/
 image: /img/weatherapp.webp

@@ -1,6 +1,6 @@
 ---
 title: "Finally Sharing My Options Trades"
-description: "My first video since August of 2025."
+description: "I'm back after months away — walking through my four open put credit spread positions on SPY and QQQ and kicking off a new options investing series on the channel."
 date: 2026-01-18T08:22:23-08:00
 url: /finally-sharing-my-options-trades/
 image: /img/option2.webp

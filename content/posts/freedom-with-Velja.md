@@ -1,6 +1,6 @@
 ---
 title: "Take back your browser freedom with Velja"
-description: "Velja is a task menu utility for browser links"
+description: "Velja is a free Mac menu bar app that lets you choose which browser opens each link — route Zoom calls, work links, and personal links to different browsers automatically."
 date: 2023-01-09
 url: /freedom-with-Velja/
 image: /img/velja.png

@@ -1,6 +1,6 @@
 ---
 title: "A New  Mac Studio Coming Soon"
-description: "My new daily Driver Mac"
+description: "I upgraded to a 2023 Mac Studio with 32 GB of RAM and a 2 TB SSD — here's the full spec breakdown and why this machine became my new daily driver."
 date: 2023-08-15
 url: /A-New--Mac-Studio-Coming-Soon/
 image: /img/MacStudio.webp

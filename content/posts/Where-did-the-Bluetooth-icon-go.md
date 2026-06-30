@@ -1,6 +1,6 @@
 ---
 title: "Where Did the Bluetooth Icon Go"
-description: "Has the Bluetooth icon disappeared?"
+description: "The Bluetooth icon moved in macOS Sonoma — here's the exact Control Center setting you need to get it back in your menu bar in under a minute."
 date: 2023-11-19
 url: /Where-did-the-Bluetooth-icon-go/
 image: /img/Bluetooth.webp

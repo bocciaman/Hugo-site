@@ -1,6 +1,6 @@
 ---
 title: "Easy Fix for Alfred Weather Workflow"
-description: "Fix the Alfred Weather Workflow"
+description: "Dark Sky's API is gone — here's how to fix your Alfred Weather workflow by switching to a supported weather API so you get accurate weather data back in Alfred."
 date: 2024-01-08
 url: /Easy-Fix-For-Alfred-Weather-Workflow/
 image: /img/Weather.webp

@@ -1,6 +1,6 @@
 ---
 title: "A Clipboard to Text File Hack"
-description: "A clipboard automation for creating new text files."
+description: "A Bash script wired into Alfred that instantly converts your clipboard contents into a new text file — saving a manual copy-paste-save workflow with a single keystroke."
 date: 2024-08-25
 url: /A-Clipboard-to-Text-File-Hack/
 image: /img/clip2txt.webp

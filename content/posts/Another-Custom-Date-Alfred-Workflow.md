@@ -1,6 +1,6 @@
 ---
 title: "Another Custom Date Alfred Workflow"
-description: ""
+description: "Build a custom Alfred workflow with a Bash script that instantly tells you the day of the week for any date you type — no calendar app needed."
 date: 2024-02-24
 url: /Another-Custom-Date-Alfred-Workflow/
 image: /img/dteworkflow.webp

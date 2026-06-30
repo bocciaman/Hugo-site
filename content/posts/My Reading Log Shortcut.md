@@ -1,6 +1,6 @@
 ---
 title: "My Reading Log Shortcut"
-description: ""
+description: "A simple iPhone Shortcut that logs your daily reading into a personal book log using Data Jar — frictionless tracking without apps, subscriptions, or notifications."
 date: 2026-02-01T20:47:17-08:00
 url: /my-reading-log-shortcut/
 image: /img/Rlog.webp

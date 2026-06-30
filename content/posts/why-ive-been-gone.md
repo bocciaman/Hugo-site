@@ -1,6 +1,6 @@
 ---
 title: "Why I've Been Gone"
-description: "The reason I haven't posted an automation in over a year."
+description: "After more than a year away from the channel, I share the personal reasons behind my absence and why I'm returning to Mac automation and investing content in 2025."
 date: 2025-12-09T15:19:22+03:00
 url: /why-ive-been-gone/
 image: /img/ABA2025.jpg
