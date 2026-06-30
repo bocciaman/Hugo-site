@@ -1,5 +1,5 @@
 ---
-title: “Instantly Declutter your desktop with Hazel”
+title: “Instantly Declutter Your Desktop With Hazel”
 description: "How to use Hazel on your Mac to automatically keep your desktop clean — set rules once and Hazel silently moves, renames, and deletes files based on your conditions."
 date: 2023-01-03
 url: /declutter-with-hazel/

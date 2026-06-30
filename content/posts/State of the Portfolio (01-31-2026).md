@@ -1,5 +1,5 @@
 ---
-title: "State of the Portfolio (01 31 2026)"
+title: "State of the Portfolio — January 31, 2026"
 description: "A candid breakdown of my current options portfolio, why I skipped the broken wing butterfly trade, and the adjustments I’m planning for the coming week."
 date: 2026-01-31T16:30:43-08:00
 url: /state-of-the-portfolio-01-31-2026/

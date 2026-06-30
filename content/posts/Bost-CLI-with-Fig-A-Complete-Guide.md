@@ -1,5 +1,5 @@
 ---
-title: "Bost CLI With Fig a Complete Guide"
+title: "Boost CLI With Fig: A Complete Guide"
 description: "In this video, I'm discussing Fig, an incredibly powerful tool for enhancing your command-line interface (CLI)."
 date: 2023-06-17
 url: /Bost-CLI-with-Fig-A-Complete-Guide/

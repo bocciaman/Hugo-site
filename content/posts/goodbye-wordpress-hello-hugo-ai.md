@@ -1,5 +1,5 @@
 ---
-title: "Goodbye Wordpress Hello Hugo Ai"
+title: "Goodbye WordPress, Hello Hugo & AI"
 description: "Why I left WordPress for good and rebuilt my site with Hugo and AI — moving from a hacked, plugin-dependent CMS to a fast, secure static site I fully control."
 date: 2026-06-29T23:54:35-07:00
 url: /goodbye-wordpress-hello-hugo-ai/
