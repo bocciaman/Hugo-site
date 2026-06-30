@@ -5,7 +5,7 @@
   <article class="widget-card mt-4">
     <div class="d-flex">
       {{ with .Params.image }}
-      <img loading="lazy" src="{{ . | absURL }}" class="rounded-circle" loading="lazy" alt="post-thumb" style="height: 70px; width: 70px; object-fit: cover" />
+      <img loading="lazy" src="{{ . | absURL }}" class="rounded-circle" alt="{{ $.Title }}" style="height: 70px; width: 70px; object-fit: cover" />
       {{ end }}
       <div class="ml-3">
         <h6 class="mb-1"><a class="post-title" href="{{.Permalink}}">{{ .Title }}</a></h6>
