@@ -8,7 +8,7 @@ trips:
   - destination: "Omaha, NE"
     departure: "2026-07-29"
     return: "2026-08-02"
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
+    image: "/img/omaha.jpg"
 
   - destination: "Cairo, Egypt"
     departure: "2026-08-13"
