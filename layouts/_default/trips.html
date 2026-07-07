@@ -1,0 +1,108 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <h1 class="mb-2">{{ .Title }}</h1>
+        <p class="text-muted mb-5">{{ with .Params.description }}{{ . }}{{ end }}</p>
+
+        {{ range .Params.trips }}
+        {{ $departure := time .departure }}
+        {{ $return    := time .return }}
+        {{ $days      := int (math.Round (div (sub $return.Unix $departure.Unix) 86400.0)) }}
+        <div class="trip-card shadow mb-4 p-0 overflow-hidden">
+          <div class="trip-card-inner d-flex align-items-stretch">
+
+            {{ with .image }}
+            <div class="trip-thumb flex-shrink-0">
+              <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+            </div>
+            {{ end }}
+
+            <div class="trip-body p-4 flex-grow-1">
+              <h2 class="trip-title mb-1">{{ .destination }}</h2>
+              <p class="trip-dates text-muted mb-3">
+                {{ $departure.Format "Mon, Jan 2" }} – {{ $return.Format "Mon, Jan 2" }}
+                &nbsp;({{ $days }} days)
+              </p>
+              <div class="trip-countdown d-flex align-items-center">
+                <span class="countdown-icon mr-2">🕐</span>
+                <span class="countdown-label">
+                  <span class="countdown-number"
+                        data-departure="{{ .departure }}">—</span>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .trip-card {
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+  }
+  .trip-card-inner { min-height: 160px; }
+  .trip-thumb {
+    width: 140px;
+    min-height: 160px;
+  }
+  .trip-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .trip-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .trip-dates {
+    font-size: .9rem;
+  }
+  .trip-countdown {
+    font-size: .95rem;
+  }
+  .countdown-number {
+    font-weight: 700;
+    color: #232058;
+    font-size: 1.05rem;
+  }
+  @media (max-width: 480px) {
+    .trip-thumb { width: 100px; }
+  }
+</style>
+
+<script>
+  (function () {
+    function updateCountdowns() {
+      document.querySelectorAll('.countdown-number[data-departure]').forEach(function (el) {
+        var dep = new Date(el.dataset.departure + 'T00:00:00');
+        var now = new Date();
+        now.setHours(0, 0, 0, 0);
+        var diff = Math.round((dep - now) / 86400000);
+        var label = el.closest('.trip-countdown').querySelector('.countdown-label');
+        if (diff > 0) {
+          el.textContent = diff;
+          label.innerHTML = '<span class="countdown-number" data-departure="' + el.dataset.departure + '">' + diff + '</span> day' + (diff === 1 ? '' : 's') + ' until departure';
+        } else if (diff === 0) {
+          label.innerHTML = '🎉 Departing today!';
+        } else {
+          label.innerHTML = 'Trip in progress';
+        }
+      });
+    }
+    updateCountdowns();
+    // refresh once per hour so the day flips correctly on long-open tabs
+    setInterval(updateCountdowns, 3600000);
+  })();
+</script>
+{{ end }}
