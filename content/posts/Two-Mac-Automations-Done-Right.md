@@ -5,6 +5,7 @@ description: "Two Mac automations built properly — a TextExpander snippet that
 author: "A.B. Anwar"
 image: /img/optionb.webp
 youtube_id: "t1UVwPXVj5s"
+url: /two-mac-automations-done-right/
 tags: ["mac automation", "textexpander", "javascript", "apple shortcuts", "keyboard shortcuts", "productivity"]
 categories: ["Automation"]
 draft: false
