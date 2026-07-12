@@ -4,6 +4,7 @@ date: 2026-07-11
 description: "Two Mac automations built properly — a TextExpander snippet that writes itself with JavaScript, and a Shortcut that opens any drive with a single keypress — plus a simple way to tell real automation from a glorified button."
 author: "A.B. Anwar"
 image: /img/optionb.webp
+youtube_id: "t1UVwPXVj5s"
 tags: ["mac automation", "textexpander", "javascript", "apple shortcuts", "keyboard shortcuts", "productivity"]
 categories: ["Automation"]
 draft: false
