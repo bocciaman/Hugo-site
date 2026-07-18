@@ -14,19 +14,19 @@ body.dark-mode .bea-page { color: #e8e8e8; }
   text-align: center;
 }
 .bea-icon-wrap {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   width: 120px;
   height: 120px;
   border-radius: 26px;
-  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
-  box-shadow: 0 8px 32px rgba(71,196,241,.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,.22);
   margin-bottom: 28px;
+  overflow: hidden;
 }
-.bea-icon-wrap span {
-  font-size: 56px;
-  line-height: 1;
+.bea-icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .bea-title {
   font-size: 2.5rem;
@@ -226,7 +226,7 @@ body.dark-mode .bea-support-box p { color: #aaa; }
     {{/* ── Hero ── */}}
     <div class="bea-hero">
       <div class="bea-icon-wrap">
-        <span>🏠</span>
+        <img src="/img/beit-el-aila-icon.png" alt="Beit El Aila app icon" />
       </div>
       <h1 class="bea-title">Beit El Aila</h1>
       <p class="bea-subtitle">The private directory for any organization — with centralized admin control.</p>
