@@ -1,0 +1,409 @@
+{{ define "main" }}
+
+<style>
+/* ── Page shell ── */
+.bea-page {
+  font-family: "PT Sans", sans-serif;
+  color: #222;
+}
+body.dark-mode .bea-page { color: #e8e8e8; }
+
+/* ── Hero ── */
+.bea-hero {
+  padding: 80px 0 64px;
+  text-align: center;
+}
+.bea-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  box-shadow: 0 8px 32px rgba(71,196,241,.25);
+  margin-bottom: 28px;
+}
+.bea-icon-wrap span {
+  font-size: 56px;
+  line-height: 1;
+}
+.bea-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  margin-bottom: 6px;
+  color: #111;
+}
+body.dark-mode .bea-title { color: #f0f0f0; }
+.bea-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 28px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body.dark-mode .bea-subtitle { color: #aaa; }
+.bea-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.bea-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3f4f6;
+  border: 1px solid #e2e4e8;
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: .85rem;
+  color: #444;
+  font-weight: 600;
+}
+body.dark-mode .bea-badge {
+  background: #1e2130;
+  border-color: #2d3044;
+  color: #ccc;
+}
+.bea-badge i { color: #47c4f1; }
+.bea-invite-note {
+  font-size: .85rem;
+  color: #888;
+}
+
+/* ── Divider ── */
+.bea-divider {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  margin: 0;
+}
+body.dark-mode .bea-divider { border-color: #2a2a2a; }
+
+/* ── Section ── */
+.bea-section {
+  padding: 60px 0;
+}
+.bea-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111;
+}
+body.dark-mode .bea-section-title { color: #f0f0f0; }
+.bea-section-lead {
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 560px;
+}
+body.dark-mode .bea-section-lead { color: #999; }
+
+/* ── Feature grid ── */
+.bea-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .bea-features { grid-template-columns: 1fr; }
+  .bea-title { font-size: 1.9rem; }
+}
+.bea-feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 20px;
+}
+body.dark-mode .bea-feature {
+  background: #1a1c28;
+  border-color: #252738;
+}
+.bea-feature-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #47c4f1 0%, #9AC4F8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+}
+.bea-feature-body h4 {
+  font-size: .95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #222;
+}
+body.dark-mode .bea-feature-body h4 { color: #e8e8e8; }
+.bea-feature-body p {
+  font-size: .85rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+body.dark-mode .bea-feature-body p { color: #999; }
+
+/* ── Privacy ── */
+.bea-privacy {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 36px;
+}
+body.dark-mode .bea-privacy {
+  background: #1a1c28;
+  border-color: #252738;
+}
+.bea-privacy h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+body.dark-mode .bea-privacy h3 { color: #ddd; }
+.bea-privacy h3:first-child { margin-top: 0; }
+.bea-privacy p, .bea-privacy ul { font-size: .9rem; color: #555; }
+body.dark-mode .bea-privacy p,
+body.dark-mode .bea-privacy ul { color: #aaa; }
+.bea-privacy ul { padding-left: 20px; }
+.bea-privacy ul li { margin-bottom: 6px; }
+.bea-privacy a { color: #47c4f1; }
+
+/* ── Support ── */
+.bea-support-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+}
+body.dark-mode .bea-support-box {
+  background: #1a1c28;
+  border-color: #252738;
+}
+.bea-support-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #47c4f1, #9AC4F8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.bea-support-box h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #222;
+}
+body.dark-mode .bea-support-box h4 { color: #e8e8e8; }
+.bea-support-box p {
+  margin: 0;
+  font-size: .9rem;
+  color: #666;
+}
+body.dark-mode .bea-support-box p { color: #aaa; }
+.bea-support-box a { color: #47c4f1; }
+</style>
+
+<div class="bea-page">
+  <div class="container">
+
+    {{/* ── Hero ── */}}
+    <div class="bea-hero">
+      <div class="bea-icon-wrap">
+        <span>🏠</span>
+      </div>
+      <h1 class="bea-title">Beit El Aila</h1>
+      <p class="bea-subtitle">The private directory for any organization — with centralized admin control.</p>
+      <div class="bea-badges">
+        <span class="bea-badge"><i class="fas fa-mobile-alt"></i> iPhone</span>
+        <span class="bea-badge"><i class="fas fa-lock"></i> Private &amp; Free</span>
+        <span class="bea-badge"><i class="fab fa-apple"></i> iOS</span>
+        <span class="bea-badge"><i class="fas fa-globe"></i> Arabic &amp; English</span>
+      </div>
+      <p class="bea-invite-note">Available by invitation · Private CloudKit storage · No ads · No accounts</p>
+    </div>
+
+    <hr class="bea-divider">
+
+    {{/* ── About ── */}}
+    <div class="bea-section">
+      <p class="lead" style="max-width:680px;color:#444;line-height:1.75;">
+        Beit El Aila is a private contact directory with centralized admin control. Whether you're managing a family, a club, a tribe, or any organization, admins control the roster while members stay connected — all data stored securely in a private iCloud container, never shared with third parties.
+      </p>
+    </div>
+
+    <hr class="bea-divider">
+
+    {{/* ── Features ── */}}
+    <div class="bea-section">
+      <h2 class="bea-section-title">Features</h2>
+      <p class="bea-section-lead">Everything your organization needs to stay connected, organized, and private.</p>
+      <div class="bea-features">
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-address-book"></i></div>
+          <div class="bea-feature-body">
+            <h4>Private Directory</h4>
+            <p>Browse and search all members with photos and contact details in one secure place.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-phone"></i></div>
+          <div class="bea-feature-body">
+            <h4>One-Tap Contact</h4>
+            <p>Call, WhatsApp, or email any member directly from their profile — one tap.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-birthday-cake"></i></div>
+          <div class="bea-feature-body">
+            <h4>Birthdays &amp; Anniversaries</h4>
+            <p>Automatic reminders so you never miss an important date for any member.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-sitemap"></i></div>
+          <div class="bea-feature-body">
+            <h4>Branches</h4>
+            <p>Organize members into sub-groups or divisions to reflect your organization's structure.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="bea-feature-body">
+            <h4>Lineage &amp; Relationships</h4>
+            <p>View family trees and connections between members at a glance.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-check-circle"></i></div>
+          <div class="bea-feature-body">
+            <h4>Member Edit Requests</h4>
+            <p>Members suggest updates; admins review and approve before anything changes.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="bea-feature-body">
+            <h4>PDF Export</h4>
+            <p>Generate a printable directory in one tap — ready to share or archive.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fas fa-language"></i></div>
+          <div class="bea-feature-body">
+            <h4>Bilingual</h4>
+            <p>Full Arabic and English support with proper RTL layout throughout the app.</p>
+          </div>
+        </div>
+
+        <div class="bea-feature">
+          <div class="bea-feature-icon"><i class="fab fa-apple"></i></div>
+          <div class="bea-feature-body">
+            <h4>Private &amp; Secure</h4>
+            <p>Powered by CloudKit. No accounts to create, no ads, no data ever sold or shared.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="bea-divider">
+
+    {{/* ── Support ── */}}
+    <div class="bea-section" id="support">
+      <h2 class="bea-section-title">Support</h2>
+      <p class="bea-section-lead">Have a question, found a bug, or need help getting started?</p>
+      <div class="bea-support-box">
+        <div class="bea-support-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h4>Email Support</h4>
+          <p>Reach the developer directly at <a href="mailto:bocciaman@gmail.com">bocciaman@gmail.com</a>. I try to respond within a few business days.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="bea-divider">
+
+    {{/* ── Privacy Policy ── */}}
+    <div class="bea-section" id="privacy">
+      <h2 class="bea-section-title">Privacy Policy</h2>
+      <p class="bea-section-lead">Effective date: July 2026 &nbsp;·&nbsp; Developer: A.B. Anwar</p>
+      <div class="bea-privacy">
+
+        <h3>Overview</h3>
+        <p>Beit El Aila ("the App") is designed with privacy as a core principle. The App does not collect, transmit, or sell your personal data. All information you enter is stored exclusively in your private iCloud container via Apple's CloudKit framework and is never accessible to the developer or any third party.</p>
+
+        <h3>Data We Store</h3>
+        <p>The App stores the following information that you choose to enter:</p>
+        <ul>
+          <li>Member names</li>
+          <li>Phone numbers</li>
+          <li>Email addresses</li>
+          <li>Profile photos</li>
+          <li>Dates (birthdays, anniversaries)</li>
+          <li>Organizational relationships and branch assignments</li>
+        </ul>
+        <p>This data is stored solely in your private CloudKit container. The developer has no ability to access, view, or export this data.</p>
+
+        <h3>How Your Data Is Stored</h3>
+        <p>All data is stored in Apple's iCloud/CloudKit infrastructure using a <strong>private database</strong>. This means only you (and other members of your CloudKit container, as authorized by you) can access the data. The data is subject to Apple's iCloud Terms of Service and Apple's privacy practices. We encourage you to review <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> for details on how iCloud data is handled.</p>
+
+        <h3>Data We Do Not Collect</h3>
+        <ul>
+          <li>The App does not send any data to the developer's servers — because there are no developer servers.</li>
+          <li>The App does not use any advertising networks or third-party analytics SDKs.</li>
+          <li>The App does not track your behavior or share data with any third party.</li>
+          <li>The App does not require you to create an account or provide any information directly to the developer.</li>
+        </ul>
+
+        <h3>Notifications</h3>
+        <p>The App uses <strong>local notifications</strong> (scheduled on-device) to remind you of upcoming birthdays and anniversaries. These notifications are generated and delivered entirely on your device. No notification content is transmitted over the network or to any server.</p>
+
+        <h3>Photos</h3>
+        <p>When you add a profile photo for a member, the App uses the iOS system photo picker. This means the App does not request access to your full photo library. Only the specific photo you select is provided to the App by the iOS operating system.</p>
+
+        <h3>Children's Privacy</h3>
+        <p>The App is not directed at children under 13. If you believe a child has entered data into the App without appropriate consent, please contact us at the address below and we will assist you in removing it from your CloudKit container.</p>
+
+        <h3>Changes to This Policy</h3>
+        <p>If we make material changes to this Privacy Policy, we will update the effective date at the top of this page. We encourage you to review this page periodically. Your continued use of the App after any changes constitutes acceptance of the updated policy.</p>
+
+        <h3>Contact</h3>
+        <p>For privacy-related questions or concerns, contact the developer at <a href="mailto:bocciaman@gmail.com">bocciaman@gmail.com</a>.</p>
+
+      </div>
+    </div>
+
+    {{/* ── Footer note ── */}}
+    <div class="pb-5 text-center" style="color:#aaa;font-size:.8rem;">
+      Beit El Aila &nbsp;·&nbsp; Version 1.0 &nbsp;·&nbsp; iOS &nbsp;·&nbsp; &copy; {{ now.Year }} A.B. Anwar
+    </div>
+
+  </div>
+</div>
+
+{{ end }}

@@ -37,6 +37,11 @@ weight = 3
 # target = "_blank"  # Open in a new tab
 
 [[main]]
+name = "Beit El Aila"
+url = "/beit-el-aila/"
+weight = 8
+
+[[main]]
 name = "Contact me"
 url = "/contact/"
 weight = 10
