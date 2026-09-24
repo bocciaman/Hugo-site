@@ -23,7 +23,16 @@ Nothing. Hypertile has no accounts, no analytics, no advertising, no crash repor
 
 Hypertile is sold through Gumroad, which handles the payment as the merchant of record under [Gumroad's privacy policy](https://gumroad.com/privacy). Your card details go to Gumroad and never reach me or the app — I only see that a sale happened, along with the email address you give at checkout, so I can send your receipt and licence.
 
-The app itself contains no purchase or licence checking, and never contacts Gumroad.
+## License checking
+
+Hypertile is free for 14 days and then needs a license key. When you enter your key, the app
+sends it once to Gumroad to confirm the purchase, and stores the result on your Mac so it
+works offline afterwards. It re-checks roughly once a month, to notice refunds.
+
+That request contains your license key and nothing else — no identifier for you or your Mac,
+and nothing about how you use the app. Gumroad's reply includes the email address from your
+purchase, which is stored on your Mac so Settings can show who the copy is licensed to. It is
+never sent anywhere else.
 
 ## Children
 

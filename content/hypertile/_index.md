@@ -11,8 +11,8 @@ platforms: "For Mac · macOS 14 Sonoma or later · $4.99, one-time purchase"
 # a window manager needs, so the App Store route is closed to apps like this.
 cta: "Buy Hypertile — $4.99"
 cta_soon: "Coming soon"
-cta_note: "One-time purchase · macOS 14 Sonoma or later · Signed and notarized by Apple"
-buy_url: "https://bocciaman.gumroad.com/l/hypertile"   # swap to get.abanwar.com once its certificate is live
+cta_note: "Free 14-day trial · One-time purchase · macOS 14 Sonoma or later · Signed and notarized by Apple"
+buy_url: "https://get.abanwar.com/l/hypertile"
 notify_url: "/subscribe/"
 notify_text: "Get notified when it launches →"
 hero: "/images/hypertile/hero.jpg"
@@ -52,7 +52,11 @@ faq:
   - q: "Can I keep an app out of the tiles?"
     a: "Yes. Float any window with <kbd>⌥</kbd> <kbd>V</kbd>, or choose *Don't Manage* from the menu bar and Hypertile will leave that app alone."
   - q: "Which Macs are supported?"
-    a: "Any Mac running macOS 14 Sonoma or later."
+    a: "Any Mac running macOS 14 Sonoma or later, Intel or Apple Silicon."
+  - q: "Can I try it before buying?"
+    a: "Yes — Hypertile is fully functional for 14 days, with nothing held back and no account needed. When the trial ends it stops tiling until you enter a license key; your windows stay where they are and the keyboard shortcuts are released, so nothing is left in a strange state."
+  - q: "How many Macs can I use one purchase on?"
+    a: "Use your key on any Mac you own. There's a *Remove License from This Mac* button in Settings for when you sell or give one away."
 
 support_text: "Questions, bug reports or feature ideas? Send me a message and I'll get back to you."
 support_url: "/contact/"
