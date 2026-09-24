@@ -21,11 +21,17 @@ Nothing. Hypertile has no accounts, no analytics, no advertising, no crash repor
 
 ## Purchases
 
-If you buy Hypertile from the Mac App Store, the purchase is handled entirely by Apple under [Apple's privacy policy](https://www.apple.com/legal/privacy/). I don't receive your payment details.
+Hypertile is sold through Gumroad, which handles the payment as the merchant of record under [Gumroad's privacy policy](https://gumroad.com/privacy). Your card details go to Gumroad and never reach me or the app — I only see that a sale happened, along with the email address you give at checkout, so I can send your receipt and licence.
+
+The app itself contains no purchase or licence checking, and never contacts Gumroad.
 
 ## Children
 
 Hypertile doesn't collect information from anyone, including children.
+
+## Updates
+
+Hypertile checks for new versions using [Sparkle](https://sparkle-project.org), an open-source updater. The check fetches a file from abanwar.com and sends nothing about you or your Mac beyond what any web request includes. You can turn it off in Settings.
 
 ## Changes
 

@@ -69,10 +69,11 @@
       <h1>{{ .Title }}</h1>
       <p class="app-tagline">{{ .Params.tagline }}</p>
       <p class="app-meta">{{ .Params.platforms }}</p>
-      {{ with .Params.appstore_url }}
+      {{ with .Params.buy_url }}
         <a class="app-cta" href="{{ . }}">{{ $.Params.cta }}</a>
+        {{ with $.Params.cta_note }}<span class="app-notify">{{ . | markdownify }}</span>{{ end }}
       {{ else }}
-        <span class="app-cta is-soon">{{ .Params.cta }}</span>
+        <span class="app-cta is-soon">{{ .Params.cta_soon | default .Params.cta }}</span>
         {{ with .Params.notify_url }}<a class="app-notify" href="{{ . | relURL }}">{{ $.Params.notify_text }}</a>{{ end }}
       {{ end }}
       {{ with .Params.hero }}<img class="app-hero-art" src="{{ . | relURL }}" alt="{{ $.Params.hero_alt }}" loading="lazy">{{ end }}

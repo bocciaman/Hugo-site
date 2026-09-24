@@ -7,8 +7,12 @@ draft: false
 icon: "/images/hypertile/icon.png"
 tagline: "A tiling window manager for Mac. Every window finds its place, and you never reach for the mouse."
 platforms: "For Mac · macOS 14 Sonoma or later · $4.99, one-time purchase"
-cta: "Coming soon to the Mac App Store"
-# appstore_url: ""   # set this at launch to turn the button into an App Store link
+# Note: sold directly, not on the Mac App Store — sandboxing blocks the Accessibility APIs
+# a window manager needs, so the App Store route is closed to apps like this.
+cta: "Buy Hypertile — $4.99"
+cta_soon: "Coming soon"
+cta_note: "One-time purchase · macOS 14 Sonoma or later · Signed and notarized by Apple"
+buy_url: "https://bocciaman.gumroad.com/l/hypertile"   # swap to get.abanwar.com once its certificate is live
 notify_url: "/subscribe/"
 notify_text: "Get notified when it launches →"
 hero: "/images/hypertile/hero.jpg"
