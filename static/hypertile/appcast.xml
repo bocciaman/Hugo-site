@@ -3,12 +3,23 @@
     <channel>
         <title>Hypertile</title>
         <item>
+            <title>0.2.0</title>
+            <pubDate>Thu, 24 Sep 2026 14:41:33 +0300</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.2.0/Hypertile-0.2.0.zip" length="3286724" type="application/octet-stream" sparkle:edSignature="YGWmHnE9r0T76eFXyAvoEYnvGOabiwHjfM5GnWfOLfeYmcAO753rJmabsuWhxiI6FU8i0unxnugKdbQP/StgCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.2.0/Hypertile16-13.delta" sparkle:deltaFrom="13" length="257850" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="X/da7zqiv8l5JRPE9kTTxnTXDLor1OSY6kpiOXrszbuBz1fr52mGsAAmViJ8ei5fdp8sKOeiOSZKbhBtS4DJBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.0</title>
-            <pubDate>Thu, 24 Sep 2026 13:01:38 +0300</pubDate>
+            <pubDate>Thu, 24 Sep 2026 14:41:40 +0300</pubDate>
             <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.1.0/Hypertile-0.1.0.zip" length="3201368" type="application/octet-stream" sparkle:edSignature="cG8TsMJBDS41D+X2D+9dAcFqstDi4OWdG9pE3lR4aPN21/U7deO13ou3ay+UFd3Ox1KTld3Ru+BCp91CZ4rgAg=="/>
+            <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.2.0/Hypertile-0.1.0.zip" length="3201368" type="application/octet-stream" sparkle:edSignature="cG8TsMJBDS41D+X2D+9dAcFqstDi4OWdG9pE3lR4aPN21/U7deO13ou3ay+UFd3Ox1KTld3Ru+BCp91CZ4rgAg=="/>
         </item>
     </channel>
 </rss>
