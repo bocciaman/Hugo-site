@@ -3,12 +3,23 @@
     <channel>
         <title>Hypertile</title>
         <item>
+            <title>0.2.1</title>
+            <pubDate>Thu, 24 Sep 2026 15:10:12 +0300</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.2.1/Hypertile-0.2.1.zip" length="3287447" type="application/octet-stream" sparkle:edSignature="bAi5d7hSybu52mxXNLco6Fc7JfuT+fdYwytVsuxYmqTUZcvXVTpwK6xUSYVY8reQvYYV++cO2sMhZSy46hINBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.2.1/Hypertile18-16.delta" sparkle:deltaFrom="16" length="96482" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="cb43d1Co+SPkIKjiXY7j/Nle1WAD+bIEnlVpwcOV1LskfN4Jf1XW3JOkQCsEXFxlGj61hK41ga4pEFQXgVCFAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.0</title>
-            <pubDate>Thu, 24 Sep 2026 14:56:58 +0300</pubDate>
+            <pubDate>Thu, 24 Sep 2026 15:10:15 +0300</pubDate>
             <sparkle:version>16</sparkle:version>
             <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.2.0/Hypertile-0.2.0.zip" length="3286724" type="application/octet-stream" sparkle:edSignature="YGWmHnE9r0T76eFXyAvoEYnvGOabiwHjfM5GnWfOLfeYmcAO753rJmabsuWhxiI6FU8i0unxnugKdbQP/StgCQ=="/>
+            <enclosure url="https://github.com/bocciaman/hypertile-releases/releases/download/v0.2.1/Hypertile-0.2.0.zip" length="3286724" type="application/octet-stream" sparkle:edSignature="YGWmHnE9r0T76eFXyAvoEYnvGOabiwHjfM5GnWfOLfeYmcAO753rJmabsuWhxiI6FU8i0unxnugKdbQP/StgCQ=="/>
         </item>
     </channel>
 </rss>
