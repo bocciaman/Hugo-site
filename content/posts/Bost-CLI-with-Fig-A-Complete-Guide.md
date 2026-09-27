@@ -3,6 +3,7 @@ title: "Boost CLI With Fig: A Complete Guide"
 author: "A.B. Anwar"
 description: "In this video, I'm discussing Fig, an incredibly powerful tool for enhancing your command-line interface (CLI)."
 date: 2023-06-17
+lastmod: 2026-09-27
 url: /bost-cli-with-fig-a-complete-guide/
 image: /img/figapp.webp
 categories:

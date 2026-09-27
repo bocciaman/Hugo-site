@@ -3,6 +3,7 @@ title: "A New  Mac Studio Coming Soon"
 author: "A.B. Anwar"
 description: "I upgraded to a 2023 Mac Studio with 32 GB of RAM and a 2 TB SSD — here's the full spec breakdown and why this machine became my new daily driver."
 date: 2023-08-15
+lastmod: 2026-09-27
 url: /a-new--mac-studio-coming-soon/
 image: /img/MacStudio.webp
 categories:

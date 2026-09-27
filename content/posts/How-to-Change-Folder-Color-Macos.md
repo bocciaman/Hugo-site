@@ -3,6 +3,7 @@ title: "How to Change Folder Color in macOS"
 author: "A.B. Anwar"
 description: "A workaround for creating custom foldor colors in macOS can't be automated yet"
 date: 2023-03-23
+lastmod: 2026-09-27
 url: /how-to-change-folder-color-macos/
 image: /img/foldercolors.jpg
 categories:

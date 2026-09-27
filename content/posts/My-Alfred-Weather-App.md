@@ -3,6 +3,7 @@ title: "My Alfred Weather App"
 author: "A.B. Anwar"
 description: "I built a custom Alfred weather workflow using a Python script and a free weather API — get current conditions and forecasts right from Alfred without opening a browser."
 date: 2024-02-18
+lastmod: 2026-09-27
 url: /my-alfred-weather-app/
 image: /img/weatherapp.webp
 categories:

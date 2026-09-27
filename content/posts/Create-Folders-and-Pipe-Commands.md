@@ -3,6 +3,7 @@ title: "Create Folders and Pipe Commands"
 author: "A.B. Anwar"
 description: "We will be using a simple command in the terminal to create a main folder, and then creating five subfolders within it - all in one go!"
 date: 2023-03-19
+lastmod: 2026-09-27
 url: /create-folders-and-pipe-commands/
 image: /img/folders.jpg
 categories:

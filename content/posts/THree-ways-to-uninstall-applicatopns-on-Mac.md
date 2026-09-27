@@ -3,6 +3,7 @@ title: "Three Ways to Uninstall Applications on Mac"
 author: "A.B. Anwar"
 description: "Three ways to uninstall apps on a Mac: the quick Trash method, AppCleaner for a thorough removal of leftover files, and Homebrew for command-line-installed apps."
 date: 2023-04-08
+lastmod: 2026-09-27
 url: /three-ways-to-uninstall-applicatopns-on-mac/
 image: /img/Uninstall.webp
 categories:

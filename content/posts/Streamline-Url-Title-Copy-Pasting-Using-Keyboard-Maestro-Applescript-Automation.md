@@ -3,6 +3,7 @@ title: "Streamline URL & Title Copy-Pasting With Keyboard Maestro"
 author: "A.B. Anwar"
 description: "Keyboard Maestro stands out by offering a more precise two-step process for copying and pasting URLs and titles."
 date: 2023-05-15
+lastmod: 2026-09-27
 url: /streamline-url-title-copy-pasting-using-keyboard-maestro-applescript-automation/
 image: /img/A_Grabber.webp
 categories:

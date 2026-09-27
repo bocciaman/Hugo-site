@@ -3,6 +3,7 @@ title: "Can a Chrome Extension Be Ported to Safari"
 author: "A.B. Anwar"
 description: "My honest experience porting a Chrome extension to Safari using Xcode — a candid look at why the process is painful and rarely worth the effort for most developers."
 date: 2024-05-20
+lastmod: 2026-09-27
 url: /can-a-chrome-extension-be-ported-to-safari/
 image: /img/portingextension.webp
 categories:

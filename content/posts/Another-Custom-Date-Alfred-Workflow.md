@@ -3,6 +3,7 @@ title: "Another Custom Date Alfred Workflow"
 author: "A.B. Anwar"
 description: "Build a custom Alfred workflow with a Bash script that instantly tells you the day of the week for any date you type — no calendar app needed."
 date: 2024-02-24
+lastmod: 2026-09-27
 url: /another-custom-date-alfred-workflow/
 image: /img/dteworkflow.webp
 categories:

@@ -3,6 +3,7 @@ title: "Auto Lock Shortcut"
 author: "A.B. Anwar"
 description: "I built an iPad Shortcut to jump directly to the Auto-Lock setting — a time-saver during voice memo playback sessions where the screen keeps turning off mid-listen."
 date: 2022-12-12
+lastmod: 2026-09-27
 url: /auto-lock-shortcut/
 image: /img/Autolock.png
 categories:

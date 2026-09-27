@@ -3,6 +3,7 @@ title: "A Ramadan Alfred Workflow"
 author: "A.B. Anwar"
 description: "A Python-powered Alfred workflow that tells you the current day of Ramadan with a quick keyword trigger — built for macOS users observing the Islamic lunar calendar."
 date: 2024-03-25
+lastmod: 2026-09-27
 url: /a-ramadan-alfred-workflow/
 image: /img/Ramadanworkflow.webp
 categories:

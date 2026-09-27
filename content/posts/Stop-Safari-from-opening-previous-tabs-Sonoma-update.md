@@ -3,6 +3,7 @@ title: "Stop Safari From Opening Previous Tabs Sonoma Update"
 author: "A.B. Anwar"
 description: "Updated guide for macOS Sonoma: one setting change in Safari stops it from reopening all your old tabs on launch and gives you a clean, fresh start every time."
 date: 2024-03-19
+lastmod: 2026-09-27
 url: /stop-safari-from-opening-previous-tabs-sonoma-update/
 image: /img/PreventSaf.webp
 categories:

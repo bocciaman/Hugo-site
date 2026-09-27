@@ -3,6 +3,7 @@ title: "Smart Mailboxes & Mail Rules in Apple Mail"
 author: "A.B. Anwar"
 description: "A tutorial on how to setup mail rules and work with Smart mailboxes in Apple Mail"
 date: 2022-07-26
+lastmod: 2026-09-27
 url: /how-to-work-with-smart-mailboxes-and-mail-rules-in-apple-mail/
 image: /img/AppleMail.webp
 categories:

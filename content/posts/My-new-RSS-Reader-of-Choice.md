@@ -3,6 +3,7 @@ title: "My New RSS Reader of Choice"
 author: "A.B. Anwar"
 description: "Why I switched to FreshRSS as my self-hosted RSS reader — full control of your feeds, no algorithm, no subscription fee, running locally via a Docker container."
 date: 2023-11-04
+lastmod: 2026-09-27
 url: /my-new-rss-reader-of-choice/
 image: /img/FreshRSS.webp
 categories:

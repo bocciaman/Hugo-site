@@ -3,6 +3,7 @@ title: "My iPhone 14 Pro Order Process"
 author: "A.B. Anwar"
 description: "A quick walkthrough of my experience ordering the iPhone 14 Pro through the Apple Store, with a look at the buying process from start to finish."
 date: 2022-10-19
+lastmod: 2026-09-27
 url: /my-iphone-14-pro-order-process/
 image: /img/iPhone.png
 categories:
