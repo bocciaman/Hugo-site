@@ -39,8 +39,10 @@
 
     <div class="apps-grid">
       {{ range .Params.apps }}
+        {{/* `with` rebinds the dot to the icon string, so keep the app itself in scope. */}}
+        {{ $app := . }}
         <a class="apps-card" href="{{ .url | relURL }}">
-          {{ with .icon }}<img class="apps-icon" src="{{ . | relURL }}" alt="{{ .name }} icon" width="84" height="84" loading="lazy">{{ end }}
+          {{ with .icon }}<img class="apps-icon" src="{{ . | relURL }}" alt="{{ $app.name }} icon" width="84" height="84" loading="lazy">{{ end }}
           <h2 class="apps-name">
             {{ .name }}
             {{ with .status }}<span class="apps-status">{{ . }}</span>{{ end }}
