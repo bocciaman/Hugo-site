@@ -3,7 +3,7 @@ title: "Using Harry Potter Spells With Siri"
 author: "A.B. Anwar"
 description: "Use Harry Potter spell names as Siri shortcuts on your iPhone — a fun iOS automation project that maps spells like Lumos and Nox to real actions on your phone."
 date: 2023-11-09
-url: /Using-Harry-Potter-Spells-with-Siri/
+url: /using-harry-potter-spells-with-siri/
 image: /img/harrypotterios.webp
 categories:
   - iOS

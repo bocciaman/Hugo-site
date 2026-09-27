@@ -3,7 +3,7 @@ title: "Be Careful When Withdrawing From BlockFi"
 author: "A.B. Anwar"
 description: "A warning about BlockFi pausing withdrawals — I tried to move crypto to my hardware wallet and the transfer never completed. My experience and what you should know."
 date: 2022-09-03
-url: /Be-Careful-when-Withdrawing-from-BlockFi/
+url: /be-careful-when-withdrawing-from-blockfi/
 image: /img/PicBlockFi.png
 categories:
   - BlockFi

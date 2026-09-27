@@ -3,7 +3,7 @@ title: "Install Ubuntu on M2 Mac"
 author: "A.B. Anwar"
 description: "How to install Ubuntu 22.04 LTS on an M2 Mac Studio using VMware Fusion 13 — run Linux safely in a virtual machine without touching your macOS installation."
 date: 2023-12-04
-url: /Install-Ubuntu-on-M2-Mac/
+url: /install-ubuntu-on-m2-mac/
 image: /img/MacLinux.webp
 categories:
   - Linux

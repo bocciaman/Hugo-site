@@ -3,7 +3,7 @@ title: "The Hiatus Is Temporary"
 author: "A.B. Anwar"
 description: ""
 date: 2023-10-13
-url: /The-Hiatus-is-Temporary/
+url: /the-hiatus-is-temporary/
 image: /img/velja.png
 categories:
   - one

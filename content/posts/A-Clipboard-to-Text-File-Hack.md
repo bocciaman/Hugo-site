@@ -3,7 +3,7 @@ title: "A Clipboard to Text File Hack"
 author: "A.B. Anwar"
 description: "A Bash script wired into Alfred that instantly converts your clipboard contents into a new text file — saving a manual copy-paste-save workflow with a single keystroke."
 date: 2024-08-25
-url: /A-Clipboard-to-Text-File-Hack/
+url: /a-clipboard-to-text-file-hack/
 image: /img/clip2txt.webp
 categories:
   - macOS

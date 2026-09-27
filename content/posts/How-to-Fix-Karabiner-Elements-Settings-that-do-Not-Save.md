@@ -3,7 +3,7 @@ title: "How to Fix Karabiner Elements Settings That Do Not Save"
 author: "A.B. Anwar"
 description: "How I fixed Karabiner Elements refusing to save keyboard modifications on my Mac — the hidden folder issue that was blocking my Caps Lock to Hyper key remapping."
 date: 2022-08-15
-url: /How-to-Fix-Karabiner-Elements-Settings-that-do-Not-Save/
+url: /how-to-fix-karabiner-elements-settings-that-do-not-save/
 image: /img/KEThumb.png
 categories:
   - Karabiner Elements

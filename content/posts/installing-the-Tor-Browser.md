@@ -3,7 +3,7 @@ title: "Installing the Tor Browser"
 author: "A.B. Anwar"
 description: "How to install the Tor Browser on a Mac using Homebrew — keeping it easy to update — plus what Tor is, how to verify it works, and how to use it responsibly."
 date: 2023-05-29
-url: /installing-the-Tor-Browser/
+url: /installing-the-tor-browser/
 image: /img/tor.webp
 categories:
   - Application
