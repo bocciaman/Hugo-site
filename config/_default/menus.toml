@@ -37,8 +37,8 @@ weight = 3
 # target = "_blank"  # Open in a new tab
 
 [[main]]
-name = "Beit El Aila"
-url = "/beit-el-aila/"
+name = "Apps"
+url = "/apps/"
 weight = 8
 
 [[main]]

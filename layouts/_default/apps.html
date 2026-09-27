@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{/* Index of the apps. Each card links to that app's own page; content lives in front matter. */}}
+<main class="apps-page">
+  <style>
+    .apps-page { --apps-accent: {{ site.Params.primary_color | default "#47c4f1" }}; padding: 64px 0 40px; }
+    .apps-page .apps-wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+    .apps-page h1 { font-size: 3rem; margin: 0 0 10px; }
+    .apps-page .apps-intro { font-size: 1.2rem; line-height: 1.5; opacity: .85; margin: 0 0 44px; max-width: 620px; }
+
+    .apps-page .apps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+    /* The whole card is the link, so there's no small target to hunt for. */
+    .apps-page .apps-card {
+      display: block; text-decoration: none; background: #1f2329; color: #c3c9d1;
+      border-radius: 18px; padding: 28px 26px; border: 1px solid rgba(255,255,255,.07);
+      box-shadow: 0 6px 18px rgba(0,0,0,.12); transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .apps-page .apps-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(0,0,0,.22); }
+    .apps-page .apps-icon { width: 84px; height: 84px; display: block; margin-bottom: 18px; }
+    .apps-page .apps-name { color: #fff; font-size: 1.45rem; font-weight: 700; margin: 0 0 8px;
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .apps-page .apps-status { font-size: .72rem; font-weight: 700; letter-spacing: .04em;
+      text-transform: uppercase; padding: 3px 9px; border-radius: 999px;
+      background: rgba(255,255,255,.12); color: #d6dbe1; }
+    .apps-page .apps-tagline { margin: 0 0 16px; font-size: .97rem; line-height: 1.55; }
+    .apps-page .apps-more { color: var(--apps-accent); font-weight: 600; font-size: .95rem; }
+
+    @media (max-width: 700px) {
+      .apps-page { padding-top: 40px; }
+      .apps-page h1 { font-size: 2.3rem; }
+      .apps-page .apps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <div class="apps-wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.intro }}<p class="apps-intro">{{ . }}</p>{{ end }}
+
+    <div class="apps-grid">
+      {{ range .Params.apps }}
+        <a class="apps-card" href="{{ .url | relURL }}">
+          {{ with .icon }}<img class="apps-icon" src="{{ . | relURL }}" alt="{{ .name }} icon" width="84" height="84" loading="lazy">{{ end }}
+          <h2 class="apps-name">
+            {{ .name }}
+            {{ with .status }}<span class="apps-status">{{ . }}</span>{{ end }}
+          </h2>
+          <p class="apps-tagline">{{ .tagline }}</p>
+          <span class="apps-more">Learn more →</span>
+        </a>
+      {{ end }}
+    </div>
+
+    {{ with .Content }}<div class="apps-intro" style="margin-top:44px">{{ . }}</div>{{ end }}
+  </div>
+</main>
+{{ end }}
