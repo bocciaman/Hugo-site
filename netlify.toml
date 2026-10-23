@@ -5,3 +5,13 @@ publish = "public"
 [build.environment]
 HUGO_VERSION = "0.156.0"
 NODE_VERSION = "22"
+
+# Hypertile's update feed used to be served from this site. It now lives on the downloads
+# repo so the site stays promotional only, but every copy sold before the move has this exact
+# URL baked into its Info.plist and checks it daily. Removing this redirect would cut those
+# installs off from updates permanently — and this is the only channel left to reach them.
+[[redirects]]
+  from = "/hypertile/appcast.xml"
+  to = "https://github.com/bocciaman/hypertile-releases/releases/latest/download/appcast.xml"
+  status = 301
+  force = true
