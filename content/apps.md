@@ -17,4 +17,8 @@ apps:
     icon: "/img/beit-el-aila-icon.png"
     url: "/beit-el-aila/"
     status: "Coming soon"
+  - name: "BuJo Mode"
+    tagline: "A macOS menu bar app that lets you type bullet journal symbols into any native Mac app using customizable keyboard shortcuts."
+    icon: "/img/bujomode.png"
+    url: "https://github.com/bocciaman/bujo-mode"
 ---
