@@ -1,6 +1,6 @@
 ---
 title: "Apps"
-description: "Mac and iOS apps designed and built by A.B. Anwar — Hypertile, a tiling window manager for Mac, and Beit El Aila, a private contact directory for iPhone and iPad."
+description: "Mac and iOS apps designed and built by A.B. Anwar — Hypertile, a tiling window manager for Mac, KeyMap, a map of every keyboard shortcut on your Mac, and Beit El Aila, a private contact directory for iPhone and iPad."
 layout: apps
 url: /apps/
 noindex: false
@@ -12,6 +12,11 @@ apps:
     tagline: "A tiling window manager for Mac. Every window finds its place, and you never reach for the mouse."
     icon: "/images/hypertile/icon.png"
     url: "/hypertile/"
+  - name: "KeyMap"
+    tagline: "See every shortcut on your Mac at a glance — what's taken, what's free, and where two apps clash."
+    icon: "/images/keymap/icon.png"
+    url: "/keymap/"
+    status: "Coming soon"
   - name: "Beit El Aila"
     tagline: "A private contact directory for families, clubs and organizations, with centralized admin control."
     icon: "/img/beit-el-aila-icon.png"
