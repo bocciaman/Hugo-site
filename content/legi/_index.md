@@ -6,12 +6,10 @@ draft: false
 
 icon: "/images/legi/icon.png"
 tagline: "The quickest way to log what you read. Open it, type the page you stopped on, and you're done."
-platforms: "For iPhone · iOS 18 or later · Free"
+platforms: "For iPhone · iOS 18 or later · $3.99"
 cta: "Download on the App Store"
 cta_soon: "Coming soon to the App Store"
-# Add buy_url with the App Store link once Legi is approved; the button switches on by itself.
-notify_url: "/subscribe/"
-notify_text: "Get notified when it launches →"
+buy_url: "https://apps.apple.com/us/app/legi-reading-log/id6832634207"
 hero: "/images/legi/hero.jpg"
 hero_alt: "Three iPhone screens: searching for a book, logging a reading session with the start page filled in, and a book's reading history"
 
