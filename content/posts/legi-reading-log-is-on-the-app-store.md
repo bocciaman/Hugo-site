@@ -15,8 +15,7 @@ tags:
   - Shortcuts
   - Indie Apps
 draft: false
-# VIDEO: when the YouTube video is up, add its ID here, e.g. youtube_id: "abc123XYZ",
-# and replace the VIDEO PLACEHOLDER comment in the body with the youtube shortcode.
+youtube_id: "IYMmqzRwCT0"
 ---
 
 I've wanted a simple way to keep track of what I read for a long time. Every reading tracker I tried asked for more than I wanted to give: an account, a social feed, a reading goal, a streak to protect. All I really wanted was to write down the page I stopped on.
@@ -25,7 +24,9 @@ So I built one. It's called **Legi**, and it's now on the App Store.
 
 <!--more-->
 
-<!-- VIDEO PLACEHOLDER: add "## Video" and the youtube shortcode with the video ID here, and set youtube_id in the front matter. -->
+## Video
+
+{{< youtube IYMmqzRwCT0 >}}
 
 ## How it works
 
