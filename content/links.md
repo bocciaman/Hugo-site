@@ -6,6 +6,9 @@ url: /links/
 layout: linkinbio
 draft: false
 buttons:
+  - label: "Legi: Reading Log for iPhone"
+    link: "https://apps.apple.com/us/app/legi-reading-log/id6832634207"
+    icon: "fa-solid fa-book-open"
   - label: "MacBook Air M1 (16GB)"
     link: "https://amzn.to/4q017Co"
     icon: "fa-solid fa-laptop"
