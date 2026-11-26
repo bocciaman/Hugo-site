@@ -1,6 +1,6 @@
 ---
 title: "Apps"
-description: "Mac and iOS apps designed and built by A.B. Anwar — Hypertile, a tiling window manager for Mac, KeyMap, a map of every keyboard shortcut on your Mac, Beit El Aila, a private contact directory for iPhone and iPad, and Legi, a private reading log for iPhone."
+description: "Mac and iOS apps designed and built by A.B. Anwar — Hypertile, a tiling window manager for Mac, PastePost, a social post organizer for Mac, KeyMap, a map of every keyboard shortcut on your Mac, Beit El Aila, a private contact directory for iPhone and iPad, and Legi, a private reading log for iPhone."
 layout: apps
 url: /apps/
 noindex: false
@@ -12,6 +12,11 @@ apps:
     tagline: "A tiling window manager for Mac. Every window finds its place, and you never reach for the mouse."
     icon: "/images/hypertile/icon.png"
     url: "/hypertile/"
+  - name: "PastePost"
+    tagline: "Your social posts, ready to paste. Caption first, then each photo, into any website."
+    icon: "/images/pastepost/icon.png"
+    url: "/pastepost/"
+    status: "Coming soon"
   - name: "KeyMap"
     tagline: "See every shortcut on your Mac at a glance — what's taken, what's free, and where two apps clash."
     icon: "/images/keymap/icon.png"
